@@ -1,0 +1,314 @@
+[
+ {
+  "build": "coordinator",
+  "trial": 0,
+  "seconds": 180.0,
+  "model_calls": 24,
+  "tokens": 39200,
+  "input_tokens": 28484,
+  "output_tokens": 10716,
+  "order": [
+   "campaign_director",
+   "audience_researcher",
+   "product_researcher",
+   "competitor_researcher",
+   "product_researcher",
+   "audience_researcher",
+   "competitor_researcher",
+   "campaign_director",
+   "copywriter",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director"
+  ],
+  "has_draft": true,
+  "has_verdict": false,
+  "timed_out": true,
+  "trace": [
+   "   3.9s campaign_director calls=['product_researcher', 'audience_researcher', 'competitor_researcher']",
+   "   5.8s audience_researcher calls=['lookup_audience']",
+   "   5.8s audience_researcher",
+   "   6.2s product_researcher calls=['lookup_product']",
+   "   6.2s product_researcher",
+   "   6.3s competitor_researcher calls=['lookup_competitors']",
+   "   6.3s competitor_researcher",
+   "   7.4s product_researcher",
+   "   8.0s audience_researcher",
+   "   8.9s competitor_researcher",
+   "   8.9s campaign_director",
+   "  12.3s campaign_director calls=['copywriter']",
+   "  25.3s copywriter",
+   "  25.3s campaign_director",
+   "  27.7s campaign_director calls=['brand_judge']",
+   "  38.0s brand_judge calls=['transfer_to_agent->campaign_director']",
+   "  38.0s brand_judge",
+   "  41.5s campaign_director calls=['brand_judge']",
+   "  44.6s brand_judge calls=['transfer_to_agent->campaign_director']",
+   "  44.6s brand_judge",
+   "  48.1s campaign_director calls=['brand_judge']",
+   "  50.8s brand_judge calls=['transfer_to_agent->campaign_director']",
+   "  50.8s brand_judge",
+   "  53.5s campaign_director calls=['brand_judge']",
+   "  56.7s brand_judge calls=['transfer_to_agent->campaign_director']",
+   "  56.7s brand_judge",
+   "  60.3s campaign_director calls=['brand_judge']",
+   " 145.2s brand_judge calls=['transfer_to_agent->campaign_director']",
+   " 145.2s brand_judge",
+   " 149.0s campaign_director calls=['brand_judge']",
+   " 152.3s brand_judge calls=['transfer_to_agent->campaign_director']",
+   " 152.3s brand_judge",
+   " 155.2s campaign_director calls=['brand_judge']",
+   " 175.8s brand_judge calls=['transfer_to_agent->campaign_director']",
+   " 175.8s brand_judge",
+   " 178.6s campaign_director calls=['brand_judge']"
+  ],
+  "warnings": [],
+  "spans": {
+   "campaign_director": [
+    3.9,
+    178.6
+   ],
+   "audience_researcher": [
+    5.8,
+    8.0
+   ],
+   "product_researcher": [
+    6.2,
+    7.4
+   ],
+   "competitor_researcher": [
+    6.3,
+    8.9
+   ],
+   "copywriter": [
+    25.3,
+    25.3
+   ],
+   "brand_judge": [
+    38.0,
+    175.8
+   ]
+  },
+  "final": "{\n  \"email_subject\": \"Reduce utility fleet gear theft: TrailLock 2 demo\",\n  \"email_body\": \"As you set your January fleet refresh budget, open cargo racks expose your gear to theft and damage, causing crew downtime.\\n\\nThe Corvane TrailLock 2 rooftop cargo system features keyed-alike locking across u"
+ },
+ {
+  "build": "coordinator",
+  "trial": 1,
+  "seconds": 180.0,
+  "model_calls": 26,
+  "tokens": 46237,
+  "input_tokens": 34321,
+  "output_tokens": 11916,
+  "order": [
+   "campaign_director",
+   "product_researcher",
+   "competitor_researcher",
+   "audience_researcher",
+   "competitor_researcher",
+   "audience_researcher",
+   "product_researcher",
+   "campaign_director",
+   "copywriter",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director"
+  ],
+  "has_draft": true,
+  "has_verdict": false,
+  "timed_out": true,
+  "trace": [
+   "   2.9s campaign_director calls=['audience_researcher', 'competitor_researcher', 'product_researcher']",
+   "   4.6s product_researcher calls=['lookup_product']",
+   "   4.6s product_researcher",
+   "   4.9s competitor_researcher calls=['lookup_competitors']",
+   "   4.9s competitor_researcher",
+   "   5.3s audience_researcher calls=['lookup_audience']",
+   "   5.3s audience_researcher",
+   "   6.9s competitor_researcher",
+   "   7.0s audience_researcher",
+   "  13.3s product_researcher",
+   "  13.3s campaign_director",
+   "  16.5s campaign_director calls=['copywriter']",
+   "  25.7s copywriter",
+   "  25.7s campaign_director",
+   "  28.1s campaign_director calls=['brand_judge']",
+   "  43.5s brand_judge calls=['transfer_to_agent->campaign_director']",
+   "  43.5s brand_judge",
+   "  47.3s campaign_director calls=['brand_judge']",
+   "  50.0s brand_judge calls=['transfer_to_agent->campaign_director']",
+   "  50.0s brand_judge",
+   "  54.0s campaign_director calls=['brand_judge']",
+   "  56.4s brand_judge calls=['transfer_to_agent->campaign_director']",
+   "  56.4s brand_judge",
+   "  60.4s campaign_director calls=['brand_judge']",
+   "  62.9s brand_judge calls=['transfer_to_agent->campaign_director']",
+   "  62.9s brand_judge",
+   "  66.8s campaign_director calls=['brand_judge']",
+   "  69.6s brand_judge calls=['transfer_to_agent->campaign_director']",
+   "  69.6s brand_judge",
+   "  73.1s campaign_director calls=['brand_judge']",
+   " 136.5s brand_judge calls=['transfer_to_agent->campaign_director']",
+   " 136.5s brand_judge",
+   " 140.2s campaign_director calls=['brand_judge']",
+   " 154.3s brand_judge calls=['transfer_to_agent->campaign_director']",
+   " 154.3s brand_judge",
+   " 158.4s campaign_director calls=['brand_judge']",
+   " 161.2s brand_judge calls=['transfer_to_agent->campaign_director']",
+   " 161.2s brand_judge",
+   " 165.6s campaign_director calls=['brand_judge']"
+  ],
+  "warnings": [],
+  "spans": {
+   "campaign_director": [
+    2.9,
+    165.6
+   ],
+   "product_researcher": [
+    4.6,
+    13.3
+   ],
+   "competitor_researcher": [
+    4.9,
+    6.9
+   ],
+   "audience_researcher": [
+    5.3,
+    7.0
+   ],
+   "copywriter": [
+    25.7,
+    25.7
+   ],
+   "brand_judge": [
+    43.5,
+    161.2
+   ]
+  },
+  "final": "{\n  \"email_subject\": \"Reduce utility crew downtime and cargo theft in Q1\",\n  \"email_body\": \"As you allocate your January annual fleet refresh budget, addressing crew downtime from damaged gear and theft from open racks is likely a priority.\\n\\nThe Corvane TrailLock 2 rooftop cargo system protects yo"
+ },
+ {
+  "build": "coordinator",
+  "trial": 2,
+  "seconds": 180.0,
+  "model_calls": 22,
+  "tokens": 33052,
+  "input_tokens": 24529,
+  "output_tokens": 8523,
+  "order": [
+   "campaign_director",
+   "product_researcher",
+   "competitor_researcher",
+   "audience_researcher",
+   "product_researcher",
+   "audience_researcher",
+   "competitor_researcher",
+   "campaign_director",
+   "copywriter",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director"
+  ],
+  "has_draft": true,
+  "has_verdict": false,
+  "timed_out": true,
+  "trace": [
+   "   3.4s campaign_director calls=['audience_researcher', 'competitor_researcher', 'product_researcher']",
+   "   5.4s product_researcher calls=['lookup_product']",
+   "   5.4s product_researcher",
+   "   5.6s competitor_researcher calls=['lookup_competitors']",
+   "   5.6s competitor_researcher",
+   "   5.7s audience_researcher calls=['lookup_audience']",
+   "   5.7s audience_researcher",
+   "   6.5s product_researcher",
+   "   7.7s audience_researcher",
+   "   8.7s competitor_researcher",
+   "   8.8s campaign_director",
+   "  11.9s campaign_director calls=['copywriter']",
+   "  20.1s copywriter",
+   "  20.1s campaign_director",
+   "  22.2s campaign_director calls=['brand_judge']",
+   "  24.6s brand_judge calls=['transfer_to_agent->campaign_director']",
+   "  24.6s brand_judge",
+   "  28.1s campaign_director calls=['brand_judge']",
+   " 141.7s brand_judge calls=['transfer_to_agent->campaign_director']",
+   " 141.7s brand_judge",
+   " 144.7s campaign_director calls=['brand_judge']",
+   " 147.8s brand_judge calls=['transfer_to_agent->campaign_director']",
+   " 147.8s brand_judge",
+   " 150.6s campaign_director calls=['brand_judge']",
+   " 155.0s brand_judge calls=['transfer_to_agent->campaign_director']",
+   " 155.0s brand_judge",
+   " 157.8s campaign_director calls=['brand_judge']",
+   " 163.5s brand_judge calls=['transfer_to_agent->campaign_director']",
+   " 163.5s brand_judge",
+   " 167.6s campaign_director calls=['brand_judge']",
+   " 171.2s brand_judge calls=['transfer_to_agent->campaign_director']",
+   " 171.2s brand_judge",
+   " 174.4s campaign_director calls=['brand_judge']"
+  ],
+  "warnings": [],
+  "spans": {
+   "campaign_director": [
+    3.4,
+    174.4
+   ],
+   "product_researcher": [
+    5.4,
+    6.5
+   ],
+   "competitor_researcher": [
+    5.6,
+    8.7
+   ],
+   "audience_researcher": [
+    5.7,
+    7.7
+   ],
+   "copywriter": [
+    20.1,
+    20.1
+   ],
+   "brand_judge": [
+    24.6,
+    171.2
+   ]
+  },
+  "final": "{\n  \"email_subject\": \"Q1 fleet refresh: Secure your utility vehicles\",\n  \"email_body\": \"As you allocate your January fleet refresh budget, addressing crew downtime from gear damage and theft from open racks is critical. \\n\\nThe Corvane TrailLock 2 rooftop cargo system secures your equipment. While c"
+ }
+]

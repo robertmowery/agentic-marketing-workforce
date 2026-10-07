@@ -1,0 +1,191 @@
+[
+ {
+  "build": "graph",
+  "trial": 0,
+  "seconds": 23.2,
+  "model_calls": 8,
+  "tokens": 5985,
+  "order": [
+   "audience_researcher",
+   "competitor_researcher",
+   "audience_researcher",
+   "competitor_researcher",
+   "product_researcher",
+   "competitor_researcher",
+   "audience_researcher",
+   "campaign_pipeline",
+   "copywriter",
+   "brand_judge"
+  ],
+  "has_draft": true,
+  "has_verdict": true,
+  "timed_out": false,
+  "trace": [
+   "   2.1s audience_researcher calls=['lookup_audience']",
+   "   2.1s competitor_researcher calls=['lookup_competitors']",
+   "   2.1s audience_researcher",
+   "   2.1s competitor_researcher",
+   "   2.2s product_researcher calls=['lookup_product']",
+   "   2.2s product_researcher",
+   "   3.1s product_researcher",
+   "   3.8s competitor_researcher",
+   "   4.0s audience_researcher",
+   "   4.0s campaign_pipeline",
+   "  16.9s copywriter",
+   "  23.2s brand_judge"
+  ],
+  "warnings": [],
+  "spans": {
+   "audience_researcher": [
+    2.1,
+    4.0
+   ],
+   "competitor_researcher": [
+    2.1,
+    3.8
+   ],
+   "product_researcher": [
+    2.2,
+    3.1
+   ],
+   "campaign_pipeline": [
+    4.0,
+    4.0
+   ],
+   "copywriter": [
+    16.9,
+    16.9
+   ],
+   "brand_judge": [
+    23.2,
+    23.2
+   ]
+  },
+  "final": "{\"passed\":false,\"score\":7,\"fixes\":[\"Add a clear call to action to the LinkedIn post to prompt the reader on what action to take next.\"]}"
+ },
+ {
+  "build": "graph",
+  "trial": 1,
+  "seconds": 36.1,
+  "model_calls": 8,
+  "tokens": 6108,
+  "order": [
+   "audience_researcher",
+   "product_researcher",
+   "competitor_researcher",
+   "product_researcher",
+   "audience_researcher",
+   "competitor_researcher",
+   "campaign_pipeline",
+   "copywriter",
+   "brand_judge"
+  ],
+  "has_draft": true,
+  "has_verdict": true,
+  "timed_out": false,
+  "trace": [
+   "   2.1s audience_researcher calls=['lookup_audience']",
+   "   2.1s audience_researcher",
+   "   2.3s product_researcher calls=['lookup_product']",
+   "   2.3s product_researcher",
+   "   2.3s competitor_researcher calls=['lookup_competitors']",
+   "   2.3s competitor_researcher",
+   "   3.7s product_researcher",
+   "   3.8s audience_researcher",
+   "   5.1s competitor_researcher",
+   "   5.1s campaign_pipeline",
+   "  28.0s copywriter",
+   "  36.1s brand_judge"
+  ],
+  "warnings": [],
+  "spans": {
+   "audience_researcher": [
+    2.1,
+    3.8
+   ],
+   "product_researcher": [
+    2.3,
+    3.7
+   ],
+   "competitor_researcher": [
+    2.3,
+    5.1
+   ],
+   "campaign_pipeline": [
+    5.1,
+    5.1
+   ],
+   "copywriter": [
+    28.0,
+    28.0
+   ],
+   "brand_judge": [
+    36.1,
+    36.1
+   ]
+  },
+  "final": "{\"passed\":false,\"score\":7,\"fixes\":[\"The LinkedIn post lacks a clear call to action. Add a specific CTA at the end of the post, such as directing fleet managers to contact the team or visit the website.\"]}"
+ },
+ {
+  "build": "graph",
+  "trial": 2,
+  "seconds": 83.2,
+  "model_calls": 8,
+  "tokens": 6007,
+  "order": [
+   "product_researcher",
+   "competitor_researcher",
+   "product_researcher",
+   "audience_researcher",
+   "competitor_researcher",
+   "campaign_pipeline",
+   "copywriter",
+   "brand_judge"
+  ],
+  "has_draft": true,
+  "has_verdict": true,
+  "timed_out": false,
+  "trace": [
+   "   1.7s product_researcher calls=['lookup_product']",
+   "   1.7s product_researcher",
+   "   2.4s competitor_researcher calls=['lookup_competitors']",
+   "   2.4s competitor_researcher",
+   "   2.9s product_researcher",
+   "   3.3s audience_researcher calls=['lookup_audience']",
+   "   3.3s audience_researcher",
+   "   5.8s audience_researcher",
+   "   6.0s competitor_researcher",
+   "   6.0s campaign_pipeline",
+   "  14.8s copywriter",
+   "  83.2s brand_judge"
+  ],
+  "warnings": [],
+  "spans": {
+   "product_researcher": [
+    1.7,
+    2.9
+   ],
+   "competitor_researcher": [
+    2.4,
+    6.0
+   ],
+   "audience_researcher": [
+    3.3,
+    5.8
+   ],
+   "campaign_pipeline": [
+    6.0,
+    6.0
+   ],
+   "copywriter": [
+    14.8,
+    14.8
+   ],
+   "brand_judge": [
+    83.2,
+    83.2
+   ]
+  },
+  "final": "{\"passed\":true,\"score\":8,\"fixes\":[\"Add a clear call to action to the LinkedIn post to guide readers on the next steps.\"]}"
+ }
+]

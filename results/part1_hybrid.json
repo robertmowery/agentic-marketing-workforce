@@ -1,0 +1,217 @@
+[
+ {
+  "build": "hybrid",
+  "trial": 0,
+  "seconds": 32.5,
+  "model_calls": 10,
+  "tokens": 7526,
+  "order": [
+   "campaign_director",
+   "product_researcher",
+   "competitor_researcher",
+   "product_researcher",
+   "audience_researcher",
+   "competitor_researcher",
+   "campaign_pipeline",
+   "copywriter",
+   "brand_judge",
+   "campaign_director"
+  ],
+  "has_draft": true,
+  "has_verdict": true,
+  "timed_out": false,
+  "trace": [
+   "   2.2s campaign_director calls=['campaign_pipeline']",
+   "   3.6s product_researcher calls=['lookup_product']",
+   "   3.6s product_researcher",
+   "   4.1s competitor_researcher calls=['lookup_competitors']",
+   "   4.1s competitor_researcher",
+   "   4.5s product_researcher",
+   "   4.9s audience_researcher calls=['lookup_audience']",
+   "   4.9s audience_researcher",
+   "   6.6s audience_researcher",
+   "   9.1s competitor_researcher",
+   "   9.1s campaign_pipeline",
+   "  21.4s copywriter",
+   "  28.7s brand_judge",
+   "  28.7s campaign_director",
+   "  32.5s campaign_director"
+  ],
+  "warnings": [],
+  "spans": {
+   "campaign_director": [
+    2.2,
+    32.5
+   ],
+   "product_researcher": [
+    3.6,
+    4.5
+   ],
+   "competitor_researcher": [
+    4.1,
+    9.1
+   ],
+   "audience_researcher": [
+    4.9,
+    6.6
+   ],
+   "campaign_pipeline": [
+    9.1,
+    9.1
+   ],
+   "copywriter": [
+    21.4,
+    21.4
+   ],
+   "brand_judge": [
+    28.7,
+    28.7
+   ]
+  },
+  "final": "The campaign brief has been processed through our pipeline. Here is the status and verdict:\n\n### **Verdict: Failed (Score: 7/10)**\nThe campaign did not pass the brand review stage. \n\n### **Required Fixes:**\nTo move this campaign forward, the following adjustments need to be made:\n1. **Call to Action"
+ },
+ {
+  "build": "hybrid",
+  "trial": 1,
+  "seconds": 25.1,
+  "model_calls": 10,
+  "tokens": 6840,
+  "order": [
+   "campaign_director",
+   "product_researcher",
+   "competitor_researcher",
+   "audience_researcher",
+   "product_researcher",
+   "competitor_researcher",
+   "audience_researcher",
+   "campaign_pipeline",
+   "copywriter",
+   "brand_judge",
+   "campaign_director"
+  ],
+  "has_draft": true,
+  "has_verdict": true,
+  "timed_out": false,
+  "trace": [
+   "   2.0s campaign_director calls=['campaign_pipeline']",
+   "   3.6s product_researcher calls=['lookup_product']",
+   "   3.6s product_researcher",
+   "   3.7s competitor_researcher calls=['lookup_competitors']",
+   "   3.7s competitor_researcher",
+   "   4.3s audience_researcher calls=['lookup_audience']",
+   "   4.3s audience_researcher",
+   "   4.6s product_researcher",
+   "   5.7s competitor_researcher",
+   "   7.4s audience_researcher",
+   "   7.4s campaign_pipeline",
+   "  15.1s copywriter",
+   "  21.9s brand_judge",
+   "  21.9s campaign_director",
+   "  25.1s campaign_director"
+  ],
+  "warnings": [],
+  "spans": {
+   "campaign_director": [
+    2.0,
+    25.1
+   ],
+   "product_researcher": [
+    3.6,
+    4.6
+   ],
+   "competitor_researcher": [
+    3.7,
+    5.7
+   ],
+   "audience_researcher": [
+    4.3,
+    7.4
+   ],
+   "campaign_pipeline": [
+    7.4,
+    7.4
+   ],
+   "copywriter": [
+    15.1,
+    15.1
+   ],
+   "brand_judge": [
+    21.9,
+    21.9
+   ]
+  },
+  "final": "Based on the campaign pipeline run, here is the verdict for your campaign brief:\n\n### **Verdict: Failed (Score: 7/10)**\nThe draft did not pass the brand review. \n\n### **Required Fixes:**\n* **LinkedIn Post:** Add a clear call to action to guide the reader on the next steps (e.g., booking a demo for Q"
+ },
+ {
+  "build": "hybrid",
+  "trial": 2,
+  "seconds": 29.1,
+  "model_calls": 10,
+  "tokens": 6733,
+  "order": [
+   "campaign_director",
+   "product_researcher",
+   "competitor_researcher",
+   "audience_researcher",
+   "product_researcher",
+   "audience_researcher",
+   "competitor_researcher",
+   "campaign_pipeline",
+   "copywriter",
+   "brand_judge",
+   "campaign_director"
+  ],
+  "has_draft": true,
+  "has_verdict": true,
+  "timed_out": false,
+  "trace": [
+   "   1.8s campaign_director calls=['campaign_pipeline']",
+   "   3.2s product_researcher calls=['lookup_product']",
+   "   3.2s product_researcher",
+   "   3.7s competitor_researcher calls=['lookup_competitors']",
+   "   3.7s competitor_researcher",
+   "   3.9s audience_researcher calls=['lookup_audience']",
+   "   3.9s audience_researcher",
+   "   4.2s product_researcher",
+   "   5.6s audience_researcher",
+   "   6.0s competitor_researcher",
+   "   6.0s campaign_pipeline",
+   "  17.8s copywriter",
+   "  24.9s brand_judge",
+   "  24.9s campaign_director",
+   "  29.1s campaign_director"
+  ],
+  "warnings": [],
+  "spans": {
+   "campaign_director": [
+    1.8,
+    29.1
+   ],
+   "product_researcher": [
+    3.2,
+    4.2
+   ],
+   "competitor_researcher": [
+    3.7,
+    6.0
+   ],
+   "audience_researcher": [
+    3.9,
+    5.6
+   ],
+   "campaign_pipeline": [
+    6.0,
+    6.0
+   ],
+   "copywriter": [
+    17.8,
+    17.8
+   ],
+   "brand_judge": [
+    24.9,
+    24.9
+   ]
+  },
+  "final": "The campaign pipeline has successfully processed your brief. Here is the verdict:\n\n* **Verdict:** Passed (Score: 9/10)\n* **Fixes required:** None\n\nThe pipeline has generated and approved the drafts (one email and one LinkedIn post) targeting regional utility fleet managers for the TrailLock 2 roofto"
+ }
+]

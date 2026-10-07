@@ -1,0 +1,207 @@
+[
+ {
+  "build": "coordinator_guarded",
+  "trial": 0,
+  "seconds": 31.5,
+  "model_calls": 12,
+  "tokens": 14607,
+  "order": [
+   "campaign_director",
+   "competitor_researcher",
+   "product_researcher",
+   "audience_researcher",
+   "product_researcher",
+   "audience_researcher",
+   "competitor_researcher",
+   "campaign_director",
+   "copywriter",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director"
+  ],
+  "has_draft": true,
+  "has_verdict": true,
+  "timed_out": false,
+  "trace": [
+   "   2.7s campaign_director calls=['audience_researcher', 'competitor_researcher', 'product_researcher']",
+   "   4.2s competitor_researcher calls=['lookup_competitors']",
+   "   4.2s competitor_researcher",
+   "   4.4s product_researcher calls=['lookup_product']",
+   "   4.4s product_researcher",
+   "   4.5s audience_researcher calls=['lookup_audience']",
+   "   4.5s audience_researcher",
+   "   5.3s product_researcher",
+   "   6.3s audience_researcher",
+   "   6.4s competitor_researcher",
+   "   6.4s campaign_director",
+   "   8.8s campaign_director calls=['copywriter']",
+   "  17.5s copywriter",
+   "  17.5s campaign_director",
+   "  19.7s campaign_director calls=['brand_judge']",
+   "  27.7s brand_judge",
+   "  27.7s campaign_director",
+   "  31.5s campaign_director"
+  ],
+  "warnings": [],
+  "spans": {
+   "campaign_director": [
+    2.7,
+    31.5
+   ],
+   "competitor_researcher": [
+    4.2,
+    6.4
+   ],
+   "product_researcher": [
+    4.4,
+    5.3
+   ],
+   "audience_researcher": [
+    4.5,
+    6.3
+   ],
+   "copywriter": [
+    17.5,
+    17.5
+   ],
+   "brand_judge": [
+    27.7,
+    27.7
+   ]
+  },
+  "final": "Here is the completed campaign draft and the brand evaluation verdict for the **Corvane TrailLock 2** rooftop cargo system launch to utility fleet managers.\n\n---\n\n### **Campaign Draft**\n\n#### **1. Email**\n* **Subject:** Secure your utility fleet for Q1 with Corvane TrailLock 2\n* **Body:** \n  > As yo"
+ },
+ {
+  "build": "coordinator_guarded",
+  "trial": 1,
+  "seconds": 90.0,
+  "model_calls": 10,
+  "tokens": 9912,
+  "order": [
+   "campaign_director",
+   "competitor_researcher",
+   "product_researcher",
+   "competitor_researcher",
+   "audience_researcher",
+   "campaign_director",
+   "copywriter",
+   "campaign_director"
+  ],
+  "has_draft": true,
+  "has_verdict": false,
+  "timed_out": true,
+  "trace": [
+   "   3.1s campaign_director calls=['audience_researcher', 'competitor_researcher', 'product_researcher']",
+   "   4.7s competitor_researcher calls=['lookup_competitors']",
+   "   4.7s competitor_researcher",
+   "   5.2s product_researcher calls=['lookup_product']",
+   "   5.2s product_researcher",
+   "   6.0s product_researcher",
+   "   7.5s competitor_researcher",
+   "  53.8s audience_researcher calls=['lookup_audience']",
+   "  53.8s audience_researcher",
+   "  55.1s audience_researcher",
+   "  55.1s campaign_director",
+   "  57.5s campaign_director calls=['copywriter']",
+   "  65.1s copywriter",
+   "  65.1s campaign_director",
+   "  68.8s campaign_director calls=['brand_judge']"
+  ],
+  "warnings": [],
+  "spans": {
+   "campaign_director": [
+    3.1,
+    68.8
+   ],
+   "competitor_researcher": [
+    4.7,
+    7.5
+   ],
+   "product_researcher": [
+    5.2,
+    6.0
+   ],
+   "audience_researcher": [
+    53.8,
+    55.1
+   ],
+   "copywriter": [
+    65.1,
+    65.1
+   ]
+  },
+  "final": "{\"email_subject\":\"Reduce gear theft and downtime: TrailLock 2 for utility fleets\",\"email_body\":\"Fleet managers are finalizing January budgets to address crew downtime from damaged gear and theft from open racks. The Corvane TrailLock 2 rooftop cargo system secures your equipment. Unlike RackMaster P"
+ },
+ {
+  "build": "coordinator_guarded",
+  "trial": 2,
+  "seconds": 37.1,
+  "model_calls": 12,
+  "tokens": 14176,
+  "order": [
+   "campaign_director",
+   "product_researcher",
+   "competitor_researcher",
+   "audience_researcher",
+   "product_researcher",
+   "audience_researcher",
+   "competitor_researcher",
+   "campaign_director",
+   "copywriter",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director"
+  ],
+  "has_draft": true,
+  "has_verdict": true,
+  "timed_out": false,
+  "trace": [
+   "   2.7s campaign_director calls=['audience_researcher', 'competitor_researcher', 'product_researcher']",
+   "   4.3s product_researcher calls=['lookup_product']",
+   "   4.3s product_researcher",
+   "   4.3s competitor_researcher calls=['lookup_competitors']",
+   "   4.3s competitor_researcher",
+   "   4.5s audience_researcher calls=['lookup_audience']",
+   "   4.5s audience_researcher",
+   "   5.4s product_researcher",
+   "   6.5s audience_researcher",
+   "   6.9s competitor_researcher",
+   "   6.9s campaign_director",
+   "   9.5s campaign_director calls=['copywriter']",
+   "  20.1s copywriter",
+   "  20.2s campaign_director",
+   "  22.8s campaign_director calls=['brand_judge']",
+   "  33.5s brand_judge",
+   "  33.5s campaign_director",
+   "  37.1s campaign_director"
+  ],
+  "warnings": [],
+  "spans": {
+   "campaign_director": [
+    2.7,
+    37.1
+   ],
+   "product_researcher": [
+    4.3,
+    5.4
+   ],
+   "competitor_researcher": [
+    4.3,
+    6.9
+   ],
+   "audience_researcher": [
+    4.5,
+    6.5
+   ],
+   "copywriter": [
+    20.1,
+    20.1
+   ],
+   "brand_judge": [
+    33.5,
+    33.5
+   ]
+  },
+  "final": "### Campaign Research Findings\n\n* **Audience (Fleet Managers at Regional Utility Companies):** \n  * **Pains:** Crew downtime from gear damage and gear theft from open racks.\n  * **Buying Trigger:** Annual fleet refresh budgets are set in January, making Q1 the optimal window.\n* **Competitor Analysis"
+ }
+]

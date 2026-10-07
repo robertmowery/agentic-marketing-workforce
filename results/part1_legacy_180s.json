@@ -1,0 +1,178 @@
+[
+ {
+  "build": "legacy",
+  "trial": 0,
+  "seconds": 113.8,
+  "model_calls": 8,
+  "tokens": 8628,
+  "input_tokens": 5377,
+  "output_tokens": 3251,
+  "order": [
+   "product_researcher",
+   "audience_researcher",
+   "competitor_researcher",
+   "product_researcher",
+   "audience_researcher",
+   "competitor_researcher",
+   "copywriter",
+   "brand_judge"
+  ],
+  "has_draft": true,
+  "has_verdict": true,
+  "timed_out": false,
+  "trace": [
+   "   1.9s product_researcher calls=['lookup_product']",
+   "   1.9s product_researcher",
+   "   2.3s audience_researcher calls=['lookup_audience']",
+   "   2.3s audience_researcher",
+   "   2.7s competitor_researcher calls=['lookup_competitors']",
+   "   2.7s competitor_researcher",
+   "   3.5s product_researcher",
+   "   5.2s audience_researcher",
+   "   5.8s competitor_researcher",
+   "  13.0s copywriter",
+   " 113.8s brand_judge"
+  ],
+  "warnings": [],
+  "spans": {
+   "product_researcher": [
+    1.9,
+    3.5
+   ],
+   "audience_researcher": [
+    2.3,
+    5.2
+   ],
+   "competitor_researcher": [
+    2.7,
+    5.8
+   ],
+   "copywriter": [
+    13.0,
+    13.0
+   ],
+   "brand_judge": [
+    113.8,
+    113.8
+   ]
+  },
+  "final": "{\"passed\":true,\"score\":10,\"fixes\":[]}"
+ },
+ {
+  "build": "legacy",
+  "trial": 1,
+  "seconds": 22.4,
+  "model_calls": 8,
+  "tokens": 10021,
+  "input_tokens": 5549,
+  "output_tokens": 4472,
+  "order": [
+   "product_researcher",
+   "audience_researcher",
+   "competitor_researcher",
+   "product_researcher",
+   "audience_researcher",
+   "competitor_researcher",
+   "copywriter",
+   "brand_judge"
+  ],
+  "has_draft": true,
+  "has_verdict": true,
+  "timed_out": false,
+  "trace": [
+   "   2.0s product_researcher calls=['lookup_product']",
+   "   2.0s product_researcher",
+   "   2.4s audience_researcher calls=['lookup_audience']",
+   "   2.4s audience_researcher",
+   "   2.6s competitor_researcher calls=['lookup_competitors']",
+   "   2.6s competitor_researcher",
+   "   3.2s product_researcher",
+   "   4.9s audience_researcher",
+   "   5.8s competitor_researcher",
+   "  16.1s copywriter",
+   "  22.4s brand_judge"
+  ],
+  "warnings": [],
+  "spans": {
+   "product_researcher": [
+    2.0,
+    3.2
+   ],
+   "audience_researcher": [
+    2.4,
+    4.9
+   ],
+   "competitor_researcher": [
+    2.6,
+    5.8
+   ],
+   "copywriter": [
+    16.1,
+    16.1
+   ],
+   "brand_judge": [
+    22.4,
+    22.4
+   ]
+  },
+  "final": "{\"passed\":true,\"score\":10,\"fixes\":[]}"
+ },
+ {
+  "build": "legacy",
+  "trial": 2,
+  "seconds": 21.5,
+  "model_calls": 8,
+  "tokens": 9688,
+  "input_tokens": 5537,
+  "output_tokens": 4151,
+  "order": [
+   "product_researcher",
+   "competitor_researcher",
+   "audience_researcher",
+   "product_researcher",
+   "competitor_researcher",
+   "copywriter",
+   "brand_judge"
+  ],
+  "has_draft": true,
+  "has_verdict": true,
+  "timed_out": false,
+  "trace": [
+   "   1.9s product_researcher calls=['lookup_product']",
+   "   1.9s product_researcher",
+   "   2.2s competitor_researcher calls=['lookup_competitors']",
+   "   2.2s competitor_researcher",
+   "   2.4s audience_researcher calls=['lookup_audience']",
+   "   2.4s audience_researcher",
+   "   4.1s audience_researcher",
+   "   4.7s product_researcher",
+   "   5.6s competitor_researcher",
+   "  15.7s copywriter",
+   "  21.5s brand_judge"
+  ],
+  "warnings": [],
+  "spans": {
+   "product_researcher": [
+    1.9,
+    4.7
+   ],
+   "competitor_researcher": [
+    2.2,
+    5.6
+   ],
+   "audience_researcher": [
+    2.4,
+    4.1
+   ],
+   "copywriter": [
+    15.7,
+    15.7
+   ],
+   "brand_judge": [
+    21.5,
+    21.5
+   ]
+  },
+  "final": "{\"passed\":true,\"score\":10,\"fixes\":[]}"
+ }
+]

@@ -1,0 +1,164 @@
+[
+ {
+  "build": "graph_sequential",
+  "trial": 0,
+  "seconds": 32.4,
+  "model_calls": 8,
+  "tokens": 6934,
+  "order": [
+   "audience_researcher",
+   "competitor_researcher",
+   "product_researcher",
+   "copywriter",
+   "brand_judge"
+  ],
+  "has_draft": true,
+  "has_verdict": true,
+  "timed_out": false,
+  "trace": [
+   "   2.3s audience_researcher calls=['lookup_audience']",
+   "   2.3s audience_researcher",
+   "   5.9s audience_researcher",
+   "   9.8s competitor_researcher calls=['lookup_competitors']",
+   "   9.8s competitor_researcher",
+   "  13.7s competitor_researcher",
+   "  17.4s product_researcher calls=['lookup_product']",
+   "  17.4s product_researcher",
+   "  18.3s product_researcher",
+   "  26.2s copywriter",
+   "  32.4s brand_judge"
+  ],
+  "warnings": [],
+  "spans": {
+   "audience_researcher": [
+    2.3,
+    5.9
+   ],
+   "competitor_researcher": [
+    9.8,
+    13.7
+   ],
+   "product_researcher": [
+    17.4,
+    18.3
+   ],
+   "copywriter": [
+    26.2,
+    26.2
+   ],
+   "brand_judge": [
+    32.4,
+    32.4
+   ]
+  },
+  "final": "{\"passed\": false, \"score\": 6, \"fixes\": [\"Add a clear, single call to action to the email, such as 'Book a demo' or 'Get a quote', instead of a general closing statement.\", \"Add a clear call to action to the LinkedIn post to direct readers on their next step.\", \"Remove unverified competitive claims s"
+ },
+ {
+  "build": "graph_sequential",
+  "trial": 1,
+  "seconds": 32.0,
+  "model_calls": 8,
+  "tokens": 7245,
+  "order": [
+   "audience_researcher",
+   "competitor_researcher",
+   "product_researcher",
+   "copywriter",
+   "brand_judge"
+  ],
+  "has_draft": true,
+  "has_verdict": true,
+  "timed_out": false,
+  "trace": [
+   "   2.3s audience_researcher calls=['lookup_audience']",
+   "   2.3s audience_researcher",
+   "   4.7s audience_researcher",
+   "   9.6s competitor_researcher calls=['lookup_competitors']",
+   "   9.6s competitor_researcher",
+   "  12.8s competitor_researcher",
+   "  15.1s product_researcher calls=['lookup_product']",
+   "  15.1s product_researcher",
+   "  17.3s product_researcher",
+   "  24.4s copywriter",
+   "  32.0s brand_judge"
+  ],
+  "warnings": [],
+  "spans": {
+   "audience_researcher": [
+    2.3,
+    4.7
+   ],
+   "competitor_researcher": [
+    9.6,
+    12.8
+   ],
+   "product_researcher": [
+    15.1,
+    17.3
+   ],
+   "copywriter": [
+    24.4,
+    24.4
+   ],
+   "brand_judge": [
+    32.0,
+    32.0
+   ]
+  },
+  "final": "{\"passed\":false,\"score\":7,\"fixes\":[\"Add a clear, single call to action to the end of the email body, such as directing the fleet manager to reply, schedule a demo, or visit a website.\",\"Ensure the email closes with an active instruction rather than a passive statement about the warranty.\"]}"
+ },
+ {
+  "build": "graph_sequential",
+  "trial": 2,
+  "seconds": 33.9,
+  "model_calls": 8,
+  "tokens": 7084,
+  "order": [
+   "audience_researcher",
+   "competitor_researcher",
+   "product_researcher",
+   "copywriter",
+   "brand_judge"
+  ],
+  "has_draft": true,
+  "has_verdict": true,
+  "timed_out": false,
+  "trace": [
+   "   2.1s audience_researcher calls=['lookup_audience']",
+   "   2.1s audience_researcher",
+   "   4.5s audience_researcher",
+   "   7.9s competitor_researcher calls=['lookup_competitors']",
+   "   7.9s competitor_researcher",
+   "  11.5s competitor_researcher",
+   "  15.2s product_researcher calls=['lookup_product']",
+   "  15.2s product_researcher",
+   "  16.8s product_researcher",
+   "  26.5s copywriter",
+   "  33.9s brand_judge"
+  ],
+  "warnings": [],
+  "spans": {
+   "audience_researcher": [
+    2.1,
+    4.5
+   ],
+   "competitor_researcher": [
+    7.9,
+    11.5
+   ],
+   "product_researcher": [
+    15.2,
+    16.8
+   ],
+   "copywriter": [
+    26.5,
+    26.5
+   ],
+   "brand_judge": [
+    33.9,
+    33.9
+   ]
+  },
+  "final": "{\"passed\":true,\"score\":9,\"fixes\":[\"Remove the subjective comparison 'where other brands fall short' in the email to maintain a strictly factual and hype-free tone.\"]}"
+ }
+]

@@ -1,0 +1,224 @@
+[
+ {
+  "build": "hybrid",
+  "trial": 0,
+  "seconds": 78.8,
+  "model_calls": 10,
+  "tokens": 7535,
+  "input_tokens": 2448,
+  "output_tokens": 5087,
+  "order": [
+   "campaign_director",
+   "product_researcher",
+   "competitor_researcher",
+   "audience_researcher",
+   "product_researcher",
+   "competitor_researcher",
+   "audience_researcher",
+   "campaign_pipeline",
+   "copywriter",
+   "brand_judge",
+   "campaign_director"
+  ],
+  "has_draft": true,
+  "has_verdict": true,
+  "timed_out": false,
+  "trace": [
+   "   2.8s campaign_director calls=['campaign_pipeline']",
+   "   4.6s product_researcher calls=['lookup_product']",
+   "   4.6s product_researcher",
+   "   4.8s competitor_researcher calls=['lookup_competitors']",
+   "   4.8s competitor_researcher",
+   "   5.6s audience_researcher calls=['lookup_audience']",
+   "   5.6s audience_researcher",
+   "   5.9s product_researcher",
+   "   7.9s competitor_researcher",
+   "   8.3s audience_researcher",
+   "   8.3s campaign_pipeline",
+   "  55.3s copywriter",
+   "  69.9s brand_judge",
+   "  69.9s campaign_director",
+   "  78.8s campaign_director"
+  ],
+  "warnings": [],
+  "spans": {
+   "campaign_director": [
+    2.8,
+    78.8
+   ],
+   "product_researcher": [
+    4.6,
+    5.9
+   ],
+   "competitor_researcher": [
+    4.8,
+    7.9
+   ],
+   "audience_researcher": [
+    5.6,
+    8.3
+   ],
+   "campaign_pipeline": [
+    8.3,
+    8.3
+   ],
+   "copywriter": [
+    55.3,
+    55.3
+   ],
+   "brand_judge": [
+    69.9,
+    69.9
+   ]
+  },
+  "final": "The campaign pipeline has processed your brief for the Corvane Outdoor TrailLock 2 rooftop cargo system. \n\nHere is the verdict and the feedback from the brand review:\n\n### **Verdict**\n* **Status:** Passed (Approved)\n* **Brand Review Score:** 9/10\n\n### **Required Fixes / Recommendations**\n* **Legal V"
+ },
+ {
+  "build": "hybrid",
+  "trial": 1,
+  "seconds": 32.9,
+  "model_calls": 10,
+  "tokens": 7650,
+  "input_tokens": 2361,
+  "output_tokens": 5289,
+  "order": [
+   "campaign_director",
+   "product_researcher",
+   "audience_researcher",
+   "competitor_researcher",
+   "product_researcher",
+   "audience_researcher",
+   "competitor_researcher",
+   "campaign_pipeline",
+   "copywriter",
+   "brand_judge",
+   "campaign_director"
+  ],
+  "has_draft": true,
+  "has_verdict": true,
+  "timed_out": false,
+  "trace": [
+   "   2.1s campaign_director calls=['campaign_pipeline']",
+   "   3.7s product_researcher calls=['lookup_product']",
+   "   3.7s product_researcher",
+   "   4.3s audience_researcher calls=['lookup_audience']",
+   "   4.3s audience_researcher",
+   "   4.5s competitor_researcher calls=['lookup_competitors']",
+   "   4.5s competitor_researcher",
+   "   4.7s product_researcher",
+   "   6.4s audience_researcher",
+   "   8.1s competitor_researcher",
+   "   8.1s campaign_pipeline",
+   "  19.8s copywriter",
+   "  28.5s brand_judge",
+   "  28.5s campaign_director",
+   "  32.9s campaign_director"
+  ],
+  "warnings": [],
+  "spans": {
+   "campaign_director": [
+    2.1,
+    32.9
+   ],
+   "product_researcher": [
+    3.7,
+    4.7
+   ],
+   "audience_researcher": [
+    4.3,
+    6.4
+   ],
+   "competitor_researcher": [
+    4.5,
+    8.1
+   ],
+   "campaign_pipeline": [
+    8.1,
+    8.1
+   ],
+   "copywriter": [
+    19.8,
+    19.8
+   ],
+   "brand_judge": [
+    28.5,
+    28.5
+   ]
+  },
+  "final": "The campaign pipeline has processed your brief. Here is the verdict:\n\n### **Verdict**\n* **Status:** Failed (Did not pass brand review)\n* **Score:** 6/10\n\n### **Required Fixes**\nTo proceed with drafting the campaign, the following issues must be addressed:\n1. **Email Call to Action:** Add a clear cal"
+ },
+ {
+  "build": "hybrid",
+  "trial": 2,
+  "seconds": 46.5,
+  "model_calls": 10,
+  "tokens": 7541,
+  "input_tokens": 2568,
+  "output_tokens": 4973,
+  "order": [
+   "campaign_director",
+   "product_researcher",
+   "competitor_researcher",
+   "audience_researcher",
+   "product_researcher",
+   "competitor_researcher",
+   "audience_researcher",
+   "campaign_pipeline",
+   "copywriter",
+   "brand_judge",
+   "campaign_director"
+  ],
+  "has_draft": true,
+  "has_verdict": true,
+  "timed_out": false,
+  "trace": [
+   "   2.4s campaign_director calls=['campaign_pipeline']",
+   "   4.1s product_researcher calls=['lookup_product']",
+   "   4.1s product_researcher",
+   "   4.4s competitor_researcher calls=['lookup_competitors']",
+   "   4.4s competitor_researcher",
+   "   4.8s audience_researcher calls=['lookup_audience']",
+   "   4.8s audience_researcher",
+   "   5.6s product_researcher",
+   "   7.2s competitor_researcher",
+   "   7.6s audience_researcher",
+   "   7.6s campaign_pipeline",
+   "  19.4s copywriter",
+   "  41.8s brand_judge",
+   "  41.8s campaign_director",
+   "  46.5s campaign_director"
+  ],
+  "warnings": [],
+  "spans": {
+   "campaign_director": [
+    2.4,
+    46.5
+   ],
+   "product_researcher": [
+    4.1,
+    5.6
+   ],
+   "competitor_researcher": [
+    4.4,
+    7.2
+   ],
+   "audience_researcher": [
+    4.8,
+    7.6
+   ],
+   "campaign_pipeline": [
+    7.6,
+    7.6
+   ],
+   "copywriter": [
+    19.4,
+    19.4
+   ],
+   "brand_judge": [
+    41.8,
+    41.8
+   ]
+  },
+  "final": "The campaign pipeline has successfully processed your brief for the Corvane Outdoor TrailLock 2 rooftop cargo system. \n\nHere is the verdict from the brand and compliance review:\n\n### **Verdict**\n* **Status:** Passed \u2705\n* **Score:** 9/10\n* **Required Fixes/Recommendations:** \n  * Add a clear, actionab"
+ }
+]

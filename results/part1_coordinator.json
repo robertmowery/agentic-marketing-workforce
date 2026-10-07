@@ -1,0 +1,243 @@
+[
+ {
+  "build": "coordinator",
+  "trial": 0,
+  "seconds": 90.0,
+  "model_calls": 20,
+  "tokens": 31010,
+  "order": [
+   "campaign_director",
+   "competitor_researcher",
+   "audience_researcher",
+   "competitor_researcher",
+   "product_researcher",
+   "campaign_director",
+   "copywriter",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director"
+  ],
+  "has_draft": true,
+  "has_verdict": false,
+  "timed_out": true,
+  "trace": [
+   "   2.7s campaign_director calls=['audience_researcher', 'competitor_researcher', 'product_researcher']",
+   "   4.6s competitor_researcher calls=['lookup_competitors']",
+   "   4.6s competitor_researcher",
+   "   5.3s audience_researcher calls=['lookup_audience']",
+   "   5.3s audience_researcher",
+   "   7.3s audience_researcher",
+   "   8.9s competitor_researcher",
+   "  14.4s product_researcher calls=['lookup_product']",
+   "  14.4s product_researcher",
+   "  15.5s product_researcher",
+   "  15.5s campaign_director",
+   "  17.9s campaign_director calls=['copywriter']",
+   "  35.8s copywriter",
+   "  35.8s campaign_director",
+   "  39.6s campaign_director calls=['brand_judge']",
+   "  42.5s brand_judge calls=['transfer_to_agent']",
+   "  42.5s brand_judge",
+   "  45.6s campaign_director calls=['brand_judge']",
+   "  47.9s brand_judge calls=['transfer_to_agent']",
+   "  47.9s brand_judge",
+   "  51.3s campaign_director calls=['brand_judge']",
+   "  73.2s brand_judge calls=['transfer_to_agent']",
+   "  73.2s brand_judge",
+   "  76.5s campaign_director calls=['brand_judge']",
+   "  78.6s brand_judge calls=['transfer_to_agent']",
+   "  78.6s brand_judge",
+   "  82.4s campaign_director calls=['brand_judge']",
+   "  84.8s brand_judge calls=['transfer_to_agent']",
+   "  84.8s brand_judge",
+   "  88.9s campaign_director calls=['brand_judge']"
+  ],
+  "warnings": [],
+  "spans": {
+   "campaign_director": [
+    2.7,
+    88.9
+   ],
+   "competitor_researcher": [
+    4.6,
+    8.9
+   ],
+   "audience_researcher": [
+    5.3,
+    7.3
+   ],
+   "product_researcher": [
+    14.4,
+    15.5
+   ],
+   "copywriter": [
+    35.8,
+    35.8
+   ],
+   "brand_judge": [
+    42.5,
+    84.8
+   ]
+  },
+  "final": "{\n  \"email_subject\": \"Secure your fleet with Corvane TrailLock 2\",\n  \"email_body\": \"As you allocate your January fleet refresh budget, consider how crew downtime from gear damage and theft from open racks impacts your operations.\\n\\nUnlike RackMaster Pro and SummitHaul, the Corvane TrailLock 2 rooft"
+ },
+ {
+  "build": "coordinator",
+  "trial": 1,
+  "seconds": 90.0,
+  "model_calls": 14,
+  "tokens": 16544,
+  "order": [
+   "campaign_director",
+   "audience_researcher",
+   "competitor_researcher",
+   "product_researcher",
+   "competitor_researcher",
+   "product_researcher",
+   "audience_researcher",
+   "product_researcher",
+   "competitor_researcher",
+   "campaign_director",
+   "copywriter",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director"
+  ],
+  "has_draft": true,
+  "has_verdict": false,
+  "timed_out": true,
+  "trace": [
+   "   2.9s campaign_director calls=['audience_researcher', 'competitor_researcher', 'product_researcher']",
+   "   4.6s audience_researcher calls=['lookup_audience']",
+   "   4.6s audience_researcher",
+   "   5.0s competitor_researcher calls=['lookup_competitors']",
+   "   5.0s product_researcher calls=['lookup_product']",
+   "   5.0s competitor_researcher",
+   "   5.0s product_researcher",
+   "   6.0s audience_researcher",
+   "   6.2s product_researcher",
+   "   7.1s competitor_researcher",
+   "   7.1s campaign_director",
+   "   9.1s campaign_director calls=['copywriter']",
+   "  20.4s copywriter",
+   "  20.5s campaign_director",
+   "  22.9s campaign_director calls=['brand_judge']",
+   "  26.7s brand_judge calls=['transfer_to_agent']",
+   "  26.7s brand_judge",
+   "  29.6s campaign_director calls=['brand_judge']",
+   "  32.6s brand_judge calls=['transfer_to_agent']",
+   "  32.6s brand_judge",
+   "  36.2s campaign_director calls=['brand_judge']"
+  ],
+  "warnings": [],
+  "spans": {
+   "campaign_director": [
+    2.9,
+    36.2
+   ],
+   "audience_researcher": [
+    4.6,
+    6.0
+   ],
+   "competitor_researcher": [
+    5.0,
+    7.1
+   ],
+   "product_researcher": [
+    5.0,
+    6.2
+   ],
+   "copywriter": [
+    20.4,
+    20.4
+   ],
+   "brand_judge": [
+    26.7,
+    32.6
+   ]
+  },
+  "final": "{\n  \"email_subject\": \"Reduce utility fleet downtime and secure gear with Corvane TrailLock 2\",\n  \"email_body\": \"As you plan your January fleet refresh budget, address the crew downtime caused by gear damage and theft from open racks.\\n\\nThe Corvane TrailLock 2 rooftop cargo system secures your equip"
+ },
+ {
+  "build": "coordinator",
+  "trial": 2,
+  "seconds": 90.0,
+  "model_calls": 12,
+  "tokens": 12137,
+  "order": [
+   "campaign_director",
+   "product_researcher",
+   "audience_researcher",
+   "competitor_researcher",
+   "product_researcher",
+   "audience_researcher",
+   "competitor_researcher",
+   "campaign_director",
+   "copywriter",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director"
+  ],
+  "has_draft": true,
+  "has_verdict": false,
+  "timed_out": true,
+  "trace": [
+   "   3.0s campaign_director calls=['audience_researcher', 'competitor_researcher', 'product_researcher']",
+   "   4.8s product_researcher calls=['lookup_product']",
+   "   4.8s product_researcher",
+   "   5.1s audience_researcher calls=['lookup_audience']",
+   "   5.1s audience_researcher",
+   "   5.2s competitor_researcher calls=['lookup_competitors']",
+   "   5.2s competitor_researcher",
+   "   5.9s product_researcher",
+   "   6.4s audience_researcher",
+   "   8.8s competitor_researcher",
+   "   8.8s campaign_director",
+   "  11.2s campaign_director calls=['copywriter']",
+   "  17.1s copywriter",
+   "  17.1s campaign_director",
+   "  19.9s campaign_director calls=['brand_judge']",
+   "  22.0s brand_judge calls=['transfer_to_agent']",
+   "  22.0s brand_judge",
+   "  25.0s campaign_director calls=['brand_judge']"
+  ],
+  "warnings": [],
+  "spans": {
+   "campaign_director": [
+    3.0,
+    25.0
+   ],
+   "product_researcher": [
+    4.8,
+    5.9
+   ],
+   "audience_researcher": [
+    5.1,
+    6.4
+   ],
+   "competitor_researcher": [
+    5.2,
+    8.8
+   ],
+   "copywriter": [
+    17.1,
+    17.1
+   ],
+   "brand_judge": [
+    22.0,
+    22.0
+   ]
+  },
+  "final": "{\n  \"email_subject\": \"Reduce fleet gear theft and downtime with Corvane TrailLock 2\",\n  \"email_body\": \"As you allocate your January fleet refresh budgets, consider the impact of gear damage and theft from open racks on your crew's downtime. The Corvane TrailLock 2 rooftop cargo system secures your u"
+ }
+]

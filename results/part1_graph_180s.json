@@ -1,0 +1,199 @@
+[
+ {
+  "build": "graph",
+  "trial": 0,
+  "seconds": 37.1,
+  "model_calls": 8,
+  "tokens": 6146,
+  "input_tokens": 2120,
+  "output_tokens": 4026,
+  "order": [
+   "competitor_researcher",
+   "product_researcher",
+   "competitor_researcher",
+   "product_researcher",
+   "audience_researcher",
+   "product_researcher",
+   "competitor_researcher",
+   "audience_researcher",
+   "campaign_pipeline",
+   "copywriter",
+   "brand_judge"
+  ],
+  "has_draft": true,
+  "has_verdict": true,
+  "timed_out": false,
+  "trace": [
+   "   2.3s competitor_researcher calls=['lookup_competitors']",
+   "   2.3s product_researcher calls=['lookup_product']",
+   "   2.3s competitor_researcher",
+   "   2.3s product_researcher",
+   "   3.3s audience_researcher calls=['lookup_audience']",
+   "   3.3s audience_researcher",
+   "   3.5s product_researcher",
+   "   4.8s competitor_researcher",
+   "   5.2s audience_researcher",
+   "   5.2s campaign_pipeline",
+   "  15.2s copywriter",
+   "  37.1s brand_judge"
+  ],
+  "warnings": [],
+  "spans": {
+   "competitor_researcher": [
+    2.3,
+    4.8
+   ],
+   "product_researcher": [
+    2.3,
+    3.5
+   ],
+   "audience_researcher": [
+    3.3,
+    5.2
+   ],
+   "campaign_pipeline": [
+    5.2,
+    5.2
+   ],
+   "copywriter": [
+    15.2,
+    15.2
+   ],
+   "brand_judge": [
+    37.1,
+    37.1
+   ]
+  },
+  "final": "{\n  \"passed\": true,\n  \"score\": 10,\n  \"fixes\": []\n}"
+ },
+ {
+  "build": "graph",
+  "trial": 1,
+  "seconds": 19.5,
+  "model_calls": 8,
+  "tokens": 5752,
+  "input_tokens": 1944,
+  "output_tokens": 3808,
+  "order": [
+   "product_researcher",
+   "competitor_researcher",
+   "audience_researcher",
+   "product_researcher",
+   "competitor_researcher",
+   "audience_researcher",
+   "campaign_pipeline",
+   "copywriter",
+   "brand_judge"
+  ],
+  "has_draft": true,
+  "has_verdict": true,
+  "timed_out": false,
+  "trace": [
+   "   2.0s product_researcher calls=['lookup_product']",
+   "   2.0s product_researcher",
+   "   2.2s competitor_researcher calls=['lookup_competitors']",
+   "   2.2s competitor_researcher",
+   "   2.7s audience_researcher calls=['lookup_audience']",
+   "   2.7s audience_researcher",
+   "   3.3s product_researcher",
+   "   5.1s competitor_researcher",
+   "   5.4s audience_researcher",
+   "   5.4s campaign_pipeline",
+   "  13.2s copywriter",
+   "  19.5s brand_judge"
+  ],
+  "warnings": [],
+  "spans": {
+   "product_researcher": [
+    2.0,
+    3.3
+   ],
+   "competitor_researcher": [
+    2.2,
+    5.1
+   ],
+   "audience_researcher": [
+    2.7,
+    5.4
+   ],
+   "campaign_pipeline": [
+    5.4,
+    5.4
+   ],
+   "copywriter": [
+    13.2,
+    13.2
+   ],
+   "brand_judge": [
+    19.5,
+    19.5
+   ]
+  },
+  "final": "{\"passed\":false,\"score\":7,\"fixes\":[\"Add a clear call to action to the end of the LinkedIn post to prompt reader engagement.\"]}"
+ },
+ {
+  "build": "graph",
+  "trial": 2,
+  "seconds": 25.3,
+  "model_calls": 8,
+  "tokens": 6730,
+  "input_tokens": 1987,
+  "output_tokens": 4743,
+  "order": [
+   "product_researcher",
+   "audience_researcher",
+   "competitor_researcher",
+   "product_researcher",
+   "audience_researcher",
+   "competitor_researcher",
+   "campaign_pipeline",
+   "copywriter",
+   "brand_judge"
+  ],
+  "has_draft": true,
+  "has_verdict": true,
+  "timed_out": false,
+  "trace": [
+   "   1.9s product_researcher calls=['lookup_product']",
+   "   1.9s product_researcher",
+   "   2.1s audience_researcher calls=['lookup_audience']",
+   "   2.2s audience_researcher",
+   "   2.4s competitor_researcher calls=['lookup_competitors']",
+   "   2.4s competitor_researcher",
+   "   3.1s product_researcher",
+   "   4.9s audience_researcher",
+   "   5.8s competitor_researcher",
+   "   5.8s campaign_pipeline",
+   "  14.9s copywriter",
+   "  25.3s brand_judge"
+  ],
+  "warnings": [],
+  "spans": {
+   "product_researcher": [
+    1.9,
+    3.1
+   ],
+   "audience_researcher": [
+    2.1,
+    4.9
+   ],
+   "competitor_researcher": [
+    2.4,
+    5.8
+   ],
+   "campaign_pipeline": [
+    5.8,
+    5.8
+   ],
+   "copywriter": [
+    14.9,
+    14.9
+   ],
+   "brand_judge": [
+    25.3,
+    25.3
+   ]
+  },
+  "final": "{\"passed\":false,\"score\":7,\"fixes\":[\"Add a clear, actionable call to action (CTA) to the LinkedIn post, such as directing readers to get a quote or contact the sales team, rather than ending with a passive statement.\"]}"
+ }
+]

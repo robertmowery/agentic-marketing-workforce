@@ -1,0 +1,42 @@
+[project]
+name = "agentic-marketing-workforce"
+version = "0.1.0"
+description = "Reference code for the article series From Pilot to Production: Engineering the Agentic Workforce."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+authors = [{ name = "Robert H. Mowery III" }]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+# Figure scripts are drawing code kept with the articles, not part of the workforce.
+extend-exclude = ["articles"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "D", "N", "SIM", "C4", "RUF", "BLE"]
+ignore = [
+    "D203", # conflicts with D211
+    "D213", # conflicts with D212
+    "D401", # tool docstrings are sent to the model as written
+    "UP041", # asyncio.TimeoutError reads more clearly next to asyncio.wait_for
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["D101", "D102", "D103"] # test names state the claim
+
+[tool.mypy]
+python_version = "3.11"
+files = ["workforce", "failures", "tests", "run_part1.py"]
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+ignore_missing_imports = true

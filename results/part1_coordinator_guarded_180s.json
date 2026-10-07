@@ -1,0 +1,224 @@
+[
+ {
+  "build": "coordinator_guarded",
+  "trial": 0,
+  "seconds": 33.4,
+  "model_calls": 12,
+  "tokens": 14251,
+  "input_tokens": 9125,
+  "output_tokens": 5126,
+  "order": [
+   "campaign_director",
+   "audience_researcher",
+   "product_researcher",
+   "competitor_researcher",
+   "audience_researcher",
+   "product_researcher",
+   "competitor_researcher",
+   "campaign_director",
+   "copywriter",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director"
+  ],
+  "has_draft": true,
+  "has_verdict": true,
+  "timed_out": false,
+  "trace": [
+   "   3.1s campaign_director calls=['audience_researcher', 'competitor_researcher', 'product_researcher']",
+   "   4.8s audience_researcher calls=['lookup_audience']",
+   "   4.8s audience_researcher",
+   "   4.8s product_researcher calls=['lookup_product']",
+   "   4.8s product_researcher",
+   "   6.0s competitor_researcher calls=['lookup_competitors']",
+   "   6.0s competitor_researcher",
+   "   6.4s audience_researcher",
+   "   6.5s product_researcher",
+   "   9.0s competitor_researcher",
+   "   9.0s campaign_director",
+   "  12.0s campaign_director calls=['copywriter']",
+   "  20.4s copywriter",
+   "  20.5s campaign_director",
+   "  23.4s campaign_director calls=['brand_judge']",
+   "  29.2s brand_judge",
+   "  29.2s campaign_director",
+   "  33.4s campaign_director"
+  ],
+  "warnings": [],
+  "spans": {
+   "campaign_director": [
+    3.1,
+    33.4
+   ],
+   "audience_researcher": [
+    4.8,
+    6.4
+   ],
+   "product_researcher": [
+    4.8,
+    6.5
+   ],
+   "competitor_researcher": [
+    6.0,
+    9.0
+   ],
+   "copywriter": [
+    20.4,
+    20.4
+   ],
+   "brand_judge": [
+    29.2,
+    29.2
+   ]
+  },
+  "final": "### Campaign Research & Discovery\n\n#### 1. Audience Insights\n* **Target Segment:** Fleet managers at regional utility companies.\n* **Core Pains:** \n  * Crew downtime resulting from gear damage.\n  * Cargo theft from unsecured open racks.\n* **Key Buying Trigger:** January annual fleet refresh budget c"
+ },
+ {
+  "build": "coordinator_guarded",
+  "trial": 1,
+  "seconds": 34.3,
+  "model_calls": 12,
+  "tokens": 14038,
+  "input_tokens": 9016,
+  "output_tokens": 5022,
+  "order": [
+   "campaign_director",
+   "product_researcher",
+   "competitor_researcher",
+   "product_researcher",
+   "audience_researcher",
+   "competitor_researcher",
+   "audience_researcher",
+   "campaign_director",
+   "copywriter",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director"
+  ],
+  "has_draft": true,
+  "has_verdict": true,
+  "timed_out": false,
+  "trace": [
+   "   2.8s campaign_director calls=['audience_researcher', 'competitor_researcher', 'product_researcher']",
+   "   4.3s product_researcher calls=['lookup_product']",
+   "   4.3s product_researcher",
+   "   4.9s competitor_researcher calls=['lookup_competitors']",
+   "   4.9s competitor_researcher",
+   "   5.4s product_researcher",
+   "   6.2s audience_researcher calls=['lookup_audience']",
+   "   6.2s audience_researcher",
+   "   6.7s competitor_researcher",
+   "   8.5s audience_researcher",
+   "   8.5s campaign_director",
+   "  11.6s campaign_director calls=['copywriter']",
+   "  20.7s copywriter",
+   "  20.7s campaign_director",
+   "  23.5s campaign_director calls=['brand_judge']",
+   "  31.2s brand_judge",
+   "  31.2s campaign_director",
+   "  34.3s campaign_director"
+  ],
+  "warnings": [],
+  "spans": {
+   "campaign_director": [
+    2.8,
+    34.3
+   ],
+   "product_researcher": [
+    4.3,
+    5.4
+   ],
+   "competitor_researcher": [
+    4.9,
+    6.7
+   ],
+   "audience_researcher": [
+    6.2,
+    8.5
+   ],
+   "copywriter": [
+    20.7,
+    20.7
+   ],
+   "brand_judge": [
+    31.2,
+    31.2
+   ]
+  },
+  "final": "Here is the campaign draft and the brand evaluation verdict for the TrailLock 2 rooftop cargo system campaign targeting regional utility fleet managers.\n\n### **Campaign Copy Draft**\n\n#### **Email**\n* **Subject:** Reduce fleet downtime and gear theft in Q1\n* **Body:** \n  > As you plan your January fl"
+ },
+ {
+  "build": "coordinator_guarded",
+  "trial": 2,
+  "seconds": 63.5,
+  "model_calls": 12,
+  "tokens": 13934,
+  "input_tokens": 8776,
+  "output_tokens": 5158,
+  "order": [
+   "campaign_director",
+   "competitor_researcher",
+   "product_researcher",
+   "audience_researcher",
+   "product_researcher",
+   "competitor_researcher",
+   "audience_researcher",
+   "campaign_director",
+   "copywriter",
+   "campaign_director",
+   "brand_judge",
+   "campaign_director"
+  ],
+  "has_draft": true,
+  "has_verdict": true,
+  "timed_out": false,
+  "trace": [
+   "   2.9s campaign_director calls=['audience_researcher', 'competitor_researcher', 'product_researcher']",
+   "   4.9s competitor_researcher calls=['lookup_competitors']",
+   "   4.9s competitor_researcher",
+   "   5.1s product_researcher calls=['lookup_product']",
+   "   5.1s product_researcher",
+   "   5.8s audience_researcher calls=['lookup_audience']",
+   "   5.8s audience_researcher",
+   "   6.3s product_researcher",
+   "   7.3s competitor_researcher",
+   "   8.1s audience_researcher",
+   "   8.1s campaign_director",
+   "  11.4s campaign_director calls=['copywriter']",
+   "  51.5s copywriter",
+   "  51.5s campaign_director",
+   "  54.1s campaign_director calls=['brand_judge']",
+   "  60.4s brand_judge",
+   "  60.4s campaign_director",
+   "  63.5s campaign_director"
+  ],
+  "warnings": [],
+  "spans": {
+   "campaign_director": [
+    2.9,
+    63.5
+   ],
+   "competitor_researcher": [
+    4.9,
+    7.3
+   ],
+   "product_researcher": [
+    5.1,
+    6.3
+   ],
+   "audience_researcher": [
+    5.8,
+    8.1
+   ],
+   "copywriter": [
+    51.5,
+    51.5
+   ],
+   "brand_judge": [
+    60.4,
+    60.4
+   ]
+  },
+  "final": "The campaign production is complete. Below are the final copy drafts and the brand verdict.\n\n### **Campaign Drafts**\n\n#### **1. Campaign Email**\n*   **Subject:** Reduce crew downtime with the Corvane TrailLock 2\n*   **Body:** \n    Utility fleet managers face costly crew downtime from gear damage and"
+ }
+]
