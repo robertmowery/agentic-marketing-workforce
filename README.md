@@ -60,6 +60,23 @@ RUN_TIMEOUT_S=300 .venv/bin/python run_part3.py loops 3     # plain, conflicting
 
 The `conflict_uncapped` build is meant not to finish: brand review requires the warranty and legal review forbids it, so `RUN_TIMEOUT_S` is what ends the run. The agents in this part ask for JSON in the instruction and validate the reply in code instead of setting a response schema, because requests with a schema often failed to return on this model during these runs. `failures/structured_output_stall.py` reproduces that comparison.
 
+## Part 4: what an outside tool hands your agent
+
+Part 4 connects one designer agent to an outside tool over the Model Context Protocol three ways: every tool the server offers, only the four the job needs, and every tool with a person approving the dangerous ones. The tool, DesignDesk, is a fictional stand-in that runs locally and keeps an audit log, so results are counted from what the server did, not from what the agent reported.
+
+| Subject | Where | Needs a model |
+| --- | --- | --- |
+| What each connection exposes; descriptions pass through unmodified | `tests/test_part4_claims.py` | No |
+| The MCP server and its audit log | `workforce/tools/design_server.py` | No |
+| Three connections against a clean and a poisoned server | `workforce/tools/access.py`, `run_part4.py` | Yes |
+
+```bash
+.venv/bin/python -m pytest -q tests/test_part4_claims.py   # starts the server, no model calls
+.venv/bin/python run_part4.py 10           # 9 setups x 10 runs
+```
+
+The poisoned server plants one instruction, either in data a tool returns or in a tool description, asking the agent to delete two designs and share one publicly. It is planted in a local stub for measurement and reaches nothing outside this process.
+
 ## Setup
 
 ```bash
@@ -77,7 +94,7 @@ The project needs the Vertex AI API enabled. Authentication uses Application Def
 .venv/bin/python -m pytest -q
 ```
 
-These tests construct agents and workflows but never call a model, so they are free and finish in about a second.
+These tests construct agents and workflows but never call a model, so they are free and finish in a few seconds. The Part 4 tests start a local MCP server as a subprocess.
 
 ## Run a build (calls the model)
 
@@ -106,6 +123,8 @@ A new Google Cloud project has a low default quota. Run builds one at a time; th
 | Part 3: judge verdicts on four planted drafts | `results/part3_judge.json` |
 | Part 3: replies returned with and without a response schema | `results/part3_structured_output.json` |
 | Part 3: cycles, the unstopped loop, the skipped join | `tests/test_part3_claims.py` |
+| Part 4: harmful calls, pauses, exports, and tokens per connection | `results/part4_access.json` (ten runs per setup) and `results/part4_access_run1.json` |
+| Part 4: tool exposure, filter, confirmation scope, description pass-through | `tests/test_part4_claims.py` |
 
 Costs in the article use the listed Gemini API price for `gemini-3.5-flash` at the time of the runs: $1.50 per million input tokens and $9.00 per million output tokens, with thinking billed as output. Model output varies from run to run, so expect your token counts to land near these, not on them.
 
@@ -117,8 +136,9 @@ Costs in the article use the listed Gemini API price for `gemini-3.5-flash` at t
 | `workforce/topologies/` | One module per build |
 | `workforce/context/` | Part 2: handoff and context-window experiments |
 | `workforce/review/` | Part 3: the review loop and the judge test |
+| `workforce/tools/` | Part 4: the DesignDesk MCP server and the three connections |
 | `workforce/harness.py` | Runs a build, single message or multi-turn, and records calls, tokens, timing, and a trace |
-| `run_part1.py`, `run_part2.py`, `run_part3.py` | Command-line runners |
+| `run_part1.py`, `run_part2.py`, `run_part3.py`, `run_part4.py` | Command-line runners |
 | `failures/` | Reproductions of failures the articles describe (these call the model) |
 | `tests/` | Framework claims, checked without a model |
 | `results/` | Recorded runs behind the published numbers |
@@ -133,7 +153,7 @@ Costs in the article use the listed Gemini API price for `gemini-3.5-flash` at t
 
 ## Roadmap
 
-Parts 1 to 3 are complete. Later installments cover MCP and outside tools, retrieval, cross-project trust, and operations. Code for each lands here as its article publishes.
+Parts 1 to 4 are complete. Later installments cover retrieval, cross-project trust, and operations. Code for each lands here as its article publishes.
 
 ## License
 

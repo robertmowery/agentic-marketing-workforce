@@ -12,4 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Part 2: the four ways an agent team loses what it was told."""
+"""Part 4: outside tools reached over the Model Context Protocol."""
