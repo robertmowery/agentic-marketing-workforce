@@ -24,8 +24,15 @@ from workforce import cast
 # of the node before it. The writer reads the research from session state.
 RESEARCH_FROM_STATE = "Research: audience={audience} competitors={competitors} product={product}"
 
+# Standing rules the marketer gave in an earlier turn or an earlier session.
+# The "user:" prefix scopes the key to the user, not the session, and the
+# trailing "?" makes it optional so a user with no rules does not raise.
+HOUSE_RULES_FROM_STATE = (
+    "House rules from the marketer, which override everything else: {user:house_rules?}"
+)
 
-def build(as_tool: bool = False, parallel: bool = True) -> Workflow:
+
+def build(as_tool: bool = False, parallel: bool = True, house_rules: bool = False) -> Workflow:
     """Build the campaign pipeline as a ``Workflow``.
 
     Args:
@@ -33,11 +40,15 @@ def build(as_tool: bool = False, parallel: bool = True) -> Workflow:
             the workflow as a tool. ADK rejects a workflow tool without one.
         parallel: Fan out to the three researchers and join. When false, run
             them one after another.
+        house_rules: Have the writer and the judge read the marketer's
+            standing rules from user-scoped session state.
     """
     r1, r2, r3 = cast.researchers(mode=None)
     join = JoinNode(name="gather_research")
-    writer = cast.copywriter(mode=None, instruction_extra="" if parallel else RESEARCH_FROM_STATE)
-    judge = cast.brand_judge(mode=None)
+    rules = HOUSE_RULES_FROM_STATE if house_rules else ""
+    research = "" if parallel else RESEARCH_FROM_STATE
+    writer = cast.copywriter(mode=None, instruction_extra=" ".join(filter(None, [research, rules])))
+    judge = cast.brand_judge(mode=None, instruction_extra=rules)
 
     tool_kwargs: dict[str, Any] = {}
     if as_tool:

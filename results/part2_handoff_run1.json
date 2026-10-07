@@ -1,0 +1,612 @@
+[
+ {
+  "experiment": "handoff",
+  "build": "coordinator_guarded",
+  "trial": 0,
+  "has_draft": true,
+  "signed_as_told": true,
+  "left_out_warranty": true,
+  "rule_in_state": null,
+  "input_tokens": 13944,
+  "output_tokens": 6553,
+  "model_calls": 13,
+  "draft": {
+   "email_subject": "Securing your fleet refresh: Corvane TrailLock 2",
+   "email_body": "Fleet managers at regional utilities face constant crew downtime from gear theft and damage on open racks. As you allocate your January fleet refresh budget, consider the Corvane TrailLock 2. Unlike RackMaster Pro and SummitHaul, Corvane provides keyed-alike locking across up to 500 vehicles, streamlining fleet security. Additionally, each system installs in only 20 minutes with no drilling required. Contact us today to book your Q1 product demo. Sincerely, The Corvane Fleet Desk",
+   "linkedin_post": "Open utility racks leave gear vulnerable to theft and damage, causing crew downtime. As you plan your January fleet refresh, consider the Corvane TrailLock 2. Unlike competitors, we offer keyed-alike locking across up to 500 vehicles, with a 20-minute, no-drill installation. Book a Q1 demo today."
+  },
+  "turns": [
+   {
+    "seconds": 7.9,
+    "model_calls": 1,
+    "input_tokens": 263,
+    "output_tokens": 920,
+    "timed_out": false,
+    "trace": [
+     "   7.9s campaign_director"
+    ],
+    "final": "Understood. I have recorded your standing rules:\n1. **Every email must be signed as \"The Corvane Fleet Desk\".**\n2. **Never mention the warranty in any copy.**\n\nPlease provide the campaign brief (including the target audience, product, or goals) whenever you are ready, and I will begin the research and production process!"
+   },
+   {
+    "seconds": 28.5,
+    "model_calls": 12,
+    "input_tokens": 13681,
+    "output_tokens": 5633,
+    "timed_out": false,
+    "trace": [
+     "   2.6s campaign_director calls=['audience_researcher', 'competitor_researcher', 'product_researcher']",
+     "   4.5s product_researcher calls=['lookup_product']",
+     "   4.5s product_researcher",
+     "   4.6s audience_researcher calls=['lookup_audience']",
+     "   4.6s audience_researcher",
+     "   4.7s competitor_researcher calls=['lookup_competitors']",
+     "   4.7s competitor_researcher",
+     "   5.7s product_researcher",
+     "   6.2s audience_researcher",
+     "   7.2s competitor_researcher",
+     "   7.2s campaign_director",
+     "  10.5s campaign_director calls=['copywriter']",
+     "  16.9s copywriter",
+     "  16.9s campaign_director",
+     "  19.8s campaign_director calls=['brand_judge']",
+     "  25.1s brand_judge",
+     "  25.1s campaign_director",
+     "  28.5s campaign_director"
+    ],
+    "final": "Here is the final campaign production report:\n\n### **Research Summary**\n* **Audience Insights**: Utility fleet managers face crew downtime from gear damage, theft from open racks, and operate on an annual budget cycle that resets in January.\n* **Competitor Landscape**: RackMaster Pro and SummitHaul are standard solutions, but neither offers keyed-alike security for a whole fleet. \n* **The Corvane "
+   }
+  ]
+ },
+ {
+  "experiment": "handoff",
+  "build": "coordinator_guarded",
+  "trial": 1,
+  "has_draft": true,
+  "signed_as_told": true,
+  "left_out_warranty": true,
+  "rule_in_state": null,
+  "input_tokens": 11908,
+  "output_tokens": 6903,
+  "model_calls": 13,
+  "draft": {
+   "email_subject": "Secure your utility fleet for Q1",
+   "email_body": "Fleet managers: gear theft from open racks and equipment damage cause crew downtime. As you allocate your January budget, secure your vehicles with the Corvane TrailLock 2. Unlike RackMaster Pro and SummitHaul, TrailLock 2 provides keyed-alike locking across your entire fleet of up to 500 vehicles. It installs in 20 minutes with no drilling. Book a demo this Q1 to see how we secure your equipment. The Corvane Fleet Desk",
+   "linkedin_post": "Utility fleet managers: gear theft from open racks and equipment damage cause downtime. Protect your fleet during your January budget refresh with the Corvane TrailLock 2. Unlike RackMaster Pro and SummitHaul, TrailLock 2 provides keyed-alike locking for up to 500 vehicles. It installs in 20 minutes with no drilling. Book a Q1 demo today."
+  },
+  "turns": [
+   {
+    "seconds": 3.9,
+    "model_calls": 1,
+    "input_tokens": 263,
+    "output_tokens": 425,
+    "timed_out": false,
+    "trace": [
+     "   3.9s campaign_director"
+    ],
+    "final": "Understood. I have recorded your standing rules:\n1. All campaign emails must be signed **\"The Corvane Fleet Desk\"**.\n2. **Never** mention the warranty in any copy.\n\nI will ensure these instructions are passed directly to the copywriter and brand judge once we begin. \n\nPlease provide your first campaign brief whenever you are ready!"
+   },
+   {
+    "seconds": 152.7,
+    "model_calls": 12,
+    "input_tokens": 11645,
+    "output_tokens": 6478,
+    "timed_out": false,
+    "trace": [
+     "   3.3s campaign_director calls=['audience_researcher', 'competitor_researcher', 'product_researcher']",
+     "   4.9s product_researcher calls=['lookup_product']",
+     "   4.9s product_researcher",
+     "   5.2s audience_researcher calls=['lookup_audience']",
+     "   5.2s audience_researcher",
+     "   5.4s competitor_researcher calls=['lookup_competitors']",
+     "   5.4s competitor_researcher",
+     "   6.1s product_researcher",
+     "   7.8s competitor_researcher",
+     "   8.5s audience_researcher",
+     "   8.5s campaign_director",
+     "  12.3s campaign_director calls=['copywriter']",
+     "  80.7s copywriter",
+     "  80.8s campaign_director",
+     "  83.7s campaign_director calls=['brand_judge']",
+     " 150.0s brand_judge",
+     " 150.0s campaign_director",
+     " 152.7s campaign_director"
+    ],
+    "final": "### Campaign Drafts\n\n#### **Email**\n* **Subject:** Secure your utility fleet for Q1\n* **Body:** \nFleet managers: gear theft from open racks and equipment damage cause crew downtime. As you allocate your January budget, secure your vehicles with the Corvane TrailLock 2. Unlike RackMaster Pro and SummitHaul, TrailLock 2 provides keyed-alike locking across your entire fleet of up to 500 vehicles. It "
+   }
+  ]
+ },
+ {
+  "experiment": "handoff",
+  "build": "coordinator_guarded",
+  "trial": 2,
+  "has_draft": true,
+  "signed_as_told": true,
+  "left_out_warranty": true,
+  "rule_in_state": null,
+  "input_tokens": 12685,
+  "output_tokens": 6911,
+  "model_calls": 13,
+  "draft": {
+   "email_subject": "Secure your utility fleet gear for Q1",
+   "email_body": "As you plan your January fleet refresh, gear security shouldn't slow your crews down. Open racks risk theft and gear damage, leading to unscheduled downtime. The Corvane TrailLock 2 rooftop cargo system secures your equipment. Unlike RackMaster Pro and SummitHaul, we provide keyed-alike locking across your entire fleet of up to 500 vehicles, simplifying key management. Installation takes under 20 minutes per vehicle with no drilling required. Schedule a brief demo with us this Q1 to see it in action. The Corvane Fleet Desk",
+   "linkedin_post": "Utility fleet managers: Crew downtime from stolen or damaged gear impacts your operations. As you plan your January fleet refresh, secure your equipment with the Corvane TrailLock 2. Unlike RackMaster Pro or SummitHaul, we offer keyed-alike locking across up to 500 vehicles. Plus, installation takes under 20 minutes with no drilling required. Book a Q1 demo today to protect your utility fleet."
+  },
+  "turns": [
+   {
+    "seconds": 3.8,
+    "model_calls": 1,
+    "input_tokens": 263,
+    "output_tokens": 542,
+    "timed_out": false,
+    "trace": [
+     "   3.8s campaign_director"
+    ],
+    "final": "I have recorded your standing rules:\n1. **Sign every email** with **'The Corvane Fleet Desk'**.\n2. **Never mention the warranty** under any circumstances.\n\nI am ready. Please provide the campaign brief, and I will begin the process by coordinating with the researchers, passing their findings to the copywriter, and submitting the draft to the brand judge."
+   },
+   {
+    "seconds": 36.3,
+    "model_calls": 12,
+    "input_tokens": 12422,
+    "output_tokens": 6369,
+    "timed_out": false,
+    "trace": [
+     "   3.3s campaign_director calls=['audience_researcher', 'competitor_researcher', 'product_researcher']",
+     "   4.9s product_researcher calls=['lookup_product']",
+     "   4.9s product_researcher",
+     "   5.3s audience_researcher calls=['lookup_audience']",
+     "   5.3s audience_researcher",
+     "   6.4s product_researcher",
+     "   6.5s competitor_researcher calls=['lookup_competitors']",
+     "   6.5s competitor_researcher",
+     "   7.4s audience_researcher",
+     "  10.1s competitor_researcher",
+     "  10.1s campaign_director",
+     "  13.3s campaign_director calls=['copywriter']",
+     "  22.5s copywriter",
+     "  22.5s campaign_director",
+     "  25.0s campaign_director calls=['brand_judge']",
+     "  33.1s brand_judge",
+     "  33.1s campaign_director",
+     "  36.3s campaign_director"
+    ],
+    "final": "### Verdict\n**Score:** 10/10  \n**Status:** Passed  \n**Review:** The campaign draft meets all brand standards, addresses the utility fleet manager segment's paint points, and strictly adheres to all constraints. No warranty is mentioned, and the email signature is correct.\n\n---\n\n### Campaign Assets\n\n#### Email Campaign\n**Subject:** Secure your utility fleet gear for Q1\n\nAs you plan your January fle"
+   }
+  ]
+ },
+ {
+  "experiment": "handoff",
+  "build": "hybrid",
+  "trial": 0,
+  "has_draft": true,
+  "signed_as_told": false,
+  "left_out_warranty": false,
+  "rule_in_state": null,
+  "input_tokens": 3440,
+  "output_tokens": 6333,
+  "model_calls": 11,
+  "draft": {
+   "email_subject": "Securing your fleet ahead of January budget cycles",
+   "email_body": "As you plan your January fleet refresh budget, consider how open rack theft and gear damage downtime affect your operations. The Corvane Outdoor TrailLock 2 protects your equipment. Unlike RackMaster Pro and SummitHaul, it offers a keyed-alike locking system across up to 500 vehicles to secure your entire fleet. It installs in 20 minutes with no drilling and comes with a 5-year warranty.",
+   "linkedin_post": "Are open rack theft and gear damage downtime impacting your operations? Plan your January fleet refresh budget with security in mind. The Corvane Outdoor TrailLock 2 installs in 20 minutes with no drilling and includes a 5-year warranty. Unlike RackMaster Pro and SummitHaul, it provides keyed-alike locking across up to 500 vehicles."
+  },
+  "turns": [
+   {
+    "seconds": 3.0,
+    "model_calls": 1,
+    "input_tokens": 148,
+    "output_tokens": 299,
+    "timed_out": false,
+    "trace": [
+     "   3.0s campaign_director"
+    ],
+    "final": "Understood. I will keep those guidelines in mind for our correspondence. \n\nWhenever you are ready, please share your campaign brief with me, and I will submit it to the campaign pipeline for research, drafting, and brand review!"
+   },
+   {
+    "seconds": 92.6,
+    "model_calls": 10,
+    "input_tokens": 3292,
+    "output_tokens": 6034,
+    "timed_out": false,
+    "trace": [
+     "   1.8s campaign_director calls=['campaign_pipeline']",
+     "   3.8s product_researcher calls=['lookup_product']",
+     "   3.8s product_researcher",
+     "   4.4s competitor_researcher calls=['lookup_competitors']",
+     "   4.4s competitor_researcher",
+     "   4.6s audience_researcher calls=['lookup_audience']",
+     "   4.6s audience_researcher",
+     "   4.8s product_researcher",
+     "   7.0s audience_researcher",
+     "   7.7s competitor_researcher",
+     "   7.7s campaign_pipeline",
+     "  18.3s copywriter",
+     "  84.9s brand_judge",
+     "  84.9s campaign_director",
+     "  92.6s campaign_director"
+    ],
+    "final": "Here is the report from the campaign pipeline:\n\n**Verdict:** Failed (Score: 7/10)\n\n**Draft Status:** \nNo approved draft is available at this stage because the campaign did not pass the pipeline checks.\n\n**Required Fixes:**\n* Add a clear call to action (CTA) to the end of the email body, such as inviting the recipient to book a demo or visit the product page.\n* Add a clear call to action (CTA) to t"
+   }
+  ]
+ },
+ {
+  "experiment": "handoff",
+  "build": "hybrid",
+  "trial": 1,
+  "has_draft": true,
+  "signed_as_told": false,
+  "left_out_warranty": false,
+  "rule_in_state": null,
+  "input_tokens": 3606,
+  "output_tokens": 5456,
+  "model_calls": 11,
+  "draft": {
+   "email_subject": "Protect Your Fleet and Reduce Crew Downtime with Corvane Outdoor",
+   "email_body": "As you allocate your January annual fleet refresh budget, address the risks of gear damage and theft from open racks. Corvane Outdoor offers a secure cargo system with keyed-alike locking across up to 500 vehicles. Competitors like RackMaster Pro and SummitHaul do not offer fleet-wide keyed-alike locking. Our system installs in just 20 minutes with no drilling required, preventing crew downtime. Every installation is backed by a 5-year warranty. Contact Corvane Outdoor to secure your fleet.",
+   "linkedin_post": "Prepare for your January annual fleet refresh by securing your gear. Open racks cause theft and gear damage, leading to crew downtime. Corvane Outdoor offers keyed-alike locking across up to 500 vehicles, a feature unavailable from RackMaster Pro or SummitHaul. Our systems install in 20 minutes with no drilling and come with a 5-year warranty."
+  },
+  "turns": [
+   {
+    "seconds": 3.4,
+    "model_calls": 1,
+    "input_tokens": 148,
+    "output_tokens": 420,
+    "timed_out": false,
+    "trace": [
+     "   3.4s campaign_director"
+    ],
+    "final": "Understood. I will ensure that any emails are signed 'The Corvane Fleet Desk' and that we never mention the warranty. \n\nPlease share your campaign brief whenever you're ready, and I will run it through the pipeline for you!"
+   },
+   {
+    "seconds": 90.3,
+    "model_calls": 10,
+    "input_tokens": 3458,
+    "output_tokens": 5036,
+    "timed_out": false,
+    "trace": [
+     "   1.9s campaign_director calls=['campaign_pipeline']",
+     "   3.7s product_researcher calls=['lookup_product']",
+     "   3.7s product_researcher",
+     "   4.5s audience_researcher calls=['lookup_audience']",
+     "   4.5s audience_researcher",
+     "   5.0s product_researcher",
+     "   5.1s competitor_researcher calls=['lookup_competitors']",
+     "   5.1s competitor_researcher",
+     "   6.8s competitor_researcher",
+     "   9.3s audience_researcher",
+     "   9.3s campaign_pipeline",
+     "  17.8s copywriter",
+     "  84.5s brand_judge",
+     "  84.5s campaign_director",
+     "  90.3s campaign_director"
+    ],
+    "final": "The campaign pipeline has processed your brief and returned the following verdict:\n\n**Verdict:** **Failed** (Score: 7/10)\n\nThe draft did not pass the brand review stage. \n\n**Required Fixes:**\n* Add a clear call to action (CTA) to the LinkedIn post, directing the reader on how to take the next step (e.g., contacting Corvane Outdoor or visiting the website).\n\nBecause the draft did not pass the brand"
+   }
+  ]
+ },
+ {
+  "experiment": "handoff",
+  "build": "hybrid",
+  "trial": 2,
+  "has_draft": true,
+  "signed_as_told": false,
+  "left_out_warranty": false,
+  "rule_in_state": null,
+  "input_tokens": 3202,
+  "output_tokens": 5729,
+  "model_calls": 11,
+  "draft": {
+   "email_subject": "Protect your fleet and reduce downtime in your January budget.",
+   "email_body": "As you plan your January fleet refresh budget, address two major sources of lost revenue: crew downtime from gear damage and theft from open racks. The Corvane TrailLock 2 secures your gear and comes with a 5-year warranty. Unlike RackMaster Pro and SummitHaul, Corvane offers keyed-alike locking across up to 500 vehicles, simplifying fleet-wide security. Each system installs in 20 minutes with no drilling required, minimizing vehicle preparation time. Contact us to secure your fleet before the new budget cycle.",
+   "linkedin_post": "Preparing your January fleet refresh budget? Equipment theft from open racks and crew downtime from gear damage cut into your profits. The Corvane TrailLock 2 secures your fleet with keyed-alike locking across up to 500 vehicles\u2014a feature RackMaster Pro and SummitHaul do not offer. It installs in 20 minutes with no drilling and includes a 5-year warranty. Secure your assets and streamline operations."
+  },
+  "turns": [
+   {
+    "seconds": 2.8,
+    "model_calls": 1,
+    "input_tokens": 148,
+    "output_tokens": 241,
+    "timed_out": false,
+    "trace": [
+     "   2.8s campaign_director"
+    ],
+    "final": "Understood. I am ready to receive your campaign brief whenever you are ready to provide it."
+   },
+   {
+    "seconds": 102.7,
+    "model_calls": 10,
+    "input_tokens": 3054,
+    "output_tokens": 5488,
+    "timed_out": false,
+    "trace": [
+     "   1.9s campaign_director calls=['campaign_pipeline']",
+     "   3.8s competitor_researcher calls=['lookup_competitors']",
+     "   3.8s competitor_researcher",
+     "   4.2s audience_researcher calls=['lookup_audience']",
+     "   4.2s audience_researcher",
+     "   4.2s product_researcher calls=['lookup_product']",
+     "   4.2s product_researcher",
+     "   5.8s product_researcher",
+     "   6.4s audience_researcher",
+     "  18.2s competitor_researcher",
+     "  18.2s campaign_pipeline",
+     "  85.2s copywriter",
+     "  97.2s brand_judge",
+     "  97.2s campaign_director",
+     " 102.7s campaign_director"
+    ],
+    "final": "The campaign pipeline has processed your brief. Here is the verdict:\n\n### Verdict\n* **Status:** Failed Review\n* **Score:** 7/10\n* **Required Fixes:** \n  * Add a clear call to action (CTA) to the LinkedIn post, such as directing readers to contact the sales team or visit the website, instead of ending with a general statement.\n\nSince the draft did not pass the brand review, a finalized draft is not"
+   }
+  ]
+ },
+ {
+  "experiment": "handoff",
+  "build": "hybrid_with_rules",
+  "trial": 0,
+  "has_draft": true,
+  "signed_as_told": true,
+  "left_out_warranty": true,
+  "rule_in_state": "Sign every email 'The Corvane Fleet Desk' and never mention the warranty.",
+  "input_tokens": 3596,
+  "output_tokens": 5005,
+  "model_calls": 12,
+  "draft": {
+   "email_subject": "Fleet cargo security for your January budget refresh",
+   "email_body": "As you plan your January fleet refresh, protect your gear from theft and prevent crew downtime. Corvane Outdoor offers a secure cargo system that installs in 20 minutes with no drilling required. Unlike RackMaster Pro and SummitHaul, we feature keyed-alike locking across up to 500 vehicles, giving your team seamless access while preventing theft. Contact us to secure your fleet before the January budget cycle. The Corvane Fleet Desk",
+   "linkedin_post": "Gear theft from open racks causes costly crew downtime. Secure your fleet before the January budget refresh with Corvane Outdoor. Our cargo system installs in 20 minutes with no drilling and offers keyed-alike locking for up to 500 vehicles\u2014a feature you won't get from RackMaster Pro or SummitHaul. Protect your equipment and keep your crews working."
+  },
+  "turns": [
+   {
+    "seconds": 2.9,
+    "model_calls": 2,
+    "input_tokens": 587,
+    "output_tokens": 176,
+    "timed_out": false,
+    "trace": [
+     "   2.1s campaign_director calls=['save_house_rule']",
+     "   2.1s campaign_director",
+     "   2.9s campaign_director"
+    ],
+    "final": "I have saved your rule to sign every email \"The Corvane Fleet Desk\" and never mention the warranty for all future copy."
+   },
+   {
+    "seconds": 137.5,
+    "model_calls": 10,
+    "input_tokens": 3009,
+    "output_tokens": 4829,
+    "timed_out": false,
+    "trace": [
+     "   1.8s campaign_director calls=['campaign_pipeline']",
+     "   3.4s product_researcher calls=['lookup_product']",
+     "   3.4s product_researcher",
+     "   4.0s competitor_researcher calls=['lookup_competitors']",
+     "   4.0s competitor_researcher",
+     "   4.1s audience_researcher calls=['lookup_audience']",
+     "   4.1s audience_researcher",
+     "   4.8s product_researcher",
+     "   6.9s competitor_researcher",
+     "  56.5s audience_researcher",
+     "  56.5s campaign_pipeline",
+     " 123.9s copywriter",
+     " 130.6s brand_judge",
+     " 130.6s campaign_director",
+     " 137.5s campaign_director"
+    ],
+    "final": "The campaign pipeline has successfully processed your brief, and the content has passed the brand review with a perfect score of 10/10 and no fixes required. \n\nHere is the verdict and the drafted copy for your campaign:\n\n### **Verdict**\n* **Status:** Passed (Approved for use)\n* **Brand Review Score:** 10/10\n* **Required Fixes:** None (The copy correctly adhered to the house rules, including the \"T"
+   }
+  ],
+  "new_session": {
+   "has_draft": true,
+   "signed_as_told": true,
+   "left_out_warranty": true,
+   "draft": {
+    "email_subject": "Secure your utility fleet for the January budget cycle",
+    "email_body": "January is the time to allocate your fleet refresh budget. Open racks expose your utility crews to gear theft and weather damage, leading to costly downtime. Corvane Outdoor offers cargo solutions that secure your equipment. We provide keyed-alike locking systems across up to 500 vehicles, a feature other brands do not offer. Our systems install in 20 minutes with no drilling required, keeping your vehicles on the road. Contact us to secure your fleet. The Corvane Fleet Desk",
+    "linkedin_post": "Regional utility fleet managers: Protect your crew's gear from theft and damage this year. As you plan your January budget refresh, consider Corvane. Our cargo solutions feature keyed-alike locking across up to 500 vehicles\u2014a capability other brands do not offer. Plus, each unit installs in 20 minutes with no drilling. Minimize crew downtime and secure your fleet today."
+   },
+   "turns": [
+    {
+     "seconds": 147.1,
+     "model_calls": 10,
+     "input_tokens": 2634,
+     "output_tokens": 4766,
+     "timed_out": false,
+     "trace": [
+      "   1.9s campaign_director calls=['campaign_pipeline']",
+      "   3.7s competitor_researcher calls=['lookup_competitors']",
+      "   3.7s competitor_researcher",
+      "   4.0s product_researcher calls=['lookup_product']",
+      "   4.0s product_researcher",
+      "   4.3s audience_researcher calls=['lookup_audience']",
+      "   4.3s audience_researcher",
+      "   5.1s product_researcher",
+      "   6.1s competitor_researcher",
+      "   6.3s audience_researcher",
+      "   6.3s campaign_pipeline",
+      " 137.6s copywriter",
+      " 143.7s brand_judge",
+      " 143.7s campaign_director",
+      " 147.1s campaign_director"
+     ],
+     "final": "The campaign pipeline has successfully processed your brief with the following results:\n\n*   **Verdict:** Passed (Score: 10/10)\n*   **Fixes Required:** None\n\nThe campaign draft has successfully passed all research, drafting, and brand reviews, meeting all requirements for the TrailLock 2 rooftop cargo system launch to regional utility fleet managers."
+    }
+   ]
+  }
+ },
+ {
+  "experiment": "handoff",
+  "build": "hybrid_with_rules",
+  "trial": 1,
+  "has_draft": false,
+  "signed_as_told": false,
+  "left_out_warranty": false,
+  "rule_in_state": "Sign every email 'The Corvane Fleet Desk' and never mention the warranty.",
+  "input_tokens": 2310,
+  "output_tokens": 1683,
+  "model_calls": 9,
+  "draft": null,
+  "turns": [
+   {
+    "seconds": 2.7,
+    "model_calls": 2,
+    "input_tokens": 562,
+    "output_tokens": 190,
+    "timed_out": false,
+    "trace": [
+     "   1.5s campaign_director calls=['save_house_rule']",
+     "   1.5s campaign_director",
+     "   2.7s campaign_director"
+    ],
+    "final": "I have saved your rule to sign every email \"The Corvane Fleet Desk\" and never mention the warranty for all future copy."
+   },
+   {
+    "seconds": 180.0,
+    "model_calls": 7,
+    "input_tokens": 1748,
+    "output_tokens": 1493,
+    "timed_out": true,
+    "trace": [
+     "   1.7s campaign_director calls=['campaign_pipeline']",
+     "   3.9s competitor_researcher calls=['lookup_competitors']",
+     "   3.9s competitor_researcher",
+     "   4.0s product_researcher calls=['lookup_product']",
+     "   4.0s product_researcher",
+     "   4.2s audience_researcher calls=['lookup_audience']",
+     "   4.2s audience_researcher",
+     "   5.4s product_researcher",
+     "   6.2s audience_researcher",
+     "   6.7s competitor_researcher",
+     "   6.7s campaign_pipeline"
+    ],
+    "final": "* **Key Competitors:** RackMaster Pro and SummitHaul are the leading competitors in the rooftop cargo system category.\n* **Identified Market Gap:** Neither of these competitors offers a keyed-alike locking system across an entire fleet.\n* **Strategic Advantage:** The TrailLock 2 can uniquely position itself to fleet managers by highlighting this fleet-wide security gap."
+   }
+  ],
+  "new_session": {
+   "has_draft": true,
+   "signed_as_told": true,
+   "left_out_warranty": true,
+   "draft": {
+    "email_subject": "Upgrade Your Fleet Security for the January Budget",
+    "email_body": "With January fleet refresh budgets being finalized, address crew downtime from gear damage and theft from open racks. Our cargo system installs in 20 minutes with no drilling. It offers keyed-alike locking across up to 500 vehicles, providing a unified security solution that competitors like RackMaster Pro and SummitHaul do not offer.\n\nThe Corvane Fleet Desk",
+    "linkedin_post": "Avoid crew downtime from gear damage and theft from open racks. As you plan your January fleet refresh budget, upgrade your security. Our system installs in 20 minutes with no drilling. Unlike RackMaster Pro or SummitHaul, we provide keyed-alike locking across up to 500 vehicles for unified fleet protection."
+   },
+   "turns": [
+    {
+     "seconds": 90.8,
+     "model_calls": 10,
+     "input_tokens": 2880,
+     "output_tokens": 5634,
+     "timed_out": false,
+     "trace": [
+      "   2.4s campaign_director calls=['campaign_pipeline']",
+      "   4.2s product_researcher calls=['lookup_product']",
+      "   4.2s product_researcher",
+      "   5.4s audience_researcher calls=['lookup_audience']",
+      "   5.4s audience_researcher",
+      "   5.4s product_researcher",
+      "   5.8s competitor_researcher calls=['lookup_competitors']",
+      "   5.8s competitor_researcher",
+      "   7.7s audience_researcher",
+      "   8.9s competitor_researcher",
+      "   8.9s campaign_pipeline",
+      "  19.8s copywriter",
+      "  86.5s brand_judge",
+      "  86.5s campaign_director",
+      "  90.8s campaign_director"
+     ],
+     "final": "The campaign pipeline has processed your brief for the TrailLock 2 rooftop cargo system. \n\n**Verdict:** Failed (Score: 7/10)\n\n**Required Fixes:**\n* Add a single, clear call to action to the email body (e.g., 'Reply to this email to request a custom quote').\n* Add a clear call to action to the LinkedIn post (e.g., 'Click the link below to learn more about our fleet solutions')."
+    }
+   ]
+  }
+ },
+ {
+  "experiment": "handoff",
+  "build": "hybrid_with_rules",
+  "trial": 2,
+  "has_draft": true,
+  "signed_as_told": true,
+  "left_out_warranty": true,
+  "rule_in_state": "Sign every email 'The Corvane Fleet Desk' and never mention the warranty.",
+  "input_tokens": 2808,
+  "output_tokens": 3354,
+  "model_calls": 10,
+  "draft": {
+   "email_subject": "Secure your equipment for the January fleet refresh",
+   "email_body": "As you plan your January fleet budget, prevent crew downtime caused by gear damage and equipment theft from open cargo racks. The Corvane TrailLock 2 installs in 20 minutes with no drilling and offers keyed-alike locking across up to 500 vehicles. Competitors like RackMaster Pro and SummitHaul do not offer fleet-wide keyed-alike locking. Secure your entire fleet with a single key solution. Contact us to learn more. The Corvane Fleet Desk",
+   "linkedin_post": "January fleet planning is underway. Prevent downtime from gear damage and open-rack theft with Corvane's TrailLock 2. Unlike RackMaster Pro and SummitHaul, we provide keyed-alike locking across up to 500 vehicles. Installs in 20 minutes with no drilling. Secure your fleet today."
+  },
+  "turns": [
+   {
+    "seconds": 6.7,
+    "model_calls": 2,
+    "input_tokens": 632,
+    "output_tokens": 244,
+    "timed_out": false,
+    "trace": [
+     "   2.5s campaign_director calls=['save_house_rule']",
+     "   2.5s campaign_director",
+     "   6.7s campaign_director"
+    ],
+    "final": "I have saved your rule to sign all emails \"The Corvane Fleet Desk\" and to never mention the warranty."
+   },
+   {
+    "seconds": 180.0,
+    "model_calls": 8,
+    "input_tokens": 2176,
+    "output_tokens": 3110,
+    "timed_out": true,
+    "trace": [
+     "   2.1s campaign_director calls=['campaign_pipeline']",
+     "   4.3s competitor_researcher calls=['lookup_competitors']",
+     "   4.3s competitor_researcher",
+     "   4.4s audience_researcher calls=['lookup_audience']",
+     "   4.4s audience_researcher",
+     "   5.4s product_researcher calls=['lookup_product']",
+     "   5.4s product_researcher",
+     "   6.2s competitor_researcher",
+     "   6.4s product_researcher",
+     "   6.6s audience_researcher",
+     "   6.7s campaign_pipeline",
+     "  18.2s copywriter"
+    ],
+    "final": "{\"email_subject\": \"Secure your equipment for the January fleet refresh\", \"email_body\": \"As you plan your January fleet budget, prevent crew downtime caused by gear damage and equipment theft from open cargo racks. The Corvane TrailLock 2 installs in 20 minutes with no drilling and offers keyed-alike locking across up to 500 vehicles. Competitors like RackMaster Pro and SummitHaul do not offer flee"
+   }
+  ],
+  "new_session": {
+   "has_draft": true,
+   "signed_as_told": true,
+   "left_out_warranty": true,
+   "draft": {
+    "email_subject": "Secure your utility fleet ahead of January budget planning",
+    "email_body": "As you plan your utility fleet refresh budget this January, consider how open rack theft and gear damage cause crew downtime. Corvane Outdoor offers cargo systems featuring keyed-alike locking across up to 500 vehicles, a feature not offered by RackMaster Pro or SummitHaul. Our systems install in 20 minutes with no drilling required, keeping your vehicles secure and your crews on schedule. Contact us to discuss your fleet needs before the budget deadline. Sincerely, The Corvane Fleet Desk",
+    "linkedin_post": "Utility fleet managers: Crew downtime from gear theft and damage on open racks is avoidable. As you set your January refresh budget, upgrade to Corvane Outdoor. We offer keyed-alike locking across up to 500 vehicles\u2014a feature competitors like RackMaster Pro and SummitHaul do not provide. Plus, our systems install in 20 minutes with no drilling required. Secure your fleet."
+   },
+   "turns": [
+    {
+     "seconds": 54.9,
+     "model_calls": 10,
+     "input_tokens": 3007,
+     "output_tokens": 4833,
+     "timed_out": false,
+     "trace": [
+      "   5.8s campaign_director calls=['campaign_pipeline']",
+      "   7.4s product_researcher calls=['lookup_product']",
+      "   7.4s product_researcher",
+      "   9.9s competitor_researcher calls=['lookup_competitors']",
+      "   9.9s competitor_researcher",
+      "  11.7s product_researcher",
+      "  21.9s competitor_researcher",
+      "  27.6s audience_researcher calls=['lookup_audience']",
+      "  27.6s audience_researcher",
+      "  29.7s audience_researcher",
+      "  29.7s campaign_pipeline",
+      "  39.2s copywriter",
+      "  44.0s brand_judge",
+      "  44.0s campaign_director",
+      "  54.9s campaign_director"
+     ],
+     "final": "The campaign pipeline has successfully processed your brief for the TrailLock 2 rooftop cargo system.\n\n**Verdict:** Passed (Score: 10/10, 0 fixes required)\n\nThe generated email and LinkedIn post drafts have successfully passed our research and brand review pipeline, meeting all criteria for targeting regional utility fleet managers for Q1 demo bookings."
+    }
+   ]
+  }
+ }
+]

@@ -32,10 +32,15 @@ from pydantic import BaseModel, Field
 
 MODEL = "gemini-3.5-flash"
 
-# Retry transient quota errors (429) instead of failing the whole campaign.
+# Retry transient quota errors (429) instead of failing the whole campaign, and
+# give up on a single request after a minute so a hung connection is retried
+# instead of stalling the run.
+REQUEST_TIMEOUT_MS = 60_000
+
 RETRY = types.GenerateContentConfig(
     http_options=types.HttpOptions(
-        retry_options=types.HttpRetryOptions(attempts=6, initial_delay=2.0, max_delay=30.0)
+        timeout=REQUEST_TIMEOUT_MS,
+        retry_options=types.HttpRetryOptions(attempts=6, initial_delay=2.0, max_delay=30.0),
     )
 )
 

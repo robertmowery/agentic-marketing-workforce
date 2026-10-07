@@ -25,8 +25,11 @@ from typing import Any
 
 from dotenv import load_dotenv
 from google.adk.agents import BaseAgent
+from google.adk.apps import App
 from google.adk.events import Event
-from google.adk.runners import InMemoryRunner
+from google.adk.memory import BaseMemoryService
+from google.adk.runners import InMemoryRunner, Runner
+from google.adk.sessions import BaseSessionService, InMemorySessionService
 from google.genai import types
 
 load_dotenv()
@@ -60,6 +63,13 @@ class RunRecord:
     timed_out: bool = False
     # Author -> (first seen, last seen), in seconds since the brief arrived.
     spans: dict[str, tuple[float, float]] = field(default_factory=dict)
+    # Every function call with its arguments: what one agent actually handed another.
+    calls: list[dict[str, Any]] = field(default_factory=list)
+    # Tokens spent summarizing history, cumulative for the session. Compaction
+    # runs after a turn and is not part of the event stream, so these are
+    # read from the stored session and are not included in the counts above.
+    compaction_input_tokens: int = 0
+    compaction_output_tokens: int = 0
 
 
 def _describe_calls(event: Event) -> list[str]:
@@ -82,6 +92,9 @@ def _record_event(rec: RunRecord, event: Event, now: float) -> None:
         rec.order.append(author)
     first_seen, _ = rec.spans.get(author, (now, now))
     rec.spans[author] = (first_seen, now)
+
+    for call in event.get_function_calls():
+        rec.calls.append({"author": author, "name": call.name, "args": dict(call.args or {})})
 
     calls = _describe_calls(event)
     line = f"{now:6.1f}s {author}"
@@ -108,6 +121,44 @@ def _record_event(rec: RunRecord, event: Event, now: float) -> None:
             rec.final_text = text
 
 
+async def _run_turn(
+    runner: Runner, rec: RunRecord, *, user_id: str, session_id: str, message: str
+) -> None:
+    """Send one user message, fold every event into ``rec``, and snapshot state."""
+    started = time.perf_counter()
+
+    async def consume() -> None:
+        async for event in runner.run_async(
+            user_id=user_id,
+            session_id=session_id,
+            new_message=types.Content(role="user", parts=[types.Part(text=message)]),
+        ):
+            _record_event(rec, event, time.perf_counter() - started)
+
+    try:
+        await asyncio.wait_for(consume(), TIMEOUT_S)
+    except asyncio.TimeoutError:
+        rec.timed_out = True
+    rec.seconds = time.perf_counter() - started
+
+    final = await runner.session_service.get_session(
+        app_name=runner.app_name, user_id=user_id, session_id=session_id
+    )
+    rec.state = dict(final.state) if final else {}
+    for stored in final.events if final else []:
+        usage = stored.usage_metadata
+        if getattr(stored.actions, "compaction", None) is not None and usage is not None:
+            rec.compaction_input_tokens += usage.prompt_token_count or 0
+            rec.compaction_output_tokens += (usage.candidates_token_count or 0) + (
+                getattr(usage, "thoughts_token_count", 0) or 0
+            )
+
+
+def _deprecations(caught: list[warnings.WarningMessage]) -> list[str]:
+    """Return the distinct deprecation warnings raised during a run."""
+    return sorted({str(w.message)[:200] for w in caught if "deprecat" in str(w.message).lower()})
+
+
 async def run(
     name: str,
     *,
@@ -132,28 +183,70 @@ async def run(
         warnings.simplefilter("always")
         runner = InMemoryRunner(agent=agent, node=node, app_name=name)
         session = await runner.session_service.create_session(app_name=name, user_id=USER_ID)
-        started = time.perf_counter()
-
-        async def consume() -> None:
-            async for event in runner.run_async(
-                user_id=USER_ID,
-                session_id=session.id,
-                new_message=types.Content(role="user", parts=[types.Part(text=message)]),
-            ):
-                _record_event(rec, event, time.perf_counter() - started)
-
-        try:
-            await asyncio.wait_for(consume(), TIMEOUT_S)
-        except asyncio.TimeoutError:
-            rec.timed_out = True
-        rec.seconds = time.perf_counter() - started
-
-        final = await runner.session_service.get_session(
-            app_name=name, user_id=USER_ID, session_id=session.id
-        )
-        rec.state = dict(final.state) if final else {}
-
-    rec.warnings = sorted(
-        {str(w.message)[:200] for w in caught if "deprecat" in str(w.message).lower()}
-    )
+        await _run_turn(runner, rec, user_id=USER_ID, session_id=session.id, message=message)
+    rec.warnings = _deprecations(caught)
     return rec
+
+
+async def converse(
+    name: str,
+    *,
+    messages: list[str],
+    agent: BaseAgent | None = None,
+    node: Any = None,
+    app: App | None = None,
+    session_service: BaseSessionService | None = None,
+    memory_service: BaseMemoryService | None = None,
+    user_id: str = USER_ID,
+    session_id: str | None = None,
+) -> list[RunRecord]:
+    """Hold a multi-turn conversation in one session and record each turn.
+
+    Args:
+        name: Label for the run; used as the ADK app name unless ``app`` is given.
+        messages: The user messages, sent in order.
+        agent: The root agent, for builds rooted in an agent.
+        node: The root workflow, for builds rooted in a graph.
+        app: An ``App``, for builds that need app-level settings such as
+            event compaction. Give this or ``agent``/``node``, not both.
+        session_service: Where sessions live. Defaults to a fresh in-memory
+            service, which forgets everything when this call returns.
+        memory_service: Optional long-term memory service.
+        user_id: The user the session belongs to.
+        session_id: Reuse or name a session. A new one is created if it does
+            not exist yet.
+
+    Returns:
+        One ``RunRecord`` per turn, each holding that turn's counts and the
+        session state as it stood when the turn ended.
+    """
+    service = session_service or InMemorySessionService()
+    if app is not None:
+        runner = Runner(app=app, session_service=service, memory_service=memory_service)
+    else:
+        runner = Runner(
+            agent=agent,
+            node=node,
+            app_name=name,
+            session_service=service,
+            memory_service=memory_service,
+        )
+
+    session = None
+    if session_id is not None:
+        session = await service.get_session(
+            app_name=runner.app_name, user_id=user_id, session_id=session_id
+        )
+    if session is None:
+        session = await service.create_session(
+            app_name=runner.app_name, user_id=user_id, session_id=session_id
+        )
+
+    records = []
+    for turn, message in enumerate(messages):
+        rec = RunRecord(name=f"{name}#turn{turn + 1}")
+        await _run_turn(runner, rec, user_id=user_id, session_id=session.id, message=message)
+        records.append(rec)
+        if rec.timed_out:
+            break
+    return records
