@@ -33,9 +33,14 @@ from pydantic import BaseModel, Field
 MODEL = "gemini-3.5-flash"
 
 # Retry transient quota errors (429) instead of failing the whole campaign, and
-# give up on a single request after a minute so a hung connection is retried
-# instead of stalling the run.
-REQUEST_TIMEOUT_MS = 60_000
+# give up on a single request after 40 seconds so that it is retried.
+#
+# The timeout exists because of structured output. On this model, a request
+# with a response schema sometimes does not return: in a side-by-side check,
+# two of four schema requests ran to a 47-second deadline and failed with
+# 504 DEADLINE_EXCEEDED, while four of four plain requests finished in about
+# 14 seconds. The schema requests that did return took 7 to 10 seconds.
+REQUEST_TIMEOUT_MS = 40_000
 
 RETRY = types.GenerateContentConfig(
     http_options=types.HttpOptions(

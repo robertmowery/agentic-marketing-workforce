@@ -34,7 +34,7 @@ convention = "google"
 
 [tool.mypy]
 python_version = "3.11"
-files = ["workforce", "failures", "tests", "run_part1.py", "run_part2.py"]
+files = ["workforce", "failures", "tests", "run_part1.py", "run_part2.py", "run_part3.py"]
 disallow_untyped_defs = true
 disallow_incomplete_defs = true
 warn_unused_ignores = true

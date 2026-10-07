@@ -1,0 +1,170 @@
+[
+ {
+  "variant": "schema",
+  "attempt": 0,
+  "returned": false,
+  "error": "ServerError: 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete",
+  "seconds": 42.7
+ },
+ {
+  "variant": "schema_no_think",
+  "attempt": 0,
+  "returned": false,
+  "error": "ServerError: 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete",
+  "seconds": 42.5
+ },
+ {
+  "variant": "json_by_request",
+  "attempt": 0,
+  "returned": true,
+  "valid_draft": true,
+  "seconds": 29.9
+ },
+ {
+  "variant": "json_mime_only",
+  "attempt": 0,
+  "returned": true,
+  "valid_draft": true,
+  "seconds": 8.2
+ },
+ {
+  "variant": "schema",
+  "attempt": 1,
+  "returned": false,
+  "error": "ServerError: 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete",
+  "seconds": 42.5
+ },
+ {
+  "variant": "schema_no_think",
+  "attempt": 1,
+  "returned": false,
+  "error": "ServerError: 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete",
+  "seconds": 42.4
+ },
+ {
+  "variant": "json_by_request",
+  "attempt": 1,
+  "returned": true,
+  "valid_draft": true,
+  "seconds": 6.6
+ },
+ {
+  "variant": "json_mime_only",
+  "attempt": 1,
+  "returned": true,
+  "valid_draft": true,
+  "seconds": 7.5
+ },
+ {
+  "variant": "schema",
+  "attempt": 2,
+  "returned": false,
+  "error": "ServerError: 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete",
+  "seconds": 42.5
+ },
+ {
+  "variant": "schema_no_think",
+  "attempt": 2,
+  "returned": false,
+  "error": "ServerError: 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete",
+  "seconds": 42.3
+ },
+ {
+  "variant": "json_by_request",
+  "attempt": 2,
+  "returned": true,
+  "valid_draft": true,
+  "seconds": 7.4
+ },
+ {
+  "variant": "json_mime_only",
+  "attempt": 2,
+  "returned": true,
+  "valid_draft": true,
+  "seconds": 7.4
+ },
+ {
+  "variant": "schema",
+  "attempt": 3,
+  "returned": false,
+  "error": "ServerError: 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete",
+  "seconds": 42.1
+ },
+ {
+  "variant": "schema_no_think",
+  "attempt": 3,
+  "returned": false,
+  "error": "ServerError: 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete",
+  "seconds": 42.3
+ },
+ {
+  "variant": "json_by_request",
+  "attempt": 3,
+  "returned": true,
+  "valid_draft": true,
+  "seconds": 6.7
+ },
+ {
+  "variant": "json_mime_only",
+  "attempt": 3,
+  "returned": true,
+  "valid_draft": true,
+  "seconds": 6.6
+ },
+ {
+  "variant": "schema",
+  "attempt": 4,
+  "returned": true,
+  "valid_draft": true,
+  "seconds": 8.4
+ },
+ {
+  "variant": "schema_no_think",
+  "attempt": 4,
+  "returned": false,
+  "error": "ServerError: 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete",
+  "seconds": 42.5
+ },
+ {
+  "variant": "json_by_request",
+  "attempt": 4,
+  "returned": true,
+  "valid_draft": true,
+  "seconds": 6.6
+ },
+ {
+  "variant": "json_mime_only",
+  "attempt": 4,
+  "returned": true,
+  "valid_draft": true,
+  "seconds": 6.0
+ },
+ {
+  "variant": "schema",
+  "attempt": 5,
+  "returned": false,
+  "error": "ServerError: 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete",
+  "seconds": 42.2
+ },
+ {
+  "variant": "schema_no_think",
+  "attempt": 5,
+  "returned": true,
+  "valid_draft": true,
+  "seconds": 2.1
+ },
+ {
+  "variant": "json_by_request",
+  "attempt": 5,
+  "returned": true,
+  "valid_draft": true,
+  "seconds": 9.3
+ },
+ {
+  "variant": "json_mime_only",
+  "attempt": 5,
+  "returned": true,
+  "valid_draft": true,
+  "seconds": 7.3
+ }
+]

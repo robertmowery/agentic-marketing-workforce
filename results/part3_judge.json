@@ -1,0 +1,417 @@
+[
+ {
+  "experiment": "judge",
+  "draft": "clean",
+  "planted_fault": null,
+  "trial": 0,
+  "judge_passed": true,
+  "judge_score": 10,
+  "judge_fixes": [],
+  "reply_was_valid": true,
+  "code_check": {
+   "passed": true,
+   "no_hype_words": true,
+   "warranty_as_approved": true,
+   "no_unapproved_feature": true
+  },
+  "input_tokens": 241,
+  "output_tokens": 848,
+  "timed_out": false
+ },
+ {
+  "experiment": "judge",
+  "draft": "clean",
+  "planted_fault": null,
+  "trial": 1,
+  "judge_passed": true,
+  "judge_score": 10,
+  "judge_fixes": [],
+  "reply_was_valid": true,
+  "code_check": {
+   "passed": true,
+   "no_hype_words": true,
+   "warranty_as_approved": true,
+   "no_unapproved_feature": true
+  },
+  "input_tokens": 241,
+  "output_tokens": 844,
+  "timed_out": false
+ },
+ {
+  "experiment": "judge",
+  "draft": "clean",
+  "planted_fault": null,
+  "trial": 2,
+  "judge_passed": true,
+  "judge_score": 10,
+  "judge_fixes": [],
+  "reply_was_valid": true,
+  "code_check": {
+   "passed": true,
+   "no_hype_words": true,
+   "warranty_as_approved": true,
+   "no_unapproved_feature": true
+  },
+  "input_tokens": 241,
+  "output_tokens": 834,
+  "timed_out": false
+ },
+ {
+  "experiment": "judge",
+  "draft": "clean",
+  "planted_fault": null,
+  "trial": 3,
+  "judge_passed": true,
+  "judge_score": 10,
+  "judge_fixes": [],
+  "reply_was_valid": true,
+  "code_check": {
+   "passed": true,
+   "no_hype_words": true,
+   "warranty_as_approved": true,
+   "no_unapproved_feature": true
+  },
+  "input_tokens": 241,
+  "output_tokens": 771,
+  "timed_out": false
+ },
+ {
+  "experiment": "judge",
+  "draft": "clean",
+  "planted_fault": null,
+  "trial": 4,
+  "judge_passed": true,
+  "judge_score": 10,
+  "judge_fixes": [],
+  "reply_was_valid": true,
+  "code_check": {
+   "passed": true,
+   "no_hype_words": true,
+   "warranty_as_approved": true,
+   "no_unapproved_feature": true
+  },
+  "input_tokens": 241,
+  "output_tokens": 823,
+  "timed_out": false
+ },
+ {
+  "experiment": "judge",
+  "draft": "hype",
+  "planted_fault": "hype words",
+  "trial": 0,
+  "judge_passed": false,
+  "judge_score": 7,
+  "judge_fixes": [
+   "Remove the hype words 'revolutionary' and 'game-changing' to comply with the brand voice rubric."
+  ],
+  "reply_was_valid": true,
+  "code_check": {
+   "passed": false,
+   "no_hype_words": false,
+   "warranty_as_approved": true,
+   "no_unapproved_feature": true
+  },
+  "input_tokens": 247,
+  "output_tokens": 784,
+  "timed_out": false
+ },
+ {
+  "experiment": "judge",
+  "draft": "hype",
+  "planted_fault": "hype words",
+  "trial": 1,
+  "judge_passed": false,
+  "judge_score": 7,
+  "judge_fixes": [
+   "Remove the hype words 'revolutionary, game-changing' to comply with the brand voice guidelines."
+  ],
+  "reply_was_valid": true,
+  "code_check": {
+   "passed": false,
+   "no_hype_words": false,
+   "warranty_as_approved": true,
+   "no_unapproved_feature": true
+  },
+  "input_tokens": 247,
+  "output_tokens": 611,
+  "timed_out": false
+ },
+ {
+  "experiment": "judge",
+  "draft": "hype",
+  "planted_fault": "hype words",
+  "trial": 2,
+  "judge_passed": false,
+  "judge_score": 7,
+  "judge_fixes": [
+   "Remove the hype words 'revolutionary' and 'game-changing' from the description of TrailLock 2."
+  ],
+  "reply_was_valid": true,
+  "code_check": {
+   "passed": false,
+   "no_hype_words": false,
+   "warranty_as_approved": true,
+   "no_unapproved_feature": true
+  },
+  "input_tokens": 247,
+  "output_tokens": 879,
+  "timed_out": false
+ },
+ {
+  "experiment": "judge",
+  "draft": "hype",
+  "planted_fault": "hype words",
+  "trial": 3,
+  "judge_passed": false,
+  "judge_score": 7,
+  "judge_fixes": [
+   "Remove the hype words 'revolutionary' and 'game-changing' from the description of TrailLock 2 to maintain a professional, hype-free tone."
+  ],
+  "reply_was_valid": true,
+  "code_check": {
+   "passed": false,
+   "no_hype_words": false,
+   "warranty_as_approved": true,
+   "no_unapproved_feature": true
+  },
+  "input_tokens": 247,
+  "output_tokens": 889,
+  "timed_out": false
+ },
+ {
+  "experiment": "judge",
+  "draft": "hype",
+  "planted_fault": "hype words",
+  "trial": 4,
+  "judge_passed": false,
+  "judge_score": 7,
+  "judge_fixes": [
+   "Remove the hype words 'revolutionary, game-changing' from the text to maintain a professional, objective tone."
+  ],
+  "reply_was_valid": true,
+  "code_check": {
+   "passed": false,
+   "no_hype_words": false,
+   "warranty_as_approved": true,
+   "no_unapproved_feature": true
+  },
+  "input_tokens": 247,
+  "output_tokens": 727,
+  "timed_out": false
+ },
+ {
+  "experiment": "judge",
+  "draft": "unapproved_claim",
+  "planted_fault": "claims that are not approved facts",
+  "trial": 0,
+  "judge_passed": false,
+  "judge_score": 6,
+  "judge_fixes": [
+   "Change the '10-year warranty' claim to '5-year warranty' to align with the approved product facts.",
+   "Remove the 'fully waterproof' claim as it is not an approved product fact."
+  ],
+  "reply_was_valid": true,
+  "code_check": {
+   "passed": false,
+   "no_hype_words": true,
+   "warranty_as_approved": false,
+   "no_unapproved_feature": false
+  },
+  "input_tokens": 246,
+  "output_tokens": 1102,
+  "timed_out": false
+ },
+ {
+  "experiment": "judge",
+  "draft": "unapproved_claim",
+  "planted_fault": "claims that are not approved facts",
+  "trial": 1,
+  "judge_passed": false,
+  "judge_score": 6,
+  "judge_fixes": [
+   "Change the '10-year warranty' claim to the approved '5-year warranty'.",
+   "Remove the 'fully waterproof' claim as it is not supported by the approved product facts."
+  ],
+  "reply_was_valid": true,
+  "code_check": {
+   "passed": false,
+   "no_hype_words": true,
+   "warranty_as_approved": false,
+   "no_unapproved_feature": false
+  },
+  "input_tokens": 246,
+  "output_tokens": 926,
+  "timed_out": false
+ },
+ {
+  "experiment": "judge",
+  "draft": "unapproved_claim",
+  "planted_fault": "claims that are not approved facts",
+  "trial": 2,
+  "judge_passed": false,
+  "judge_score": 6,
+  "judge_fixes": [
+   "Change '10-year warranty' to '5-year warranty' to match approved product facts.",
+   "Remove the claim 'fully waterproof' as it is not an approved product fact."
+  ],
+  "reply_was_valid": true,
+  "code_check": {
+   "passed": false,
+   "no_hype_words": true,
+   "warranty_as_approved": false,
+   "no_unapproved_feature": false
+  },
+  "input_tokens": 246,
+  "output_tokens": 856,
+  "timed_out": false
+ },
+ {
+  "experiment": "judge",
+  "draft": "unapproved_claim",
+  "planted_fault": "claims that are not approved facts",
+  "trial": 3,
+  "judge_passed": false,
+  "judge_score": 7,
+  "judge_fixes": [
+   "Change '10-year warranty' to the approved '5-year warranty'.",
+   "Remove 'fully waterproof' as it is not in the list of approved product facts."
+  ],
+  "reply_was_valid": true,
+  "code_check": {
+   "passed": false,
+   "no_hype_words": true,
+   "warranty_as_approved": false,
+   "no_unapproved_feature": false
+  },
+  "input_tokens": 246,
+  "output_tokens": 1009,
+  "timed_out": false
+ },
+ {
+  "experiment": "judge",
+  "draft": "unapproved_claim",
+  "planted_fault": "claims that are not approved facts",
+  "trial": 4,
+  "judge_passed": false,
+  "judge_score": 6,
+  "judge_fixes": [
+   "Change the '10-year warranty' claim to the approved '5-year warranty'.",
+   "Remove the 'fully waterproof' claim as it is not in the approved list of product facts."
+  ],
+  "reply_was_valid": true,
+  "code_check": {
+   "passed": false,
+   "no_hype_words": true,
+   "warranty_as_approved": false,
+   "no_unapproved_feature": false
+  },
+  "input_tokens": 246,
+  "output_tokens": 658,
+  "timed_out": false
+ },
+ {
+  "experiment": "judge",
+  "draft": "no_call_to_action",
+  "planted_fault": "no call to action",
+  "trial": 0,
+  "judge_passed": false,
+  "judge_score": 7,
+  "judge_fixes": [
+   "Add a clear call to action (CTA) at the end of the email, such as 'Reply to this email to get a custom quote for your fleet' or 'Visit our website to schedule a 10-minute demo.'"
+  ],
+  "reply_was_valid": true,
+  "code_check": {
+   "passed": true,
+   "no_hype_words": true,
+   "warranty_as_approved": true,
+   "no_unapproved_feature": true
+  },
+  "input_tokens": 230,
+  "output_tokens": 871,
+  "timed_out": false
+ },
+ {
+  "experiment": "judge",
+  "draft": "no_call_to_action",
+  "planted_fault": "no call to action",
+  "trial": 1,
+  "judge_passed": false,
+  "judge_score": 7,
+  "judge_fixes": [
+   "Add a clear call to action (CTA) at the end of the draft, such as 'Reply to this email to get a custom quote for your fleet' or 'Schedule a demo today.'"
+  ],
+  "reply_was_valid": true,
+  "code_check": {
+   "passed": true,
+   "no_hype_words": true,
+   "warranty_as_approved": true,
+   "no_unapproved_feature": true
+  },
+  "input_tokens": 230,
+  "output_tokens": 906,
+  "timed_out": false
+ },
+ {
+  "experiment": "judge",
+  "draft": "no_call_to_action",
+  "planted_fault": "no call to action",
+  "trial": 2,
+  "judge_passed": false,
+  "judge_score": 7,
+  "judge_fixes": [
+   "Add a clear call to action (CTA) at the end of the email, such as inviting the fleet manager to request a quote or schedule a consultation."
+  ],
+  "reply_was_valid": true,
+  "code_check": {
+   "passed": true,
+   "no_hype_words": true,
+   "warranty_as_approved": true,
+   "no_unapproved_feature": true
+  },
+  "input_tokens": 230,
+  "output_tokens": 1010,
+  "timed_out": false
+ },
+ {
+  "experiment": "judge",
+  "draft": "no_call_to_action",
+  "planted_fault": "no call to action",
+  "trial": 3,
+  "judge_passed": false,
+  "judge_score": 7,
+  "judge_fixes": [
+   "Add a clear call to action (CTA) at the end of the message to guide the fleet manager on the next steps (e.g., 'Reply to request a custom quote for your fleet' or 'Schedule a quick call to learn more')."
+  ],
+  "reply_was_valid": true,
+  "code_check": {
+   "passed": true,
+   "no_hype_words": true,
+   "warranty_as_approved": true,
+   "no_unapproved_feature": true
+  },
+  "input_tokens": 230,
+  "output_tokens": 832,
+  "timed_out": false
+ },
+ {
+  "experiment": "judge",
+  "draft": "no_call_to_action",
+  "planted_fault": "no call to action",
+  "trial": 4,
+  "judge_passed": false,
+  "judge_score": 7,
+  "judge_fixes": [
+   "Add a single, clear call to action (CTA) at the end of the text, such as directing the fleet manager to schedule a demo, request a quote, or visit a website."
+  ],
+  "reply_was_valid": true,
+  "code_check": {
+   "passed": true,
+   "no_hype_words": true,
+   "warranty_as_approved": true,
+   "no_unapproved_feature": true
+  },
+  "input_tokens": 230,
+  "output_tokens": 657,
+  "timed_out": false
+ }
+]

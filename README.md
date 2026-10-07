@@ -40,6 +40,26 @@ Part 2 looks for the four failures behind "the agent forgot": the session was ne
 
 The handoff experiment gives the Director a standing rule in one turn and the brief in the next, then checks the saved draft. Each result row records every function call with its arguments, so you can see what one agent actually handed another.
 
+## Part 3: three ways a team gets stuck
+
+Part 3 builds a review loop (writer, brand review, legal review) and looks at three ways it fails to finish: a loop with no exit, two reviewers whose rules contradict, and a join that waits on a branch that never ran.
+
+| Subject | Where | Needs a model |
+| --- | --- | --- |
+| Loops, routed edges, the skipped join | `tests/test_part3_claims.py` | No |
+| Four builds of the review loop | `workforce/review/loop.py`, `run_part3.py loops` | Yes |
+| Judge consistency on planted faults | `workforce/review/judge.py`, `run_part3.py judge` | Yes |
+| Requests with a response schema stalling | `failures/structured_output_stall.py` | Yes |
+
+```bash
+.venv/bin/python -m pytest -q tests/test_part3_claims.py   # no model calls
+RUN_TIMEOUT_S=300 .venv/bin/python run_part3.py loops 3     # plain, conflicting, capped, ranked
+.venv/bin/python run_part3.py judge 5      # four drafts, each scored five times
+.venv/bin/python -m failures.structured_output_stall 6
+```
+
+The `conflict_uncapped` build is meant not to finish: brand review requires the warranty and legal review forbids it, so `RUN_TIMEOUT_S` is what ends the run. The agents in this part ask for JSON in the instruction and validate the reply in code instead of setting a response schema, because requests with a schema often failed to return on this model during these runs. `failures/structured_output_stall.py` reproduces that comparison.
+
 ## Setup
 
 ```bash
@@ -82,6 +102,10 @@ A new Google Cloud project has a low default quota. Run builds one at a time; th
 | Part 2: sessions, state prefixes, direct state writes | `tests/test_part2_claims.py` |
 | Part 2: standing rule followed or broken, per build | `results/part2_handoff.json` and `results/part2_handoff_run1.json` |
 | Part 2: input tokens per turn, compaction cost | `results/part2_window.json` and `results/part2_window_run1.json` |
+| Part 3: calls, tokens, and outcome per loop build | `results/part3_loops.json` (three trials each, 300-second cutoff) |
+| Part 3: judge verdicts on four planted drafts | `results/part3_judge.json` |
+| Part 3: replies returned with and without a response schema | `results/part3_structured_output.json` |
+| Part 3: cycles, the unstopped loop, the skipped join | `tests/test_part3_claims.py` |
 
 Costs in the article use the listed Gemini API price for `gemini-3.5-flash` at the time of the runs: $1.50 per million input tokens and $9.00 per million output tokens, with thinking billed as output. Model output varies from run to run, so expect your token counts to land near these, not on them.
 
@@ -92,8 +116,9 @@ Costs in the article use the listed Gemini API price for `gemini-3.5-flash` at t
 | `workforce/cast.py` | The shared agents, stub tools, and output contracts |
 | `workforce/topologies/` | One module per build |
 | `workforce/context/` | Part 2: handoff and context-window experiments |
+| `workforce/review/` | Part 3: the review loop and the judge test |
 | `workforce/harness.py` | Runs a build, single message or multi-turn, and records calls, tokens, timing, and a trace |
-| `run_part1.py`, `run_part2.py` | Command-line runners |
+| `run_part1.py`, `run_part2.py`, `run_part3.py` | Command-line runners |
 | `failures/` | Reproductions of failures the articles describe (these call the model) |
 | `tests/` | Framework claims, checked without a model |
 | `results/` | Recorded runs behind the published numbers |
@@ -108,7 +133,7 @@ Costs in the article use the listed Gemini API price for `gemini-3.5-flash` at t
 
 ## Roadmap
 
-Parts 1 and 2 are complete. Later installments cover loops and judges, MCP and outside tools, retrieval, cross-project trust, and operations. Code for each lands here as its article publishes.
+Parts 1 to 3 are complete. Later installments cover MCP and outside tools, retrieval, cross-project trust, and operations. Code for each lands here as its article publishes.
 
 ## License
 
