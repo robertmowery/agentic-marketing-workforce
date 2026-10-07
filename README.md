@@ -77,6 +77,23 @@ Part 4 connects one designer agent to an outside tool over the Model Context Pro
 
 The poisoned server plants one instruction, either in data a tool returns or in a tool description, asking the agent to delete two designs and share one publicly. It is planted in a local stub for measurement and reaches nothing outside this process.
 
+## Part 5: answering from the company's documents
+
+Part 5 gives one sales-desk agent a small company library three ways: no documents, a search tool, and a search tool that returns each document's effective date along with rules for using it. The library is fictional and the search is a local keyword match, so the results are about what the agent does with what it is handed, and they run the same on every machine with no search service to set up.
+
+| Subject | Where | Needs a model |
+| --- | --- | --- |
+| What the search returns, and the code check on cited figures | `tests/test_part5_claims.py` | No |
+| The library and the search | `workforce/knowledge/library.py` | No |
+| Three builds, four questions, graded in code | `workforce/knowledge/answer.py`, `run_part5.py` | Yes |
+
+```bash
+.venv/bin/python -m pytest -q tests/test_part5_claims.py   # no model calls
+.venv/bin/python run_part5.py 10           # 3 builds x 4 questions x 10 runs
+```
+
+The library holds two price lists, one superseded and never removed, and one question that no document answers. Every reply is graded in code: right, stale, gave both, declined, or answered what the documents do not say, plus any figure that appears in the answer and in none of the documents it cites.
+
 ## Setup
 
 ```bash
@@ -125,6 +142,8 @@ A new Google Cloud project has a low default quota. Run builds one at a time; th
 | Part 3: cycles, the unstopped loop, the skipped join | `tests/test_part3_claims.py` |
 | Part 4: harmful calls, pauses, exports, and tokens per connection | `results/part4_access.json` (ten runs per setup) and `results/part4_access_run1.json` |
 | Part 4: tool exposure, filter, confirmation scope, description pass-through | `tests/test_part4_claims.py` |
+| Part 5: outcome per build and question, searches, and tokens | `results/part5_answers.json` (ten runs per cell) |
+| Part 5: search behavior, date visibility, the figure check, the grader | `tests/test_part5_claims.py` |
 
 Costs in the article use the listed Gemini API price for `gemini-3.5-flash` at the time of the runs: $1.50 per million input tokens and $9.00 per million output tokens, with thinking billed as output. Model output varies from run to run, so expect your token counts to land near these, not on them.
 
@@ -137,8 +156,9 @@ Costs in the article use the listed Gemini API price for `gemini-3.5-flash` at t
 | `workforce/context/` | Part 2: handoff and context-window experiments |
 | `workforce/review/` | Part 3: the review loop and the judge test |
 | `workforce/tools/` | Part 4: the DesignDesk MCP server and the three connections |
+| `workforce/knowledge/` | Part 5: the company library, its search, and the answering agent |
 | `workforce/harness.py` | Runs a build, single message or multi-turn, and records calls, tokens, timing, and a trace |
-| `run_part1.py`, `run_part2.py`, `run_part3.py`, `run_part4.py` | Command-line runners |
+| `run_part1.py`, `run_part2.py`, `run_part3.py`, `run_part4.py`, `run_part5.py` | Command-line runners |
 | `failures/` | Reproductions of failures the articles describe (these call the model) |
 | `tests/` | Framework claims, checked without a model |
 | `results/` | Recorded runs behind the published numbers |
@@ -153,7 +173,7 @@ Costs in the article use the listed Gemini API price for `gemini-3.5-flash` at t
 
 ## Roadmap
 
-Parts 1 to 4 are complete. Later installments cover retrieval, cross-project trust, and operations. Code for each lands here as its article publishes.
+Parts 1 to 5 are complete. Later installments cover cross-project trust and operations. Code for each lands here as its article publishes.
 
 ## License
 

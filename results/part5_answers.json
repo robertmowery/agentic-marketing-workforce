@@ -1,0 +1,3106 @@
+[
+  {
+    "build": "no_library",
+    "question": "install",
+    "trial": 0,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I am unable to find the installation time for the TrailLock 2 in the available product specifications.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 5.8,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 98,
+    "output_tokens": 750
+  },
+  {
+    "build": "no_library",
+    "question": "install",
+    "trial": 1,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I am sorry, but I do not have access to the documentation containing the installation time for the TrailLock 2.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 4.5,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 98,
+    "output_tokens": 635
+  },
+  {
+    "build": "no_library",
+    "question": "install",
+    "trial": 2,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I do not have access to the specific installation instructions or time requirements for the TrailLock 2 in my current product documentation.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 5.5,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 98,
+    "output_tokens": 742
+  },
+  {
+    "build": "no_library",
+    "question": "install",
+    "trial": 3,
+    "valid": true,
+    "outcome": "wrong",
+    "found": true,
+    "answer": "The TrailLock 2 is designed for quick, tool-free installation and can be fully set up in under five minutes.",
+    "sources": [
+      "corvane_traillock2_spec_sheet"
+    ],
+    "sources_not_in_library": [
+      "corvane_traillock2_spec_sheet"
+    ],
+    "numbers_not_in_sources": [
+      "2"
+    ],
+    "searches": [],
+    "seconds": 6.8,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 98,
+    "output_tokens": 835
+  },
+  {
+    "build": "no_library",
+    "question": "install",
+    "trial": 4,
+    "valid": true,
+    "outcome": "wrong",
+    "found": true,
+    "answer": "The TrailLock 2 can be fully installed in under five minutes with basic hand tools, allowing for rapid deployment across your fleet.",
+    "sources": [
+      "corvane-traillock2-spec-sheet"
+    ],
+    "sources_not_in_library": [
+      "corvane-traillock2-spec-sheet"
+    ],
+    "numbers_not_in_sources": [
+      "2"
+    ],
+    "searches": [],
+    "seconds": 9.8,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 98,
+    "output_tokens": 1233
+  },
+  {
+    "build": "no_library",
+    "question": "install",
+    "trial": 5,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I am sorry, but I do not have access to the installation manual or product specifications for the Corvane Outdoor TrailLock 2 to verify its installation time.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 7.0,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 98,
+    "output_tokens": 1025
+  },
+  {
+    "build": "no_library",
+    "question": "install",
+    "trial": 6,
+    "valid": true,
+    "outcome": "wrong",
+    "found": true,
+    "answer": "The TrailLock 2 is designed for quick and easy installation, taking less than 5 minutes to set up without requiring any special tools.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [
+      "2",
+      "5"
+    ],
+    "searches": [],
+    "seconds": 7.9,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 98,
+    "output_tokens": 1002
+  },
+  {
+    "build": "no_library",
+    "question": "install",
+    "trial": 7,
+    "valid": true,
+    "outcome": "wrong",
+    "found": true,
+    "answer": "The TrailLock 2 is designed for a quick and easy setup, requiring no drilling and taking less than 10 minutes to install with standard hand tools.",
+    "sources": [
+      "traillock_2_installation_guide"
+    ],
+    "sources_not_in_library": [
+      "traillock_2_installation_guide"
+    ],
+    "numbers_not_in_sources": [
+      "10",
+      "2"
+    ],
+    "searches": [],
+    "seconds": 6.9,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 98,
+    "output_tokens": 1168
+  },
+  {
+    "build": "no_library",
+    "question": "install",
+    "trial": 8,
+    "valid": true,
+    "outcome": "wrong",
+    "found": true,
+    "answer": "The TrailLock 2 is designed for quick and easy installation, typically taking less than 15 minutes to set up with basic hand tools and no drilling required.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [
+      "15",
+      "2"
+    ],
+    "searches": [],
+    "seconds": 6.4,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 98,
+    "output_tokens": 818
+  },
+  {
+    "build": "no_library",
+    "question": "install",
+    "trial": 9,
+    "valid": true,
+    "outcome": "wrong",
+    "found": true,
+    "answer": "The TrailLock 2 can be installed in under five minutes with no specialized tools or drilling required. This quick-setup design makes it highly efficient for fleet operators securing multiple trailers.",
+    "sources": [
+      "doc_traillock2_install_guide"
+    ],
+    "sources_not_in_library": [
+      "doc_traillock2_install_guide"
+    ],
+    "numbers_not_in_sources": [
+      "2"
+    ],
+    "searches": [],
+    "seconds": 8.3,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 98,
+    "output_tokens": 1012
+  },
+  {
+    "build": "no_library",
+    "question": "price",
+    "trial": 0,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I do not have the current fleet pricing details for the TrailLock 2 in my available documentation.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 5.0,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 100,
+    "output_tokens": 584
+  },
+  {
+    "build": "no_library",
+    "question": "price",
+    "trial": 1,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I do not have access to the current fleet pricing documentation for the TrailLock 2 to provide an accurate per-unit price.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 4.5,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 100,
+    "output_tokens": 653
+  },
+  {
+    "build": "no_library",
+    "question": "price",
+    "trial": 2,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I am sorry, but I cannot find the specific fleet price per unit for the TrailLock 2 in my available reference documents.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 4.7,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 100,
+    "output_tokens": 639
+  },
+  {
+    "build": "no_library",
+    "question": "price",
+    "trial": 3,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I do not have access to the current fleet pricing sheet for the TrailLock 2.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 4.0,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 100,
+    "output_tokens": 494
+  },
+  {
+    "build": "no_library",
+    "question": "price",
+    "trial": 4,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I am sorry, but I cannot find the specific fleet price per unit for the TrailLock 2 in my current sales documentation.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 5.6,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 100,
+    "output_tokens": 671
+  },
+  {
+    "build": "no_library",
+    "question": "price",
+    "trial": 5,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I am unable to find the fleet price per unit for the TrailLock 2 because I do not have access to the product catalog or pricing sheets.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 7.5,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 100,
+    "output_tokens": 589
+  },
+  {
+    "build": "no_library",
+    "question": "price",
+    "trial": 6,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I am unable to find the specific fleet price per unit for the TrailLock 2 in the available documentation.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 5.7,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 100,
+    "output_tokens": 691
+  },
+  {
+    "build": "no_library",
+    "question": "price",
+    "trial": 7,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I cannot find the fleet price per unit for the TrailLock 2 because I do not have access to the current product catalog or pricing documentation.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 5.4,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 100,
+    "output_tokens": 620
+  },
+  {
+    "build": "no_library",
+    "question": "price",
+    "trial": 8,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I do not have access to the fleet pricing sheets or product catalog containing the specific per-unit price for the TrailLock 2.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 6.3,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 100,
+    "output_tokens": 691
+  },
+  {
+    "build": "no_library",
+    "question": "price",
+    "trial": 9,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I do not have access to the fleet pricing details for the TrailLock 2 in my current documentation.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 6.6,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 100,
+    "output_tokens": 834
+  },
+  {
+    "build": "no_library",
+    "question": "discount",
+    "trial": 0,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I do not have access to the specific volume discount tiers or unit requirements for fleet orders of the TrailLock 2 in my current reference materials.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 6.8,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 107,
+    "output_tokens": 952
+  },
+  {
+    "build": "no_library",
+    "question": "discount",
+    "trial": 1,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I do not have access to the specific volume discount details or minimum unit thresholds for TrailLock 2 fleet orders in my current resources.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 6.7,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 107,
+    "output_tokens": 893
+  },
+  {
+    "build": "no_library",
+    "question": "discount",
+    "trial": 2,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I do not have access to the volume discount rates or unit thresholds for fleet orders of the TrailLock 2 in my current documentation.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 6.2,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 107,
+    "output_tokens": 856
+  },
+  {
+    "build": "no_library",
+    "question": "discount",
+    "trial": 3,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I do not have information on the specific volume discounts or unit thresholds for the TrailLock 2 fleet orders.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 5.1,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 107,
+    "output_tokens": 588
+  },
+  {
+    "build": "no_library",
+    "question": "discount",
+    "trial": 4,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I do not have access to the specific volume discount tiers or unit thresholds for the TrailLock 2 fleet orders in my available documents.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 6.5,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 107,
+    "output_tokens": 793
+  },
+  {
+    "build": "no_library",
+    "question": "discount",
+    "trial": 5,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I am unable to find the specific volume discount or unit threshold details for the TrailLock 2 in the available fleet sales documentation.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 6.3,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 107,
+    "output_tokens": 722
+  },
+  {
+    "build": "no_library",
+    "question": "discount",
+    "trial": 6,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I am unable to find the specific volume discount details and unit thresholds for the TrailLock 2 in the available fleet sales documentation.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 5.8,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 107,
+    "output_tokens": 698
+  },
+  {
+    "build": "no_library",
+    "question": "discount",
+    "trial": 7,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I do not have the specific volume discount details or unit thresholds for TrailLock 2 fleet orders in my current documentation.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 5.4,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 107,
+    "output_tokens": 701
+  },
+  {
+    "build": "no_library",
+    "question": "discount",
+    "trial": 8,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I do not have the volume discount details or unit thresholds for the TrailLock 2 in my available documentation.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 6.0,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 107,
+    "output_tokens": 713
+  },
+  {
+    "build": "no_library",
+    "question": "discount",
+    "trial": 9,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I am currently unable to find the specific volume discount percentage or the required unit threshold for the TrailLock 2 in the available fleet sales documents.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 5.7,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 107,
+    "output_tokens": 766
+  },
+  {
+    "build": "no_library",
+    "question": "fit",
+    "trial": 0,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I do not have access to any product documentation regarding the Corvane Outdoor TrailLock 2 or its compatibility with the 2026 Ford Transit high roof factory rails.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 5.5,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 109,
+    "output_tokens": 758
+  },
+  {
+    "build": "no_library",
+    "question": "fit",
+    "trial": 1,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I currently do not have access to the compatibility database or product manuals to verify if the TrailLock 2 fits the factory roof rails of a 2026 Ford Transit high roof.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 24.5,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 109,
+    "output_tokens": 664
+  },
+  {
+    "build": "no_library",
+    "question": "fit",
+    "trial": 2,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I do not have access to the compatibility specifications for the Corvane Outdoor TrailLock 2 on a 2026 Ford Transit high roof.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 5.9,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 109,
+    "output_tokens": 764
+  },
+  {
+    "build": "no_library",
+    "question": "fit",
+    "trial": 3,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I do not have access to the product compatibility specifications for the Corvane Outdoor TrailLock 2 on a 2026 Ford Transit high roof.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 5.4,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 109,
+    "output_tokens": 694
+  },
+  {
+    "build": "no_library",
+    "question": "fit",
+    "trial": 4,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I do not have access to the product specifications or compatibility charts to confirm if the TrailLock 2 fits the factory roof rails of a 2026 Ford Transit high roof.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 6.5,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 109,
+    "output_tokens": 821
+  },
+  {
+    "build": "no_library",
+    "question": "fit",
+    "trial": 5,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I do not have access to the product specification sheets for the Corvane Outdoor TrailLock 2 to verify its compatibility with the 2026 Ford Transit high roof.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 5.0,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 109,
+    "output_tokens": 671
+  },
+  {
+    "build": "no_library",
+    "question": "fit",
+    "trial": 6,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I do not have the specifications or compatibility details to confirm if the TrailLock 2 fits the factory roof rails of a 2026 Ford Transit high roof.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 5.9,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 109,
+    "output_tokens": 806
+  },
+  {
+    "build": "no_library",
+    "question": "fit",
+    "trial": 7,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I do not have access to the product compatibility specifications or fitment guides to confirm if the Corvane Outdoor TrailLock 2 fits the factory roof rails of a 2026 Ford Transit high roof.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 4.5,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 109,
+    "output_tokens": 627
+  },
+  {
+    "build": "no_library",
+    "question": "fit",
+    "trial": 8,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I do not have access to the compatibility specifications for the TrailLock 2 on a 2026 Ford Transit high roof.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 5.4,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 109,
+    "output_tokens": 650
+  },
+  {
+    "build": "no_library",
+    "question": "fit",
+    "trial": 9,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I do not have access to the specifications for the TrailLock 2 or the 2026 Ford Transit high roof to determine compatibility.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [],
+    "seconds": 4.8,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 109,
+    "output_tokens": 627
+  },
+  {
+    "build": "library",
+    "question": "install",
+    "trial": 0,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The TrailLock 2 takes approximately 20 minutes to install with no drilling required.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 install time"
+      }
+    ],
+    "seconds": 33.1,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 575,
+    "output_tokens": 431
+  },
+  {
+    "build": "library",
+    "question": "install",
+    "trial": 1,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The TrailLock 2 takes 20 minutes to install and requires no drilling.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 installation"
+      }
+    ],
+    "seconds": 5.0,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 553,
+    "output_tokens": 338
+  },
+  {
+    "build": "library",
+    "question": "install",
+    "trial": 2,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The TrailLock 2 takes approximately 20 minutes to install and requires no drilling.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 installation time"
+      }
+    ],
+    "seconds": 33.6,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 556,
+    "output_tokens": 378
+  },
+  {
+    "build": "library",
+    "question": "install",
+    "trial": 3,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The TrailLock 2 takes 20 minutes to install with no drilling required.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 installation time"
+      }
+    ],
+    "seconds": 12.8,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 539,
+    "output_tokens": 324
+  },
+  {
+    "build": "library",
+    "question": "install",
+    "trial": 4,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The TrailLock 2 can be installed in 20 minutes with no drilling required.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 installation time"
+      }
+    ],
+    "seconds": 4.1,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 568,
+    "output_tokens": 400
+  },
+  {
+    "build": "library",
+    "question": "install",
+    "trial": 5,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The TrailLock 2 takes 20 minutes to install and requires no drilling.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 installation time"
+      }
+    ],
+    "seconds": 14.0,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 573,
+    "output_tokens": 544
+  },
+  {
+    "build": "library",
+    "question": "install",
+    "trial": 6,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The TrailLock 2 takes approximately 20 minutes to install and requires no drilling.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 installation time"
+      }
+    ],
+    "seconds": 3.9,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 553,
+    "output_tokens": 403
+  },
+  {
+    "build": "library",
+    "question": "install",
+    "trial": 7,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "TrailLock 2 takes 20 minutes to install with no drilling required.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 installation"
+      }
+    ],
+    "seconds": 4.4,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 581,
+    "output_tokens": 457
+  },
+  {
+    "build": "library",
+    "question": "install",
+    "trial": 8,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The TrailLock 2 can be installed in approximately 20 minutes with no drilling required.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 install"
+      }
+    ],
+    "seconds": 4.3,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 578,
+    "output_tokens": 405
+  },
+  {
+    "build": "library",
+    "question": "install",
+    "trial": 9,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The TrailLock 2 takes 20 minutes to install and requires no drilling.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 install time"
+      }
+    ],
+    "seconds": 10.3,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 542,
+    "output_tokens": 440
+  },
+  {
+    "build": "library",
+    "question": "price",
+    "trial": 0,
+    "valid": true,
+    "outcome": "gave both",
+    "found": true,
+    "answer": "According to the final pricing sheet, the fleet price for the TrailLock 2 is $489 per unit, although another document lists it at $529 per unit.",
+    "sources": [
+      "tl2-pricing-final",
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 fleet price"
+      },
+      {
+        "query": "TrailLock 2 pricing"
+      },
+      {
+        "query": "TrailLock 2"
+      }
+    ],
+    "seconds": 23.1,
+    "timed_out": false,
+    "model_calls": 4,
+    "input_tokens": 2212,
+    "output_tokens": 1003
+  },
+  {
+    "build": "library",
+    "question": "price",
+    "trial": 1,
+    "valid": true,
+    "outcome": "gave both",
+    "found": true,
+    "answer": "The fleet price for the TrailLock 2 is $489 per unit, according to the final price list, though some documentation lists it as $529 per unit.",
+    "sources": [
+      "tl2-pricing-final",
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 fleet price per unit"
+      },
+      {
+        "query": "TrailLock 2 pricing"
+      }
+    ],
+    "seconds": 17.7,
+    "timed_out": false,
+    "model_calls": 3,
+    "input_tokens": 1319,
+    "output_tokens": 815
+  },
+  {
+    "build": "library",
+    "question": "price",
+    "trial": 2,
+    "valid": true,
+    "outcome": "gave both",
+    "found": true,
+    "answer": "The fleet price for the TrailLock 2 is $489 per unit according to the final pricing list, although another price list document states it is $529 per unit.",
+    "sources": [
+      "tl2-pricing-final",
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 fleet price"
+      },
+      {
+        "query": "TrailLock 2 price"
+      }
+    ],
+    "seconds": 7.0,
+    "timed_out": false,
+    "model_calls": 3,
+    "input_tokens": 1312,
+    "output_tokens": 835
+  },
+  {
+    "build": "library",
+    "question": "price",
+    "trial": 3,
+    "valid": true,
+    "outcome": "gave both",
+    "found": true,
+    "answer": "The fleet price for the TrailLock 2 is $489 per unit according to the final price list, though another document lists it at $529 per unit.",
+    "sources": [
+      "tl2-pricing-final",
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 fleet price"
+      },
+      {
+        "query": "TrailLock 2 price list"
+      },
+      {
+        "query": "TrailLock 2"
+      },
+      {
+        "query": "pricing update"
+      },
+      {
+        "query": "fleet price"
+      }
+    ],
+    "seconds": 52.5,
+    "timed_out": false,
+    "model_calls": 6,
+    "input_tokens": 4660,
+    "output_tokens": 1023
+  },
+  {
+    "build": "library",
+    "question": "price",
+    "trial": 4,
+    "valid": true,
+    "outcome": "gave both",
+    "found": true,
+    "answer": "The final fleet price for the TrailLock 2 is $489 per unit, although an alternative price list specifies it as $529 per unit.",
+    "sources": [
+      "tl2-pricing-final",
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 fleet price"
+      },
+      {
+        "query": "TrailLock 2 pricing"
+      }
+    ],
+    "seconds": 8.4,
+    "timed_out": false,
+    "model_calls": 3,
+    "input_tokens": 1426,
+    "output_tokens": 1001
+  },
+  {
+    "build": "library",
+    "question": "price",
+    "trial": 5,
+    "valid": true,
+    "outcome": "gave both",
+    "found": true,
+    "answer": "According to the final price list, the fleet price for the TrailLock 2 is $489 per unit, though another price list states it is $529 per unit.",
+    "sources": [
+      "tl2-pricing-final",
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 fleet price"
+      },
+      {
+        "query": "TrailLock 2 price"
+      }
+    ],
+    "seconds": 10.9,
+    "timed_out": false,
+    "model_calls": 3,
+    "input_tokens": 1299,
+    "output_tokens": 867
+  },
+  {
+    "build": "library",
+    "question": "price",
+    "trial": 6,
+    "valid": true,
+    "outcome": "gave both",
+    "found": true,
+    "answer": "The fleet price for the TrailLock 2 is $489 per unit according to the final price list, though another price list specifies it as $529 per unit.",
+    "sources": [
+      "tl2-pricing-final",
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 fleet price"
+      },
+      {
+        "query": "TrailLock 2 price update"
+      },
+      {
+        "query": "TrailLock 2"
+      }
+    ],
+    "seconds": 15.1,
+    "timed_out": false,
+    "model_calls": 4,
+    "input_tokens": 2332,
+    "output_tokens": 979
+  },
+  {
+    "build": "library",
+    "question": "price",
+    "trial": 7,
+    "valid": true,
+    "outcome": "gave both",
+    "found": true,
+    "answer": "Depending on the price list, the fleet price for the TrailLock 2 is listed as either $489 per unit (with a 10% discount for orders over 50 units) or $529 per unit (with a 12% discount for orders over 100 units).",
+    "sources": [
+      "tl2-fleet-pricing",
+      "tl2-pricing-final"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 fleet price per unit"
+      },
+      {
+        "query": "TrailLock 2 current pricing final"
+      },
+      {
+        "query": "TrailLock 2 price update"
+      },
+      {
+        "query": "pricing policy"
+      },
+      {
+        "query": "TrailLock 2"
+      }
+    ],
+    "seconds": 24.3,
+    "timed_out": false,
+    "model_calls": 6,
+    "input_tokens": 4920,
+    "output_tokens": 1268
+  },
+  {
+    "build": "library",
+    "question": "price",
+    "trial": 8,
+    "valid": true,
+    "outcome": "gave both",
+    "found": true,
+    "answer": "The fleet price for the TrailLock 2 is $489 per unit according to the final price list, though another price list states it is $529 per unit.",
+    "sources": [
+      "tl2-pricing-final",
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 fleet price"
+      },
+      {
+        "query": "TrailLock 2"
+      }
+    ],
+    "seconds": 107.2,
+    "timed_out": false,
+    "model_calls": 3,
+    "input_tokens": 1415,
+    "output_tokens": 827
+  },
+  {
+    "build": "library",
+    "question": "price",
+    "trial": 9,
+    "valid": true,
+    "outcome": "gave both",
+    "found": true,
+    "answer": "According to the final price list, the fleet price for the TrailLock 2 is $489 per unit, though an alternative price sheet lists it at $529 per unit.",
+    "sources": [
+      "tl2-pricing-final",
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 fleet price"
+      },
+      {
+        "query": "TrailLock 2"
+      },
+      {
+        "query": "Corvane Outdoor price list"
+      }
+    ],
+    "seconds": 9.0,
+    "timed_out": false,
+    "model_calls": 4,
+    "input_tokens": 2544,
+    "output_tokens": 994
+  },
+  {
+    "build": "library",
+    "question": "discount",
+    "trial": 0,
+    "valid": true,
+    "outcome": "gave both",
+    "found": true,
+    "answer": "According to the final price list, fleet orders of TrailLock 2 receive a 10% volume discount for orders over 50 units, although an alternative price list mentions a 12% discount for orders over 100 units.",
+    "sources": [
+      "tl2-pricing-final",
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 volume discount fleet"
+      },
+      {
+        "query": "TrailLock 2 fleet price list final"
+      }
+    ],
+    "seconds": 10.9,
+    "timed_out": false,
+    "model_calls": 3,
+    "input_tokens": 1490,
+    "output_tokens": 1153
+  },
+  {
+    "build": "library",
+    "question": "discount",
+    "trial": 1,
+    "valid": true,
+    "outcome": "gave both",
+    "found": true,
+    "answer": "According to the final price list, fleet orders of TrailLock 2 receive a 10% volume discount for orders over 50 units, while an alternative price list indicates a 12% discount for orders over 100 units.",
+    "sources": [
+      "tl2-pricing-final",
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 volume discount fleet order"
+      },
+      {
+        "query": "TrailLock 2 pricing policy current"
+      }
+    ],
+    "seconds": 9.7,
+    "timed_out": false,
+    "model_calls": 3,
+    "input_tokens": 1824,
+    "output_tokens": 1021
+  },
+  {
+    "build": "library",
+    "question": "discount",
+    "trial": 2,
+    "valid": true,
+    "outcome": "gave both",
+    "found": true,
+    "answer": "According to the final fleet price list, orders over 50 units of TrailLock 2 receive a 10% volume discount, while another price list indicates a 12% discount for orders over 100 units.",
+    "sources": [
+      "tl2-pricing-final",
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 volume discount"
+      },
+      {
+        "query": "TrailLock 2 fleet price list"
+      }
+    ],
+    "seconds": 15.1,
+    "timed_out": false,
+    "model_calls": 3,
+    "input_tokens": 1361,
+    "output_tokens": 1288
+  },
+  {
+    "build": "library",
+    "question": "discount",
+    "trial": 3,
+    "valid": true,
+    "outcome": "gave both",
+    "found": true,
+    "answer": "According to the final price list, a fleet order of TrailLock 2 receives a 10% volume discount on orders over 50 units, though another price sheet lists a 12% discount for orders over 100 units.",
+    "sources": [
+      "tl2-pricing-final",
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 volume discount fleet"
+      }
+    ],
+    "seconds": 6.4,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 571,
+    "output_tokens": 881
+  },
+  {
+    "build": "library",
+    "question": "discount",
+    "trial": 4,
+    "valid": true,
+    "outcome": "gave both",
+    "found": true,
+    "answer": "A fleet order of TrailLock 2 receives a 10% volume discount for orders over 50 units, although another price list notes a 12% discount for orders over 100 units.",
+    "sources": [
+      "tl2-pricing-final",
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 volume discount fleet"
+      },
+      {
+        "query": "TrailLock 2 pricing"
+      }
+    ],
+    "seconds": 9.2,
+    "timed_out": false,
+    "model_calls": 3,
+    "input_tokens": 1329,
+    "output_tokens": 866
+  },
+  {
+    "build": "library",
+    "question": "discount",
+    "trial": 5,
+    "valid": true,
+    "outcome": "gave both",
+    "found": true,
+    "answer": "According to the final price list, a fleet order of TrailLock 2 receives a 10% volume discount for orders over 50 units, though another pricing document lists a 12% discount for orders over 100 units.",
+    "sources": [
+      "tl2-pricing-final",
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 volume discount fleet"
+      },
+      {
+        "query": "TrailLock 2 fleet price list"
+      }
+    ],
+    "seconds": 7.2,
+    "timed_out": false,
+    "model_calls": 3,
+    "input_tokens": 1375,
+    "output_tokens": 946
+  },
+  {
+    "build": "library",
+    "question": "discount",
+    "trial": 6,
+    "valid": true,
+    "outcome": "gave both",
+    "found": true,
+    "answer": "According to the final fleet price list, TrailLock 2 orders over 50 units receive a 10% volume discount, although another price list specifies a 12% discount for orders over 100 units.",
+    "sources": [
+      "tl2-pricing-final",
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 volume discount"
+      },
+      {
+        "query": "TrailLock 2 fleet pricing"
+      }
+    ],
+    "seconds": 55.8,
+    "timed_out": false,
+    "model_calls": 3,
+    "input_tokens": 1427,
+    "output_tokens": 1011
+  },
+  {
+    "build": "library",
+    "question": "discount",
+    "trial": 7,
+    "valid": true,
+    "outcome": "gave both",
+    "found": true,
+    "answer": "According to the final fleet price list, a fleet order of TrailLock 2 receives a 10% volume discount for orders over 50 units, though another pricing document notes a 12% discount for orders over 100 units.",
+    "sources": [
+      "tl2-pricing-final",
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 volume discount fleet"
+      },
+      {
+        "query": "TrailLock 2 pricing current final active"
+      }
+    ],
+    "seconds": 9.8,
+    "timed_out": false,
+    "model_calls": 3,
+    "input_tokens": 1346,
+    "output_tokens": 906
+  },
+  {
+    "build": "library",
+    "question": "discount",
+    "trial": 8,
+    "valid": true,
+    "outcome": "gave both",
+    "found": true,
+    "answer": "According to the final price list, fleet orders of TrailLock 2 receive a 10% volume discount for orders over 50 units, while an alternative price list notes a 12% volume discount for orders over 100 units.",
+    "sources": [
+      "tl2-pricing-final",
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 volume discount fleet order units"
+      },
+      {
+        "query": "TrailLock 2 fleet price list"
+      }
+    ],
+    "seconds": 47.2,
+    "timed_out": false,
+    "model_calls": 3,
+    "input_tokens": 1411,
+    "output_tokens": 890
+  },
+  {
+    "build": "library",
+    "question": "discount",
+    "trial": 9,
+    "valid": true,
+    "outcome": "gave both",
+    "found": true,
+    "answer": "According to the final fleet price list, TrailLock 2 orders over 50 units receive a 10% volume discount, while another price list indicates a 12% volume discount for orders over 100 units.",
+    "sources": [
+      "tl2-pricing-final",
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 volume discount fleet"
+      },
+      {
+        "query": "TrailLock 2 pricing"
+      }
+    ],
+    "seconds": 9.2,
+    "timed_out": false,
+    "model_calls": 3,
+    "input_tokens": 1403,
+    "output_tokens": 1123
+  },
+  {
+    "build": "library",
+    "question": "fit",
+    "trial": 0,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I cannot confirm if the TrailLock 2 fits the factory roof rails on a 2026 Ford Transit high roof, as our library lacks specific vehicle compatibility data. However, the TrailLock 2 is designed to clamp to crossbars between 24 and 36 millimeters wide.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 Ford Transit roof rails"
+      },
+      {
+        "query": "TrailLock 2 compatibility Ford Transit"
+      },
+      {
+        "query": "Transit"
+      },
+      {
+        "query": "crossbars"
+      }
+    ],
+    "seconds": 19.7,
+    "timed_out": false,
+    "model_calls": 5,
+    "input_tokens": 2875,
+    "output_tokens": 1185
+  },
+  {
+    "build": "library",
+    "question": "fit",
+    "trial": 1,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I cannot definitively confirm compatibility because our library lacks specifications for the 2026 Ford Transit high roof factory rails. However, the TrailLock 2 is compatible with any crossbars that are between 24 and 36 millimeters wide.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 Ford Transit roof rails"
+      },
+      {
+        "query": "TrailLock 2 compatibility Transit"
+      },
+      {
+        "query": "Ford Transit"
+      },
+      {
+        "query": "Transit high roof"
+      },
+      {
+        "query": "factory roof rails crossbars"
+      },
+      {
+        "query": "TrailLock"
+      }
+    ],
+    "seconds": 21.1,
+    "timed_out": false,
+    "model_calls": 7,
+    "input_tokens": 4812,
+    "output_tokens": 1141
+  },
+  {
+    "build": "library",
+    "question": "fit",
+    "trial": 2,
+    "valid": true,
+    "outcome": "answered what the documents do not say",
+    "found": true,
+    "answer": "We do not have specifications for the 2026 Ford Transit's factory roof rails, but the TrailLock 2 is compatible with crossbars between 24 and 36 millimeters wide.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [
+      "2026"
+    ],
+    "searches": [
+      {
+        "query": "TrailLock 2 Ford Transit roof rails"
+      },
+      {
+        "query": "Ford Transit roof rails"
+      },
+      {
+        "query": "Transit crossbars roof rails compatibility"
+      },
+      {
+        "query": "TrailLock"
+      },
+      {
+        "query": "factory roof rails"
+      }
+    ],
+    "seconds": 30.0,
+    "timed_out": false,
+    "model_calls": 6,
+    "input_tokens": 3965,
+    "output_tokens": 1396
+  },
+  {
+    "build": "library",
+    "question": "fit",
+    "trial": 3,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "The TrailLock 2 is designed to clamp to crossbars between 24 and 36 millimeters wide, but we do not have the specific specifications for the 2026 Ford Transit high roof factory rails to confirm if it fits.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2"
+      },
+      {
+        "query": "Ford Transit roof rails"
+      },
+      {
+        "query": "Transit"
+      },
+      {
+        "query": "compatibility"
+      },
+      {
+        "query": "TrailLock 2 fit"
+      },
+      {
+        "query": "crossbars"
+      },
+      {
+        "query": "Ford"
+      },
+      {
+        "query": "high roof"
+      },
+      {
+        "query": "roof rails"
+      }
+    ],
+    "seconds": 27.5,
+    "timed_out": false,
+    "model_calls": 10,
+    "input_tokens": 6946,
+    "output_tokens": 1074
+  },
+  {
+    "build": "library",
+    "question": "fit",
+    "trial": 4,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I am unable to confirm if the TrailLock 2 fits the factory roof rails on a 2026 Ford Transit high roof, as there is no specific vehicle compatibility information for this model in the company library.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 2026 Ford Transit roof rails"
+      },
+      {
+        "query": "Ford Transit roof rails TrailLock 2"
+      },
+      {
+        "query": "Ford Transit"
+      },
+      {
+        "query": "TrailLock 2 compatibility"
+      },
+      {
+        "query": "roof rails"
+      },
+      {
+        "query": "2026"
+      },
+      {
+        "query": "factory"
+      }
+    ],
+    "seconds": 42.6,
+    "timed_out": false,
+    "model_calls": 8,
+    "input_tokens": 6969,
+    "output_tokens": 1087
+  },
+  {
+    "build": "library",
+    "question": "fit",
+    "trial": 5,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "While the TrailLock 2 clamps to crossbars between 24 and 36 millimeters wide, I cannot confirm if it fits a 2026 Ford Transit high roof as there is no specific compatibility information for that vehicle in our library.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 2026 Ford Transit roof rails"
+      },
+      {
+        "query": "TrailLock 2 compatibility Ford Transit"
+      },
+      {
+        "query": "Ford Transit factory roof rails"
+      },
+      {
+        "query": "TrailLock 2"
+      },
+      {
+        "query": "Transit"
+      },
+      {
+        "query": "high roof"
+      },
+      {
+        "query": "crossbars"
+      },
+      {
+        "query": "Ford"
+      }
+    ],
+    "seconds": 22.6,
+    "timed_out": false,
+    "model_calls": 9,
+    "input_tokens": 7091,
+    "output_tokens": 1010
+  },
+  {
+    "build": "library",
+    "question": "fit",
+    "trial": 6,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "We cannot definitively confirm if the TrailLock 2 fits the 2026 Ford Transit high roof because we do not have specific data on its factory roof rails. However, the TrailLock 2 is designed to clamp onto crossbars that are between 24 and 36 millimeters wide.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 Ford Transit roof rails"
+      },
+      {
+        "query": "TrailLock 2 vehicle compatibility fitment Ford Transit"
+      },
+      {
+        "query": "Ford Transit"
+      },
+      {
+        "query": "TrailLock 2"
+      },
+      {
+        "query": "roof rails"
+      }
+    ],
+    "seconds": 23.4,
+    "timed_out": false,
+    "model_calls": 6,
+    "input_tokens": 3758,
+    "output_tokens": 1011
+  },
+  {
+    "build": "library",
+    "question": "fit",
+    "trial": 7,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I do not have specific compatibility information for the 2026 Ford Transit high roof's factory roof rails. However, the TrailLock 2 is designed to clamp to crossbars that are between 24 and 36 millimeters wide.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 Ford Transit roof rails"
+      },
+      {
+        "query": "TrailLock 2 Ford Transit compatibility"
+      },
+      {
+        "query": "Ford Transit roof rails"
+      },
+      {
+        "query": "TrailLock 2 fits"
+      },
+      {
+        "query": "Transit"
+      }
+    ],
+    "seconds": 32.7,
+    "timed_out": false,
+    "model_calls": 6,
+    "input_tokens": 4568,
+    "output_tokens": 974
+  },
+  {
+    "build": "library",
+    "question": "fit",
+    "trial": 8,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "We cannot verify compatibility with the 2026 Ford Transit high roof because we lack specifications for its factory rails. However, the TrailLock 2 is designed to clamp to any crossbars between 24 and 36 millimeters wide.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 2026 Ford Transit high roof roof rails"
+      },
+      {
+        "query": "TrailLock 2 Ford Transit"
+      },
+      {
+        "query": "Ford Transit roof rails crossbars"
+      },
+      {
+        "query": "Ford Transit"
+      },
+      {
+        "query": "TrailLock"
+      },
+      {
+        "query": "2026"
+      }
+    ],
+    "seconds": 15.7,
+    "timed_out": false,
+    "model_calls": 7,
+    "input_tokens": 5312,
+    "output_tokens": 1112
+  },
+  {
+    "build": "library",
+    "question": "fit",
+    "trial": 9,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "We cannot confirm compatibility with the 2026 Ford Transit high roof factory rails, but the TrailLock 2 is designed to clamp to crossbars between 24 and 36 millimeters wide.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 Ford Transit roof rails compatibility"
+      },
+      {
+        "query": "TrailLock 2 compatibility Ford Transit"
+      },
+      {
+        "query": "Transit roof rails"
+      },
+      {
+        "query": "TrailLock 2 fit"
+      },
+      {
+        "query": "Ford"
+      },
+      {
+        "query": "roof"
+      }
+    ],
+    "seconds": 17.3,
+    "timed_out": false,
+    "model_calls": 7,
+    "input_tokens": 5064,
+    "output_tokens": 906
+  },
+  {
+    "build": "dated",
+    "question": "install",
+    "trial": 0,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "TrailLock 2 takes 20 minutes to install and requires no drilling.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 installation time"
+      }
+    ],
+    "seconds": 8.9,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 709,
+    "output_tokens": 460
+  },
+  {
+    "build": "dated",
+    "question": "install",
+    "trial": 1,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "TrailLock 2 takes 20 minutes to install and requires no drilling.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 installation time"
+      }
+    ],
+    "seconds": 4.3,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 750,
+    "output_tokens": 450
+  },
+  {
+    "build": "dated",
+    "question": "install",
+    "trial": 2,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "TrailLock 2 takes 20 minutes to install with no drilling required.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 installation time"
+      },
+      {
+        "query": "TrailLock 2"
+      }
+    ],
+    "seconds": 7.7,
+    "timed_out": false,
+    "model_calls": 3,
+    "input_tokens": 1931,
+    "output_tokens": 907
+  },
+  {
+    "build": "dated",
+    "question": "install",
+    "trial": 3,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "TrailLock 2 takes 20 minutes to install and requires no drilling.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 install"
+      },
+      {
+        "query": "TrailLock 2 installation time"
+      }
+    ],
+    "seconds": 6.3,
+    "timed_out": false,
+    "model_calls": 3,
+    "input_tokens": 1641,
+    "output_tokens": 688
+  },
+  {
+    "build": "dated",
+    "question": "install",
+    "trial": 4,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "TrailLock 2 takes 20 minutes to install with no drilling.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 installation time"
+      }
+    ],
+    "seconds": 7.5,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 699,
+    "output_tokens": 433
+  },
+  {
+    "build": "dated",
+    "question": "install",
+    "trial": 5,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "TrailLock 2 takes 20 minutes to install, requiring no drilling.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 installation time"
+      }
+    ],
+    "seconds": 18.2,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 701,
+    "output_tokens": 550
+  },
+  {
+    "build": "dated",
+    "question": "install",
+    "trial": 6,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "TrailLock 2 takes 20 minutes to install with no drilling.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 installation time"
+      }
+    ],
+    "seconds": 38.9,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 697,
+    "output_tokens": 649
+  },
+  {
+    "build": "dated",
+    "question": "install",
+    "trial": 7,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "TrailLock 2 takes 20 minutes to install with no drilling required.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 installation time"
+      }
+    ],
+    "seconds": 4.5,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 707,
+    "output_tokens": 555
+  },
+  {
+    "build": "dated",
+    "question": "install",
+    "trial": 8,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "TrailLock 2 takes 20 minutes to install and requires no drilling.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 install time"
+      }
+    ],
+    "seconds": 6.1,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 714,
+    "output_tokens": 364
+  },
+  {
+    "build": "dated",
+    "question": "install",
+    "trial": 9,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The TrailLock 2 takes 20 minutes to install and requires no drilling.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 installation time"
+      },
+      {
+        "query": "TrailLock 2"
+      }
+    ],
+    "seconds": 8.3,
+    "timed_out": false,
+    "model_calls": 3,
+    "input_tokens": 1624,
+    "output_tokens": 760
+  },
+  {
+    "build": "dated",
+    "question": "price",
+    "trial": 0,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The fleet price for the TrailLock 2 is $529 per unit, according to the latest pricing documentation.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 fleet price"
+      }
+    ],
+    "seconds": 6.3,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 697,
+    "output_tokens": 544
+  },
+  {
+    "build": "dated",
+    "question": "price",
+    "trial": 1,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The fleet price per unit for the TrailLock 2 is $529, according to the pricing sheet effective July 1, 2026.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 fleet price"
+      }
+    ],
+    "seconds": 5.8,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 716,
+    "output_tokens": 777
+  },
+  {
+    "build": "dated",
+    "question": "price",
+    "trial": 2,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The fleet price for the TrailLock 2 is $529 per unit.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 fleet price"
+      }
+    ],
+    "seconds": 11.7,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 696,
+    "output_tokens": 712
+  },
+  {
+    "build": "dated",
+    "question": "price",
+    "trial": 3,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The fleet price for TrailLock 2 is $529 per unit, with orders over 100 units receiving a 12% volume discount.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 fleet price"
+      }
+    ],
+    "seconds": 8.6,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 697,
+    "output_tokens": 771
+  },
+  {
+    "build": "dated",
+    "question": "price",
+    "trial": 4,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The fleet price for TrailLock 2 is $529 per unit, based on the price list effective July 1, 2026.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 fleet price"
+      }
+    ],
+    "seconds": 32.9,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 700,
+    "output_tokens": 831
+  },
+  {
+    "build": "dated",
+    "question": "price",
+    "trial": 5,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The fleet price for the TrailLock 2 is $529 per unit.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 fleet price per unit"
+      }
+    ],
+    "seconds": 78.4,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 712,
+    "output_tokens": 635
+  },
+  {
+    "build": "dated",
+    "question": "price",
+    "trial": 6,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The fleet price for TrailLock 2 is $529 per unit.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 fleet price"
+      }
+    ],
+    "seconds": 6.1,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 728,
+    "output_tokens": 887
+  },
+  {
+    "build": "dated",
+    "question": "price",
+    "trial": 7,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The fleet price for the TrailLock 2 is $529 per unit.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 fleet price"
+      }
+    ],
+    "seconds": 9.6,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 707,
+    "output_tokens": 848
+  },
+  {
+    "build": "dated",
+    "question": "price",
+    "trial": 8,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The fleet price for the TrailLock 2 is $529 per unit.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 fleet price"
+      }
+    ],
+    "seconds": 11.8,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 716,
+    "output_tokens": 563
+  },
+  {
+    "build": "dated",
+    "question": "price",
+    "trial": 9,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The fleet price for TrailLock 2 is $529 per unit, based on the pricing effective July 1, 2026.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 fleet price"
+      }
+    ],
+    "seconds": 43.1,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 703,
+    "output_tokens": 494
+  },
+  {
+    "build": "dated",
+    "question": "discount",
+    "trial": 0,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "A fleet order of TrailLock 2 receives a 12% volume discount on orders over 100 units.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 volume discount fleet order"
+      }
+    ],
+    "seconds": 45.3,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 723,
+    "output_tokens": 710
+  },
+  {
+    "build": "dated",
+    "question": "discount",
+    "trial": 1,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "A fleet order of TrailLock 2 receives a 12% volume discount on orders over 100 units.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 volume discount fleet"
+      }
+    ],
+    "seconds": 45.7,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 730,
+    "output_tokens": 773
+  },
+  {
+    "build": "dated",
+    "question": "discount",
+    "trial": 2,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "A fleet order of TrailLock 2 receives a 12% volume discount for orders of over 100 units.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 volume discount fleet"
+      }
+    ],
+    "seconds": 26.9,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 736,
+    "output_tokens": 567
+  },
+  {
+    "build": "dated",
+    "question": "discount",
+    "trial": 3,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "A fleet order of TrailLock 2 receives a 12% volume discount on orders over 100 units.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 volume discount fleet order"
+      }
+    ],
+    "seconds": 6.1,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 719,
+    "output_tokens": 883
+  },
+  {
+    "build": "dated",
+    "question": "discount",
+    "trial": 4,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "A fleet order of TrailLock 2 receives a 12% volume discount on orders over 100 units.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 volume discount fleet order"
+      }
+    ],
+    "seconds": 5.9,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 726,
+    "output_tokens": 751
+  },
+  {
+    "build": "dated",
+    "question": "discount",
+    "trial": 5,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "A fleet order of TrailLock 2 receives a 12% volume discount for orders over 100 units.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 volume discount fleet order"
+      }
+    ],
+    "seconds": 10.5,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 706,
+    "output_tokens": 747
+  },
+  {
+    "build": "dated",
+    "question": "discount",
+    "trial": 6,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "A fleet order of TrailLock 2 receives a 12% volume discount for orders over 100 units.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 volume discount fleet"
+      }
+    ],
+    "seconds": 60.9,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 719,
+    "output_tokens": 481
+  },
+  {
+    "build": "dated",
+    "question": "discount",
+    "trial": 7,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "A fleet order of TrailLock 2 receives a 12% volume discount on orders over 100 units.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 volume discount fleet order"
+      }
+    ],
+    "seconds": 53.2,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 724,
+    "output_tokens": 692
+  },
+  {
+    "build": "dated",
+    "question": "discount",
+    "trial": 8,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "A fleet order of TrailLock 2 receives a 12% volume discount on orders over 100 units.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 volume discount fleet order"
+      }
+    ],
+    "seconds": 23.5,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 717,
+    "output_tokens": 678
+  },
+  {
+    "build": "dated",
+    "question": "discount",
+    "trial": 9,
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "A fleet order of TrailLock 2 receives a 12% volume discount for orders over 100 units.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 volume discount fleet"
+      }
+    ],
+    "seconds": 20.2,
+    "timed_out": false,
+    "model_calls": 2,
+    "input_tokens": 753,
+    "output_tokens": 669
+  },
+  {
+    "build": "dated",
+    "question": "fit",
+    "trial": 0,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "While the TrailLock 2 requires crossbars between 24 and 36 millimeters wide to install, there is no information in our documents regarding the factory roof rail dimensions or compatibility for the 2026 Ford Transit high roof.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 Ford Transit roof rails"
+      },
+      {
+        "query": "Ford Transit roof rails TrailLock 2"
+      },
+      {
+        "query": "Ford Transit"
+      },
+      {
+        "query": "TrailLock 2 compatibility"
+      },
+      {
+        "query": "Transit"
+      },
+      {
+        "query": "crossbars"
+      },
+      {
+        "query": "roof rails"
+      },
+      {
+        "query": "high roof"
+      },
+      {
+        "query": "TrailLock"
+      }
+    ],
+    "seconds": 119.4,
+    "timed_out": false,
+    "model_calls": 10,
+    "input_tokens": 11210,
+    "output_tokens": 1480
+  },
+  {
+    "build": "dated",
+    "question": "fit",
+    "trial": 1,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "While the TrailLock 2 requires crossbars between 24 and 36 millimeters wide, there is no information in the documents regarding the factory roof rail specifications for the 2026 Ford Transit high roof.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 Ford Transit roof rails"
+      },
+      {
+        "query": "TrailLock 2 compatibility Ford Transit"
+      },
+      {
+        "query": "Ford Transit"
+      },
+      {
+        "query": "TrailLock 2"
+      },
+      {
+        "query": "Ford"
+      },
+      {
+        "query": "factory roof rails"
+      },
+      {
+        "query": "crossbars"
+      }
+    ],
+    "seconds": 28.8,
+    "timed_out": false,
+    "model_calls": 8,
+    "input_tokens": 6683,
+    "output_tokens": 1072
+  },
+  {
+    "build": "dated",
+    "question": "fit",
+    "trial": 2,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "While the TrailLock 2 clamps to crossbars between 24 and 36 millimeters wide, the available documents do not provide the dimensions of the factory roof rails on a 2026 Ford Transit high roof to confirm compatibility.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 Ford Transit roof rails"
+      },
+      {
+        "query": "Ford Transit roof rails TrailLock 2"
+      },
+      {
+        "query": "Ford Transit"
+      },
+      {
+        "query": "TrailLock 2"
+      },
+      {
+        "query": "Transit"
+      }
+    ],
+    "seconds": 84.5,
+    "timed_out": false,
+    "model_calls": 6,
+    "input_tokens": 4643,
+    "output_tokens": 1376
+  },
+  {
+    "build": "dated",
+    "question": "fit",
+    "trial": 3,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I cannot determine if the TrailLock 2 fits a 2026 Ford Transit high roof because the available documents do not contain specifications for that vehicle's factory roof rails. We only know that the TrailLock 2 requires crossbars between 24 and 36 millimeters wide to install.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 Ford Transit roof rails"
+      },
+      {
+        "query": "TrailLock 2 compatibility Ford Transit"
+      },
+      {
+        "query": "Ford Transit roof rails"
+      },
+      {
+        "query": "Transit"
+      },
+      {
+        "query": "TrailLock 2"
+      },
+      {
+        "query": "crossbars"
+      },
+      {
+        "query": "Ford"
+      },
+      {
+        "query": "compatible"
+      },
+      {
+        "query": "high roof"
+      },
+      {
+        "query": "roof rails"
+      }
+    ],
+    "seconds": 41.6,
+    "timed_out": false,
+    "model_calls": 11,
+    "input_tokens": 11071,
+    "output_tokens": 1498
+  },
+  {
+    "build": "dated",
+    "question": "fit",
+    "trial": 4,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I cannot determine if the TrailLock 2 fits the 2026 Ford Transit high roof because the available documents do not contain specifications or crossbar widths for the Ford Transit's factory roof rails. The TrailLock 2 requires crossbars between 24 and 36 millimeters wide to install properly.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 Ford Transit"
+      },
+      {
+        "query": "Ford Transit roof rails"
+      },
+      {
+        "query": "TrailLock 2 compatibility"
+      },
+      {
+        "query": "Ford Transit"
+      },
+      {
+        "query": "Transit"
+      },
+      {
+        "query": "roof rails"
+      },
+      {
+        "query": "crossbars"
+      },
+      {
+        "query": "TrailLock"
+      }
+    ],
+    "seconds": 77.6,
+    "timed_out": false,
+    "model_calls": 9,
+    "input_tokens": 7999,
+    "output_tokens": 1212
+  },
+  {
+    "build": "dated",
+    "question": "fit",
+    "trial": 5,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I cannot determine if the TrailLock 2 fits the 2026 Ford Transit high roof because our documents lack specifications for the Transit's factory roof rails. We only have information stating that the TrailLock 2 requires crossbars between 24 and 36 millimeters wide.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 Ford Transit"
+      },
+      {
+        "query": "Ford Transit roof rails compatibility"
+      },
+      {
+        "query": "TrailLock 2 compatibility"
+      },
+      {
+        "query": "Transit"
+      },
+      {
+        "query": "Ford"
+      },
+      {
+        "query": "roof rails"
+      },
+      {
+        "query": "high roof"
+      }
+    ],
+    "seconds": 63.9,
+    "timed_out": false,
+    "model_calls": 8,
+    "input_tokens": 6814,
+    "output_tokens": 1165
+  },
+  {
+    "build": "dated",
+    "question": "fit",
+    "trial": 6,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "While the TrailLock 2 requires crossbars between 24 and 36 millimeters wide to fit, we lack documentation specifying the dimensions of the factory roof rails on a 2026 Ford Transit high roof to determine compatibility.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 Ford Transit 2026"
+      },
+      {
+        "query": "Ford Transit factory roof rails 2026"
+      },
+      {
+        "query": "TrailLock 2 compatibility"
+      },
+      {
+        "query": "Ford Transit"
+      },
+      {
+        "query": "roof rails"
+      },
+      {
+        "query": "crossbars"
+      }
+    ],
+    "seconds": 28.1,
+    "timed_out": false,
+    "model_calls": 7,
+    "input_tokens": 5970,
+    "output_tokens": 1310
+  },
+  {
+    "build": "dated",
+    "question": "fit",
+    "trial": 7,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "While the TrailLock 2 is known to clamp to crossbars between 24 and 36 millimeters wide, we lack documentation specifying the dimensions of the factory roof rails on a 2026 Ford Transit high roof.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 2026 Ford Transit factory roof rails"
+      },
+      {
+        "query": "Ford Transit crossbar width factory roof rails"
+      },
+      {
+        "query": "Transit"
+      },
+      {
+        "query": "compatibility"
+      },
+      {
+        "query": "roof rails"
+      }
+    ],
+    "seconds": 72.5,
+    "timed_out": false,
+    "model_calls": 6,
+    "input_tokens": 4126,
+    "output_tokens": 1177
+  },
+  {
+    "build": "dated",
+    "question": "fit",
+    "trial": 8,
+    "valid": false,
+    "outcome": "invalid reply",
+    "searches": [
+      {
+        "query": "TrailLock 2 2026 Ford Transit roof rails"
+      },
+      {
+        "query": "Ford Transit roof rails"
+      },
+      {
+        "query": "TrailLock 2"
+      },
+      {
+        "query": "Transit"
+      }
+    ],
+    "seconds": 180.0,
+    "timed_out": true,
+    "model_calls": 4,
+    "input_tokens": 2212,
+    "output_tokens": 363
+  },
+  {
+    "build": "dated",
+    "question": "fit",
+    "trial": 9,
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "I cannot determine if the TrailLock 2 fits the 2026 Ford Transit high roof because we lack information about the dimensions of its factory roof rails. To verify compatibility, we need to know if the factory roof rails or crossbars are between 24 and 36 millimeters wide.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "TrailLock 2 Ford Transit 2026 factory roof rails"
+      },
+      {
+        "query": "Ford Transit TrailLock 2"
+      },
+      {
+        "query": "TrailLock 2 compatibility"
+      },
+      {
+        "query": "Ford Transit"
+      },
+      {
+        "query": "Transit"
+      },
+      {
+        "query": "roof rails"
+      },
+      {
+        "query": "crossbars"
+      }
+    ],
+    "seconds": 115.9,
+    "timed_out": false,
+    "model_calls": 8,
+    "input_tokens": 8551,
+    "output_tokens": 1684
+  }
+]
