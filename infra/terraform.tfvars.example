@@ -1,0 +1,7 @@
+# Copy to terraform.tfvars and fill in. No secrets belong in this file.
+project_id = "your-project-id"
+region     = "us-central1"
+
+# Who may call the private service, for example:
+# invokers = ["user:you@example.com"]
+invokers = []

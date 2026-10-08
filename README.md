@@ -79,20 +79,67 @@ The poisoned server plants one instruction, either in data a tool returns or in 
 
 ## Part 5: answering from the company's documents
 
-Part 5 gives one sales-desk agent a small company library three ways: no documents, a search tool, and a search tool that returns each document's effective date along with rules for using it. The library is fictional and the search is a local keyword match, so the results are about what the agent does with what it is handed, and they run the same on every machine with no search service to set up.
+Part 5 gives one sales-desk agent a small company library three ways: no documents, a search tool, and a search tool that returns each document's effective date along with rules for using it. The library is fictional. The experiment runs twice: on a local keyword match, which runs the same on every machine with nothing to set up, and on a Vertex AI Search data store holding the same eight documents.
 
 | Subject | Where | Needs a model |
 | --- | --- | --- |
 | What the search returns, and the code check on cited figures | `tests/test_part5_claims.py` | No |
-| The library and the search | `workforce/knowledge/library.py` | No |
+| The same tools on either search, and how the built-in build is graded | `tests/test_part5_vertex.py` | No |
+| The library and the keyword search | `workforce/knowledge/library.py` | No |
+| The same library in Vertex AI Search | `workforce/knowledge/vertex_search.py` | No, but it needs a data store |
 | Three builds, four questions, graded in code | `workforce/knowledge/answer.py`, `run_part5.py` | Yes |
 
 ```bash
-.venv/bin/python -m pytest -q tests/test_part5_claims.py   # no model calls
-.venv/bin/python run_part5.py 10           # 3 builds x 4 questions x 10 runs
+.venv/bin/python -m pytest -q tests/test_part5_claims.py tests/test_part5_vertex.py   # no model calls
+.venv/bin/python run_part5.py 10           # 3 builds x 4 questions x 10 runs, keyword search
+
+# The second run. Creating a data store is billable; see infra/README.md.
+.venv/bin/python -m workforce.knowledge.vertex_search setup
+.venv/bin/python run_part5.py 10 vertex    # the same search tools on Vertex AI Search
+.venv/bin/python run_part5.py 10 grounded  # ADK's built-in VertexAiSearchTool
+.venv/bin/python -m workforce.knowledge.vertex_search delete
 ```
 
 The library holds two price lists, one superseded and never removed, and one question that no document answers. Every reply is graded in code: right, stale, gave both, declined, or answered what the documents do not say, plus any figure that appears in the answer and in none of the documents it cites.
+
+## Part 6: defenses, and a person who approves
+
+Part 6 goes back to the planted instruction from Part 4 and gives the designer every tool again. It compares three defenses (nothing, a warning in the instruction, and a code callback that refuses a dangerous call the marketer's request did not ask for), then answers the confirmation from Part 4 with two stand-ins for a person: one that approves everything and one that reads the request first.
+
+| Subject | Where | Needs a model |
+| --- | --- | --- |
+| What the guard reads, what it blocks, and the two approvers | `tests/test_part6_claims.py` | No |
+| The warning and the code guard | `workforce/trust/guard.py` | Yes |
+| A run that pauses for approval and continues | `workforce/trust/approval.py` | Yes |
+
+```bash
+.venv/bin/python -m pytest -q tests/test_part6_claims.py   # no model calls
+.venv/bin/python run_part6.py defenses 10
+.venv/bin/python run_part6.py approval 10
+```
+
+Harm is counted from the stub server's audit log, never from the agent's own account of what it did.
+
+## Part 7: running the team as a service
+
+Part 7 puts the Part 2 team behind an HTTP endpoint on Cloud Run and checks what changes once more than one copy of it is running: who may call it, where a conversation lives between requests, and how long a first request takes.
+
+| Subject | Where |
+| --- | --- |
+| The service: ADK's FastAPI app around the team | `deploy/main.py`, `deploy/agents/marketing_team/agent.py` |
+| Container and deploy script (private service, its own service account) | `Dockerfile`, `deploy/deploy.sh` |
+| Cloud setup as code: APIs, service account, session store, data store | `infra/` |
+| The checks: auth, sessions across instances, the team over HTTP, cold start | `run_part7.py` |
+
+```bash
+cd infra && terraform init && terraform apply && cd ..      # see infra/README.md first
+deploy/deploy.sh corvane-marketing-team memory://           # sessions in each instance's memory
+.venv/bin/python run_part7.py sessions SERVICE_URL
+deploy/deploy.sh corvane-marketing-team "$(terraform -chdir=infra output -raw session_service_uri)"
+.venv/bin/python run_part7.py sessions SERVICE_URL
+```
+
+Everything in this part is billable and none of it is needed for Parts 1 to 6. `infra/README.md` has the teardown. Nothing in `infra/` or `deploy/` holds a key, a password, or a token: Terraform and the scripts sign in with your own gcloud login.
 
 ## Setup
 
@@ -144,6 +191,14 @@ A new Google Cloud project has a low default quota. Run builds one at a time; th
 | Part 4: tool exposure, filter, confirmation scope, description pass-through | `tests/test_part4_claims.py` |
 | Part 5: outcome per build and question, searches, and tokens | `results/part5_answers.json` (ten runs per cell) |
 | Part 5: search behavior, date visibility, the figure check, the grader | `tests/test_part5_claims.py` |
+| Part 5: the same builds on Vertex AI Search | `results/part5_answers_vertex.json` (ten runs per cell) |
+| Part 5: ADK's built-in search tool, with the documents the service cited | `results/part5_answers_grounded.json` |
+| Part 6: harmful calls per defense | `results/part6_defenses.json` (ten runs per defense and server) |
+| Part 6: what each approver was shown and approved | `results/part6_approval.json` |
+| Part 6: the guard and the approvers | `tests/test_part6_claims.py` |
+| Part 7: calls with and without an identity token | `results/part7_auth_memory.json` |
+| Part 7: session lookups across three instances | `results/part7_sessions_memory.json`, `results/part7_sessions_agentengine.json` |
+| Part 7: the two-request conversation over HTTP | `results/part7_team_memory.json`, `results/part7_team_agentengine.json` |
 
 Costs in the article use the listed Gemini API price for `gemini-3.5-flash` at the time of the runs: $1.50 per million input tokens and $9.00 per million output tokens, with thinking billed as output. Model output varies from run to run, so expect your token counts to land near these, not on them.
 
@@ -156,9 +211,12 @@ Costs in the article use the listed Gemini API price for `gemini-3.5-flash` at t
 | `workforce/context/` | Part 2: handoff and context-window experiments |
 | `workforce/review/` | Part 3: the review loop and the judge test |
 | `workforce/tools/` | Part 4: the DesignDesk MCP server and the three connections |
-| `workforce/knowledge/` | Part 5: the company library, its search, and the answering agent |
+| `workforce/knowledge/` | Part 5: the company library, its two searches, and the answering agent |
+| `workforce/trust/` | Part 6: the code guard and the approval run |
+| `deploy/`, `Dockerfile` | Part 7: the team as a Cloud Run service |
+| `infra/` | Terraform for the Google Cloud resources Parts 5 and 7 use |
 | `workforce/harness.py` | Runs a build, single message or multi-turn, and records calls, tokens, timing, and a trace |
-| `run_part1.py`, `run_part2.py`, `run_part3.py`, `run_part4.py`, `run_part5.py` | Command-line runners |
+| `run_part1.py` to `run_part7.py` | Command-line runners |
 | `failures/` | Reproductions of failures the articles describe (these call the model) |
 | `tests/` | Framework claims, checked without a model |
 | `results/` | Recorded runs behind the published numbers |
@@ -173,7 +231,7 @@ Costs in the article use the listed Gemini API price for `gemini-3.5-flash` at t
 
 ## Roadmap
 
-Parts 1 to 5 are complete. Later installments cover cross-project trust and operations. Code for each lands here as its article publishes.
+Parts 1 to 7 are complete.
 
 ## License
 

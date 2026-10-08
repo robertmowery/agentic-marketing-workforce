@@ -1,0 +1,16 @@
+# Keep the build upload to what the image needs.
+.git
+.venv
+.env
+.env.*
+articles
+logs
+results
+tests
+failures
+__pycache__
+*.pyc
+*.db
+.adk
+.pytest_cache
+Claude outputs

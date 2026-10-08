@@ -70,6 +70,11 @@ class RunRecord:
     # read from the stored session and are not included in the counts above.
     compaction_input_tokens: int = 0
     compaction_output_tokens: int = 0
+    # For agents that use a built-in retrieval tool (Vertex AI Search): the ids
+    # of the documents the service says the reply was grounded on, and the
+    # queries it ran. These come from grounding metadata, not from the model.
+    grounded_documents: list[str] = field(default_factory=list)
+    retrieval_queries: list[str] = field(default_factory=list)
 
 
 def _describe_calls(event: Event) -> list[str]:
@@ -112,6 +117,15 @@ def _record_event(rec: RunRecord, event: Event, now: float) -> None:
         rec.output_tokens += (usage.candidates_token_count or 0) + (
             getattr(usage, "thoughts_token_count", 0) or 0
         )
+
+    grounding = getattr(event, "grounding_metadata", None)
+    if grounding is not None and not partial:
+        for chunk in grounding.grounding_chunks or []:
+            context = chunk.retrieved_context
+            name = (context.document_name or "") if context else ""
+            if name and name.rsplit("/", 1)[-1] not in rec.grounded_documents:
+                rec.grounded_documents.append(name.rsplit("/", 1)[-1])
+        rec.retrieval_queries.extend(grounding.retrieval_queries or [])
 
     if event.content and event.content.parts:
         text = "".join(

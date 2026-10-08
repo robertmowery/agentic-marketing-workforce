@@ -1,0 +1,3 @@
+# The service needs one more extra than a laptop run: "gcp" brings the Cloud Trace
+# exporter. Without it the server exits at startup when tracing is on.
+google-adk[db,mcp,gcp]==2.11.0

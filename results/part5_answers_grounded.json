@@ -1,0 +1,1205 @@
+[
+  {
+    "build": "grounded",
+    "question": "install",
+    "trial": 0,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The TrailLock 2 can be installed in 20 minutes with no drilling required. It clamps to crossbars between 24 and 36 millimeters wide using an included hex key.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 installation time"
+      }
+    ],
+    "seconds": 4.9,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 90,
+    "output_tokens": 433
+  },
+  {
+    "build": "grounded",
+    "question": "install",
+    "trial": 1,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The TrailLock 2 takes approximately 20 minutes to install and requires no drilling. It clamps directly to crossbars between 24 and 36 millimeters wide using the included hex key.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "\"TrailLock 2\""
+      }
+    ],
+    "seconds": 8.7,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 90,
+    "output_tokens": 466
+  },
+  {
+    "build": "grounded",
+    "question": "install",
+    "trial": 2,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The TrailLock 2 can be installed in just 20 minutes with no drilling required. It clamps to crossbars between 24 and 36 millimeters wide using the included hex key.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 install time"
+      }
+    ],
+    "seconds": 4.9,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 90,
+    "output_tokens": 458
+  },
+  {
+    "build": "grounded",
+    "question": "install",
+    "trial": 3,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The TrailLock 2 takes approximately 20 minutes to install and requires no drilling. It clamps onto crossbars between 24 and 36 millimeters wide using the included hex key.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 installation time"
+      }
+    ],
+    "seconds": 4.9,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 90,
+    "output_tokens": 511
+  },
+  {
+    "build": "grounded",
+    "question": "install",
+    "trial": 4,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The TrailLock 2 takes approximately 20 minutes to install and requires no drilling. It clamps easily to crossbars between 24 and 36 millimeters wide using the included hex key.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 installation time"
+      }
+    ],
+    "seconds": 4.8,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 90,
+    "output_tokens": 382
+  },
+  {
+    "build": "grounded",
+    "question": "install",
+    "trial": 5,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The TrailLock 2 takes approximately 20 minutes to install and requires no drilling. It clamps securely to crossbars between 24 and 36 millimeters wide using the included hex key.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 installation time"
+      }
+    ],
+    "seconds": 4.9,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 90,
+    "output_tokens": 486
+  },
+  {
+    "build": "grounded",
+    "question": "install",
+    "trial": 6,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The TrailLock 2 takes approximately 20 minutes to install and requires no drilling. It easily clamps to crossbars between 24 and 36 millimeters wide using the included hex key.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 installation time"
+      }
+    ],
+    "seconds": 5.4,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 90,
+    "output_tokens": 507
+  },
+  {
+    "build": "grounded",
+    "question": "install",
+    "trial": 7,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The TrailLock 2 takes only 20 minutes to install and requires no drilling. It securely clamps to crossbars between 24 and 36 millimeters wide using the included hex key.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 installation time"
+      }
+    ],
+    "seconds": 6.3,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 90,
+    "output_tokens": 775
+  },
+  {
+    "build": "grounded",
+    "question": "install",
+    "trial": 8,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The TrailLock 2 takes approximately 20 minutes to install and requires no drilling. It clamps easily to crossbars between 24 and 36 millimeters wide using the included hex key.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 installation time"
+      }
+    ],
+    "seconds": 4.9,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 90,
+    "output_tokens": 395
+  },
+  {
+    "build": "grounded",
+    "question": "install",
+    "trial": 9,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The TrailLock 2 can be installed in just 20 minutes with no drilling required. It clamps directly to crossbars between 24 and 36 millimeters wide using an included hex key.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 installation time"
+      }
+    ],
+    "seconds": 4.7,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 90,
+    "output_tokens": 447
+  },
+  {
+    "build": "grounded",
+    "question": "price",
+    "trial": 0,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The fleet price for the TrailLock 2 is $529 per unit, and orders over 100 units qualify for a 12% volume discount. Please note that prices are in US dollars and exclude freight.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 fleet price"
+      }
+    ],
+    "seconds": 24.8,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 92,
+    "output_tokens": 517
+  },
+  {
+    "build": "grounded",
+    "question": "price",
+    "trial": 1,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The fleet price for the TrailLock 2 is $529 per unit. Additionally, fleet orders of over 100 units qualify for a 12% volume discount.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 fleet price per unit"
+      }
+    ],
+    "seconds": 5.5,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 92,
+    "output_tokens": 544
+  },
+  {
+    "build": "grounded",
+    "question": "price",
+    "trial": 2,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The fleet price for the TrailLock 2 is $529 per unit. Additionally, orders over 100 units are eligible for a 12% volume discount.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 fleet price per unit"
+      }
+    ],
+    "seconds": 4.9,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 92,
+    "output_tokens": 541
+  },
+  {
+    "build": "grounded",
+    "question": "price",
+    "trial": 3,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The fleet price for the TrailLock 2 is $529 per unit. Orders over 100 units receive a 12% volume discount.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 fleet price per unit"
+      }
+    ],
+    "seconds": 5.7,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 92,
+    "output_tokens": 556
+  },
+  {
+    "build": "grounded",
+    "question": "price",
+    "trial": 4,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The fleet price for the TrailLock 2 is $529 per unit. Orders of more than 100 units qualify for a 12% volume discount.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 fleet price"
+      }
+    ],
+    "seconds": 6.1,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 92,
+    "output_tokens": 440
+  },
+  {
+    "build": "grounded",
+    "question": "price",
+    "trial": 5,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The fleet price for the TrailLock 2 is $529 per unit. Orders of more than 100 units are eligible for a 12% volume discount.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 fleet price"
+      }
+    ],
+    "seconds": 5.0,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 92,
+    "output_tokens": 597
+  },
+  {
+    "build": "grounded",
+    "question": "price",
+    "trial": 6,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The fleet price for the TrailLock 2 is $529 per unit. Orders of more than 100 units qualify for a 12% volume discount.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 fleet price per unit"
+      }
+    ],
+    "seconds": 5.9,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 92,
+    "output_tokens": 608
+  },
+  {
+    "build": "grounded",
+    "question": "price",
+    "trial": 7,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The fleet price for the TrailLock 2 is $529 per unit, with prices excluding freight. Additionally, orders of over 100 units are eligible for a 12% volume discount.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 fleet price"
+      }
+    ],
+    "seconds": 4.9,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 92,
+    "output_tokens": 493
+  },
+  {
+    "build": "grounded",
+    "question": "price",
+    "trial": 8,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The fleet price for the TrailLock 2 is $529 per unit, effective as of July 1, 2026. Orders exceeding 100 units are eligible for a 12% volume discount.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "\"TrailLock 2\" price"
+      }
+    ],
+    "seconds": 5.5,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 92,
+    "output_tokens": 521
+  },
+  {
+    "build": "grounded",
+    "question": "price",
+    "trial": 9,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "The fleet price for the TrailLock 2 is $529 per unit, and orders over 100 units qualify for a 12% volume discount. These prices are in US dollars and do not include freight.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 fleet price"
+      }
+    ],
+    "seconds": 5.8,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 92,
+    "output_tokens": 623
+  },
+  {
+    "build": "grounded",
+    "question": "discount",
+    "trial": 0,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "A fleet order of TrailLock 2 receives a 12% volume discount for orders over 100 units.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 volume discount fleet order"
+      }
+    ],
+    "seconds": 5.5,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 99,
+    "output_tokens": 645
+  },
+  {
+    "build": "grounded",
+    "question": "discount",
+    "trial": 1,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "A fleet order of TrailLock 2 receives a 12% volume discount on orders over 100 units.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 fleet volume discount"
+      }
+    ],
+    "seconds": 6.5,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 99,
+    "output_tokens": 653
+  },
+  {
+    "build": "grounded",
+    "question": "discount",
+    "trial": 2,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "Under the current price list, fleet orders of the TrailLock 2 receive a 12% volume discount for orders of over 100 units.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 fleet volume discount"
+      }
+    ],
+    "seconds": 5.4,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 99,
+    "output_tokens": 586
+  },
+  {
+    "build": "grounded",
+    "question": "discount",
+    "trial": 3,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "A fleet order of TrailLock 2 receives a 12% volume discount on orders over 100 units.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 volume discount fleet"
+      }
+    ],
+    "seconds": 5.3,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 99,
+    "output_tokens": 572
+  },
+  {
+    "build": "grounded",
+    "question": "discount",
+    "trial": 4,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "A fleet order of the TrailLock 2 receives a 12% volume discount on orders over 100 units.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 volume discount"
+      }
+    ],
+    "seconds": 5.8,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 99,
+    "output_tokens": 624
+  },
+  {
+    "build": "grounded",
+    "question": "discount",
+    "trial": 5,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "A fleet order of the TrailLock 2 receives a 12% volume discount on orders of over 100 units.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 volume discount fleet"
+      }
+    ],
+    "seconds": 5.8,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 99,
+    "output_tokens": 605
+  },
+  {
+    "build": "grounded",
+    "question": "discount",
+    "trial": 6,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "For fleet orders of the TrailLock 2, orders over 100 units receive a 12% volume discount.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 volume discount fleet"
+      }
+    ],
+    "seconds": 8.6,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 99,
+    "output_tokens": 614
+  },
+  {
+    "build": "grounded",
+    "question": "discount",
+    "trial": 7,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "Based on the current price list, fleet orders of the TrailLock 2 receive a 12% volume discount on orders of more than 100 units.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 volume discount fleet order"
+      }
+    ],
+    "seconds": 5.3,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 99,
+    "output_tokens": 574
+  },
+  {
+    "build": "grounded",
+    "question": "discount",
+    "trial": 8,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "Under the current fleet price list, orders of the TrailLock 2 over 100 units receive a 12% volume discount.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 volume discount fleet order"
+      }
+    ],
+    "seconds": 4.9,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 99,
+    "output_tokens": 569
+  },
+  {
+    "build": "grounded",
+    "question": "discount",
+    "trial": 9,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "right",
+    "found": true,
+    "answer": "A fleet order of TrailLock 2 receives a 12% volume discount on orders over 100 units.",
+    "sources": [
+      "tl2-fleet-pricing"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 volume discount fleet order"
+      }
+    ],
+    "seconds": 5.7,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 99,
+    "output_tokens": 595
+  },
+  {
+    "build": "grounded",
+    "question": "fit",
+    "trial": 0,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "NOT FOUND. The company library is missing compatibility specifications for the 2026 Ford Transit high roof and its factory roof rails. We cannot confirm a fit without knowing if its crossbars fall within the TrailLock 2's required clamp range of 24 to 36 millimeters.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 factory roof rails"
+      }
+    ],
+    "seconds": 10.3,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 101,
+    "output_tokens": 997
+  },
+  {
+    "build": "grounded",
+    "question": "fit",
+    "trial": 1,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "NOT FOUND. The company library is missing compatibility specifications for the 2026 Ford Transit high roof, including whether its factory roof rails fit the TrailLock 2's required crossbar width of 24 to 36 millimeters.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 2026 Ford Transit high roof roof rails"
+      }
+    ],
+    "seconds": 16.2,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 101,
+    "output_tokens": 1266
+  },
+  {
+    "build": "grounded",
+    "question": "fit",
+    "trial": 2,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "NOT FOUND. The company library does not contain fitment data for the 2026 Ford Transit high roof or the width of its factory roof rails to confirm compatibility. For reference, the TrailLock 2 is compatible with crossbars that have a width between 24 and 36 millimeters.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 Ford Transit"
+      }
+    ],
+    "seconds": 20.8,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 101,
+    "output_tokens": 1234
+  },
+  {
+    "build": "grounded",
+    "question": "fit",
+    "trial": 3,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "NOT FOUND. The company library is missing compatibility specifications for the 2026 Ford Transit high roof's factory roof rails. Currently, the documentation only specifies that the TrailLock 2 clamps to crossbars between 24 and 36 millimeters wide.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2"
+      }
+    ],
+    "seconds": 11.5,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 101,
+    "output_tokens": 815
+  },
+  {
+    "build": "grounded",
+    "question": "fit",
+    "trial": 4,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "NOT FOUND. The library does not contain compatibility information for the TrailLock 2 on a 2026 Ford Transit high roof or details about the dimensions of its factory roof rails.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2"
+      },
+      {
+        "query": "TrailLock 2 2026 Ford Transit high roof"
+      },
+      {
+        "query": "TrailLock 2 fit guide"
+      },
+      {
+        "query": "TrailLock 2 vehicle compatibility"
+      },
+      {
+        "query": "Corvane Outdoor Transit"
+      },
+      {
+        "query": "TrailLock 2 Ford Transit"
+      },
+      {
+        "query": "\"Corvane\""
+      },
+      {
+        "query": "\"Corvane\" \"Transit\""
+      },
+      {
+        "query": "\"Corvane Outdoor\" compatibility"
+      },
+      {
+        "query": "\"Corvane\" \"TrailLock 2\""
+      },
+      {
+        "query": "Corvane"
+      },
+      {
+        "query": "TrailLock"
+      },
+      {
+        "query": "Ford Transit high roof factory roof rails"
+      },
+      {
+        "query": "TrailLock Ford Transit"
+      },
+      {
+        "query": "Transit"
+      },
+      {
+        "query": "Ford Transit"
+      },
+      {
+        "query": "factory roof rails Transit"
+      },
+      {
+        "query": "roof rails Transit"
+      }
+    ],
+    "seconds": 12.5,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 101,
+    "output_tokens": 1071
+  },
+  {
+    "build": "grounded",
+    "question": "fit",
+    "trial": 5,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "NOT FOUND. The company library does not contain compatibility information regarding whether the TrailLock 2 fits the factory roof rails of a 2026 Ford Transit high roof.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2"
+      },
+      {
+        "query": "TrailLock 2 Ford Transit 2026"
+      },
+      {
+        "query": "Corvane TrailLock 2 factory roof rails"
+      },
+      {
+        "query": "Corvane TrailLock 2 Ford Transit"
+      },
+      {
+        "query": "Corvane TrailLock 2 compatibility"
+      },
+      {
+        "query": "Corvane TrailLock 2 roof rails"
+      },
+      {
+        "query": "Corvane Ford Transit"
+      },
+      {
+        "query": "Corvane vehicle compatibility"
+      },
+      {
+        "query": "Corvane high roof"
+      },
+      {
+        "query": "TrailLock"
+      }
+    ],
+    "seconds": 11.8,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 101,
+    "output_tokens": 646
+  },
+  {
+    "build": "grounded",
+    "question": "fit",
+    "trial": 6,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "NOT FOUND: The company library is missing compatibility details for using the TrailLock 2 on the factory roof rails of a 2026 Ford Transit high roof. Our current documentation only specifies that the TrailLock 2 clamps to crossbars between 24 and 36 millimeters wide.",
+    "sources": [
+      "install"
+    ],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 Ford Transit 2026 roof rails"
+      }
+    ],
+    "seconds": 16.8,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 101,
+    "output_tokens": 1018
+  },
+  {
+    "build": "grounded",
+    "question": "fit",
+    "trial": 7,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "NOT FOUND. The company library is missing vehicle-specific compatibility data for the 2026 Ford Transit high roof, including the dimensions of its factory roof rails.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 Ford Transit 2026 roof rails"
+      },
+      {
+        "query": "Corvane TrailLock 2 fit Ford Transit high roof"
+      },
+      {
+        "query": "Corvane Outdoor TrailLock 2"
+      },
+      {
+        "query": "Corvane Outdoor TrailLock 2 compatibility Ford Transit"
+      },
+      {
+        "query": "Corvane TrailLock 2 fit guide"
+      },
+      {
+        "query": "Corvane Transit roof rails TrailLock"
+      },
+      {
+        "query": " \"TrailLock 2\""
+      },
+      {
+        "query": "\"TrailLock 2\" vehicle compatibility"
+      },
+      {
+        "query": "\"TrailLock 2\" \"Ford Transit\""
+      }
+    ],
+    "seconds": 9.4,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 101,
+    "output_tokens": 819
+  },
+  {
+    "build": "grounded",
+    "question": "fit",
+    "trial": 8,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "NOT FOUND. The company library does not contain compatibility information or specifications for the 2026 Ford Transit high roof factory roof rails.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 Ford Transit high roof"
+      },
+      {
+        "query": "Corvane Outdoor TrailLock 2 fit 2026 Ford Transit"
+      },
+      {
+        "query": "Corvane Outdoor TrailLock 2"
+      },
+      {
+        "query": "Corvane Outdoor TrailLock 2 compatibility"
+      },
+      {
+        "query": "Corvane Outdoor Ford Transit"
+      },
+      {
+        "query": "TrailLock 2 roof rails"
+      },
+      {
+        "query": "\"Ford Transit\""
+      },
+      {
+        "query": " \"Transit\" \"TrailLock\""
+      },
+      {
+        "query": "\"Transit\" \"Corvane\""
+      },
+      {
+        "query": "\"roof rails\" \"Corvane\""
+      },
+      {
+        "query": "Transit"
+      },
+      {
+        "query": "Ford"
+      },
+      {
+        "query": "\"TrailLock 2\" vehicle compatibility"
+      },
+      {
+        "query": "TrailLock 2 fits"
+      },
+      {
+        "query": "\"Transit\""
+      },
+      {
+        "query": "\"Ford\""
+      },
+      {
+        "query": "\"roof rails\""
+      },
+      {
+        "query": "\"compatibility\""
+      }
+    ],
+    "seconds": 11.1,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 101,
+    "output_tokens": 795
+  },
+  {
+    "build": "grounded",
+    "question": "fit",
+    "trial": 9,
+    "search": "grounded",
+    "valid": true,
+    "outcome": "declined",
+    "found": false,
+    "answer": "NOT FOUND. The company library does not contain compatibility information for the TrailLock 2 on a 2026 Ford Transit high roof or its factory roof rails.",
+    "sources": [],
+    "sources_not_in_library": [],
+    "numbers_not_in_sources": [],
+    "searches": [
+      {
+        "query": "Corvane Outdoor TrailLock 2 Ford Transit"
+      },
+      {
+        "query": "Corvane TrailLock 2 Ford Transit high roof"
+      },
+      {
+        "query": "Corvane Outdoor TrailLock 2 roof rails"
+      },
+      {
+        "query": "Corvane TrailLock 2"
+      },
+      {
+        "query": "Corvane TrailLock 2 compatibility"
+      },
+      {
+        "query": "Corvane TrailLock 2 Transit"
+      },
+      {
+        "query": "Corvane TrailLock 2 fit"
+      },
+      {
+        "query": "Corvane Transit"
+      },
+      {
+        "query": "Corvane Outdoor Transit"
+      },
+      {
+        "query": "Corvane Ford Transit"
+      },
+      {
+        "query": "Corvane \"high roof\""
+      },
+      {
+        "query": "Corvane Outdoor"
+      },
+      {
+        "query": "TrailLock 2"
+      },
+      {
+        "query": "Corvane TrailLock"
+      },
+      {
+        "query": "Corvane \"TrailLock 2\""
+      },
+      {
+        "query": "\"Corvane\" \"Ford\""
+      },
+      {
+        "query": "\"Corvane\" \"Transit\""
+      },
+      {
+        "query": "\"TrailLock\" \"Transit\""
+      },
+      {
+        "query": "\"TrailLock\" \"Ford\""
+      },
+      {
+        "query": "\"Corvane\" \"roof rails\""
+      },
+      {
+        "query": "\"Corvane\" \"factory\""
+      }
+    ],
+    "seconds": 13.6,
+    "timed_out": false,
+    "model_calls": 1,
+    "input_tokens": 101,
+    "output_tokens": 952
+  }
+]

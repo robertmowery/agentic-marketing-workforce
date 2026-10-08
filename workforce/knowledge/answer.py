@@ -27,17 +27,23 @@ response schema (see Part 3 and failures/structured_output_stall.py).
 from __future__ import annotations
 
 import re
+from collections.abc import Callable
 from dataclasses import dataclass
 from typing import Any
 
 from google.adk.agents import Agent
+from google.adk.tools import VertexAiSearchTool
 from pydantic import BaseModel
 
 from workforce import cast
-from workforce.knowledge import library
+from workforce.knowledge import library, vertex_search
 from workforce.review.loop import JSON_REPLY, parse_reply
 
 BUILDS = ("no_library", "library", "dated")
+# A fourth build that only exists on Vertex AI Search: no search function of
+# ours at all. ADK's built-in VertexAiSearchTool hands the data store to the
+# model, and the service does the retrieval and reports what it used.
+GROUNDED = "grounded"
 
 
 class Answer(BaseModel):  # noqa: D101 - a docstring here would leak into the contract
@@ -53,6 +59,10 @@ ANSWER_FORMAT = (
 )
 ROLE = "You answer sales questions about Corvane Outdoor products for the fleet sales team."
 USE_LIBRARY = " Search the company library before you answer."
+GROUNDED_FORMAT = (
+    "Answer in one or two sentences. If the library does not answer the"
+    " question, begin your reply with the words NOT FOUND and say what is missing."
+)
 GROUNDING_RULES = (
     " Answer only from documents the search returns. When two documents"
     " disagree, the one with the later effective date wins. If the documents"
@@ -96,28 +106,59 @@ QUESTIONS: tuple[Question, ...] = (
 )
 
 
-def search_library(query: str) -> list[dict[str, str]]:
-    """Search the company library and return the best-matching documents."""
-    return [{"id": d.doc_id, "title": d.title, "text": d.text} for d in library.search(query)]
+Search = Callable[[str], list[library.Document]]
+
+# Two ways to search the same eight documents. "local" is the keyword search in
+# library.py. "vertex" is a Vertex AI Search data store (see vertex_search.py).
+SEARCHES: dict[str, Search] = {"local": library.search, "vertex": vertex_search.search}
 
 
-def search_library_dated(query: str) -> list[dict[str, str]]:
-    """Search the company library and return the best-matching documents with their dates."""
-    return [
-        {"id": d.doc_id, "title": d.title, "effective": d.effective, "text": d.text}
-        for d in library.search(query)
-    ]
+def library_tools(find: Search) -> tuple[Callable[..., Any], Callable[..., Any]]:
+    """Build the two search tools around one way of searching.
+
+    The tools keep the same names and descriptions whichever search is behind
+    them, so the agent is told the same thing in every run.
+    """
+
+    def search_library(query: str) -> list[dict[str, str]]:
+        """Search the company library and return the best-matching documents."""
+        return [{"id": d.doc_id, "title": d.title, "text": d.text} for d in find(query)]
+
+    def search_library_dated(query: str) -> list[dict[str, str]]:
+        """Search the company library and return the best-matching documents with their dates."""
+        return [
+            {"id": d.doc_id, "title": d.title, "effective": d.effective, "text": d.text}
+            for d in find(query)
+        ]
+
+    return search_library, search_library_dated
 
 
-def build(name: str) -> Agent:
-    """Build one of the three answering agents."""
+search_library, search_library_dated = library_tools(library.search)
+
+
+def build(name: str, search: str = "local") -> Agent:
+    """Build one of the three answering agents on one of the two searches."""
+    plain, dated = library_tools(SEARCHES[search])
     if name == "no_library":
         tools: list[Any] = []
         instruction = ROLE
     elif name == "library":
-        instruction, tools = ROLE + USE_LIBRARY, [search_library]
+        instruction, tools = ROLE + USE_LIBRARY, [plain]
     elif name == "dated":
-        instruction, tools = ROLE + USE_LIBRARY + GROUNDING_RULES, [search_library_dated]
+        instruction, tools = ROLE + USE_LIBRARY + GROUNDING_RULES, [dated]
+    elif name == GROUNDED:
+        # This build replies in plain sentences. Asked for JSON, the service
+        # stopped reporting which documents it had used, and those citations
+        # are the reason to use the built-in tool (see harness.RunRecord).
+        return Agent(
+            name="sales_desk",
+            model=cast.MODEL,
+            generate_content_config=cast.RETRY,
+            description="Answers fleet sales questions.",
+            instruction=f"{ROLE}{USE_LIBRARY} {GROUNDED_FORMAT}",
+            tools=[VertexAiSearchTool(data_store_id=vertex_search.data_store())],
+        )
     else:
         raise ValueError(f"unknown build: {name}")
     return Agent(
@@ -150,11 +191,23 @@ def unsupported_numbers(answer: str, sources: list[str]) -> set[str]:
     return numbers(answer) - numbers(cited)
 
 
-def grade(question: Question, reply: str) -> dict[str, Any]:
-    """Grade one reply in code against what the library actually says."""
-    parsed = parse_reply(reply, Answer)
-    if parsed is None:
-        return {"valid": False, "outcome": "invalid reply"}
+def grade(question: Question, reply: str, sources: list[str] | None = None) -> dict[str, Any]:
+    """Grade one reply in code against what the library actually says.
+
+    Args:
+        question: The question that was asked.
+        reply: The agent's reply. A JSON object, unless ``sources`` is given.
+        sources: Document ids reported by the search service, for the build
+            that replies in plain sentences. A reply that begins NOT FOUND
+            counts as declined.
+    """
+    if sources is None:
+        parsed = parse_reply(reply, Answer)
+        if parsed is None:
+            return {"valid": False, "outcome": "invalid reply"}
+    else:
+        declined = reply.strip().upper().startswith("NOT FOUND")
+        parsed = {"answer": reply.strip(), "sources": sources, "found": not declined}
     text = parsed["answer"]
     known = [s for s in parsed["sources"] if library.get(s) is not None]
     loose = sorted(unsupported_numbers(text, known)) if parsed["found"] else []
