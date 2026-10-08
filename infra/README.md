@@ -62,6 +62,23 @@ cd infra
 terraform destroy
 ```
 
+If `terraform destroy` stops with "contains child resources: sessions", the
+session store still holds conversations. Delete it with its sessions, then run
+`terraform destroy` again:
+
+```bash
+curl -X DELETE -H "Authorization: Bearer $(gcloud auth print-access-token)" \
+  "https://us-central1-aiplatform.googleapis.com/v1/$(terraform output -raw session_service_uri | sed 's|agentengine://||')?force=true"
+```
+
+`gcloud run deploy --source` also leaves a Cloud Storage bucket named
+`run-sources-YOUR_PROJECT-us-central1` holding the uploaded source. Delete it
+when you no longer need it:
+
+```bash
+gcloud storage rm --recursive gs://run-sources-YOUR_PROJECT-us-central1
+```
+
 `terraform destroy` leaves the APIs switched on, so it cannot break anything
 else in the project. Switch them off by hand if you want them off.
 
